@@ -1,6 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 import cross from "@/assets/images/cross-arrow.webp";
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
 
 
 const Services = () => {
@@ -21,112 +25,144 @@ const Services = () => {
 						</div>
 					</div>
 					<div className="service_tabsection">
-						<div className="row">
-							<div className="col-lg-7 offset-lg-1">
-								<div className="heading">
-									<span>Services</span>
-								</div>
-							</div>
-							<div className="col-lg-5 offset-lg-1">
-								<div className="tab_section">
-									<div className="nav nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-										<button className="nav-link active" id="logo_design_tab" data-bs-toggle="pill" data-bs-target="#logo_tab" type="button" role="tab" aria-controls="logo_tab" aria-selected="true">
-											Logo Design & Branding
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
-										<button className="nav-link" id="ui_ux_design_tab" data-bs-toggle="pill" data-bs-target="#design_tab_wrap" type="button" role="tab" aria-controls="design_tab_wrap" aria-selected="false">
-											UX/UI Design
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
-										<button className="nav-link" id="mobile_application_tab" data-bs-toggle="pill" data-bs-target="#mobiapp_tab" type="button" role="tab" aria-controls="mobiapp_tab" aria-selected="false">
-											Mobile Application
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
-										<button className="nav-link" id="seo_tab" data-bs-toggle="pill" data-bs-target="#seo_wrap" type="button" role="tab" aria-controls="seo_wrap" aria-selected="false">
-											SEO
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
-										<button className="nav-link" id="custom_web_tab" data-bs-toggle="pill" data-bs-target="#custom_tab" type="button" role="tab" aria-controls="custom_tab" aria-selected="false">
-											Custom Web Development
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
-										<button className="nav-link" id="video_art_tab" data-bs-toggle="pill" data-bs-target="#video_tab" type="button" role="tab" aria-controls="video_tab" aria-selected="false">
-											Video & Art Direction
-											<span><Image src={cross} alt="cross-arrow" /></span>
-										</button>
+						<Tab.Container id="tabs_wrapper" defaultActiveKey="logo_design_tab">
+							<div className="row">
+								<div className="col-lg-7 offset-lg-1">
+									<div className="heading">
+										<span>Services</span>
 									</div>
 								</div>
-							</div>
-							<div className="col-lg-5">
-								<div className="tab-content" id="v-pills-tabContent">
-									<div className="tab-pane fade show active" id="logo_tab" role="tabpanel" aria-labelledby="logo_design_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
-												<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
-												<div className="chip"><Link href="javascript:;">Booking</Link></div>
-												<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
-												<div className="chip"><Link href="javascript:;">Software</Link></div>
-											</div>
-										</div>
-									</div>
-									<div className="tab-pane fade" id="design_tab_wrap" role="tabpanel" aria-labelledby="ui_ux_design_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
-												<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
-												<div className="chip"><Link href="javascript:;">Booking</Link></div>
-											</div>
-										</div>
-									</div>
-									<div className="tab-pane fade" id="mobiapp_tab" role="tabpanel" aria-labelledby="mobile_application_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
-												<div className="chip"><Link href="javascript:;">Booking</Link></div>
-												<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
-												<div className="chip"><Link href="javascript:;">Software</Link></div>
-											</div>
-										</div>
-									</div>
-									<div className="tab-pane fade" id="seo_wrap" role="tabpanel" aria-labelledby="seo_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
-												<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
-												<div className="chip"><Link href="javascript:;">Booking</Link></div>
-												<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
-												<div className="chip"><Link href="javascript:;">Software</Link></div>
-											</div>
-										</div>
-									</div>
-									<div className="tab-pane fade" id="custom_tab" role="tabpanel" aria-labelledby="custom_web_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
-												<div className="chip"><Link href="javascript:;">Booking</Link></div>
-												<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
-												<div className="chip"><Link href="javascript:;">Software</Link></div>
-											</div>
-										</div>
-									</div>
-									<div className="tab-pane fade" id="video_tab" role="tabpanel" aria-labelledby="video_art_tab" tabindex="0">
-										<div className="content_box">
-											<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
-											<div className="chips">
-												<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
-												<div className="chip"><Link href="javascript:;">Software</Link></div>
-											</div>
-										</div>
+								<div className="col-lg-5 offset-lg-1">
+									<div className="tab_section">
+										<Nav variant="pills">
+											<Nav.Item>
+												<Nav.Link eventKey="logo_design_tab">
+													Logo Design & Branding
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="ui_ux_design_tab">
+													UX/UI Design
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="mobile_application_tab">
+													Mobile Application
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="seo_tab">
+													SEO
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="custom_web_tab">
+													Custom Web Development
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+											<Nav.Item>
+												<Nav.Link eventKey="video_art_tab">
+													Video & Art Direction
+													<span><Image src={cross} alt="cross-arrow" /></span>
+												</Nav.Link>
+											</Nav.Item>
+										</Nav>
 									</div>
 								</div>
+								<div className="col-lg-5 offset-lg-1">
+									<Tab.Content>
+										<Tab.Pane eventKey="logo_design_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
+													<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
+													<div className="chip"><Link href="javascript:;">Booking</Link></div>
+													<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
+													<div className="chip"><Link href="javascript:;">Software</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+										<Tab.Pane eventKey="ui_ux_design_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
+													<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
+													<div className="chip"><Link href="javascript:;">Booking</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+										<Tab.Pane eventKey="mobile_application_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
+													<div className="chip"><Link href="javascript:;">Booking</Link></div>
+													<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
+													<div className="chip"><Link href="javascript:;">Software</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+										<Tab.Pane eventKey="seo_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">SaaS Product</Link></div>
+													<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
+													<div className="chip"><Link href="javascript:;">Booking</Link></div>
+													<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
+													<div className="chip"><Link href="javascript:;">Software</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+										<Tab.Pane eventKey="custom_web_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">Dashboard</Link></div>
+													<div className="chip"><Link href="javascript:;">Booking</Link></div>
+													<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
+													<div className="chip"><Link href="javascript:;">Software</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+										<Tab.Pane eventKey="video_art_tab">
+											<div className="content_box">
+												<span>Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.</span>
+												<div className="chips">
+													<div className="chip"><Link href="javascript:;">Marketplace</Link></div>
+													<div className="chip"><Link href="javascript:;">Software</Link></div>
+												</div>
+											</div>
+										</Tab.Pane>
+									</Tab.Content>
+								</div>
 							</div>
-						</div>
+						</Tab.Container>
+					</div>
+				</div>
+				<div className="service_detail">
+					<div className="marquee">
+						<ul className="marquee-content scroll">
+							<li className="back_wrapper"><p className="text_box">Award Winning</p></li>
+							<li className="back_wrapper"><p className="text_box">Official WordPress Partner</p></li>
+							<li className="back_wrapper"><p className="text_box">21th Century Best Design</p></li>
+							<li className="back_wrapper"><p className="text_box">5 Star Rated Agency</p></li>
+							<li className="back_wrapper"><p className="text_box">Agile Process</p></li>
+						</ul>
+						<ul className="marquee-content scroll">
+							<li className="back_wrapper"><p className="text_box">Award Winning</p></li>
+							<li className="back_wrapper"><p className="text_box">Official WordPress Partner</p></li>
+							<li className="back_wrapper"><p className="text_box">21th Century Best Design</p></li>
+							<li className="back_wrapper"><p className="text_box">5 Star Rated Agency</p></li>
+							<li className="back_wrapper"><p className="text_box">Agile Process</p></li>
+						</ul>
 					</div>
 				</div>
 			</div>
