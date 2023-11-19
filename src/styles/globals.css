@@ -152,7 +152,6 @@ textarea {
 .service_tabsection .tab_section .nav .nav-link span { display: inline-flex; width: 40px; height: 40px; opacity: 0; visibility: hidden; transition: all 0.3s ease-in-out; }
 .service_tabsection .tab_section .nav .nav-link span img { width: 100%; height: auto; max-width: 100%; max-height: 100%; object-fit: cover; }
 .service_tabsection .tab_section .nav .nav-link.active span { opacity: 1; visibility: visible; }
-.service_tabsection .tab-content { height: 100%; display: flex; align-items: center; }
 .service_tabsection .tab-content .content_box span { color: var(--primary-black); font-size: 18px; font-weight: 500; line-height: 1.44; margin-bottom: 24px; display: block; }
 .service_tabsection .tab-content .content_box .chips { display: flex; flex-wrap: wrap; gap: 16px; }
 .service_tabsection .tab-content .content_box .chips .chip a { white-space: nowrap; overflow: hidden; padding: 8px 16px; display: block; border-radius: 57px; background-color: var(--primary-light-white); font-size: 16px; font-weight: 500; transition: all 0.3s ease-in-out; color: var(--primary-black); text-decoration: none; }
@@ -172,3 +171,11 @@ textarea {
 .service_detail .marquee .marquee-content .back_wrapper { max-width: 430px; position: relative; }
 .service_detail .marquee .marquee-content .back_wrapper::after { content: ""; position: absolute; left: -6%; top: 50%; transform: translate(0, -50%); width: 6px; height: 6px; border-radius: 50%; background: var(--primary-black); }
 .service_detail .marquee .marquee-content .back_wrapper .text_box { width: 100%; color: var(--primary-light-gray); font-size: 36px; font-weight: 500; margin: 0; }
+
+
+.award { padding: 120px 0; }
+.award_section { position: relative; max-width: 1075px; margin: 0 auto; display: flex; align-items: center; flex-direction: column; }
+.award_section .image { display: flex; height: 686px; width: 427px; }
+.award_section .image img { width: 100%; height: auto; max-width: 100%; max-height: 100%; object-fit: cover; }
+.award_section .award_text { position: absolute; top: 50%; transform: translate(0, -50%); }
+.award_section .award_text h2 { text-align: center; color: var(--primary-white); font-size: 84px; font-weight: 700; margin: 0; }

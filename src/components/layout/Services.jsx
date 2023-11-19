@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import cross from "@/assets/images/cross-arrow.webp";
-import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
-import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
 
