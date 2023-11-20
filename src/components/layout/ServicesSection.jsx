@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 
 
-const Services = () => {
+const ServicesSection = () => {
 	return (
 		<>
 			<div className="services">
@@ -14,18 +14,16 @@ const Services = () => {
 						We engineer business solutions that drive measurable results for renowned industry leaders around the 
 						<div className="globe">
 							gl
-							<div className="world_img">
-								<video preload="none" poster="images/world-animation.mp4" autoplay muted loop>
-									<source src="images/world-animation.mp4" type="video/mp4" />
-								</video>
-							</div>
+							{/* <div className="world_img">
+								<video src={require('../../assets/images/world-animation.mp4')} autoPlay />
+							</div> */}
 							be
 						</div>
 					</div>
 					<div className="service_tabsection">
 						<Tab.Container id="tabs_wrapper" defaultActiveKey="logo_design_tab">
 							<div className="row">
-								<div className="col-lg-7 offset-lg-1">
+								<div className="col-lg-10 offset-lg-1">
 									<div className="heading">
 										<span>Services</span>
 									</div>
@@ -34,45 +32,57 @@ const Services = () => {
 									<div className="tab_section">
 										<Nav variant="pills">
 											<Nav.Item>
-												<Nav.Link eventKey="logo_design_tab">
-													Logo Design & Branding
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="logo_design_tab">
+														Logo Design & Branding
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link eventKey="ui_ux_design_tab">
-													UX/UI Design
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="ui_ux_design_tab">
+														UX/UI Design
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link eventKey="mobile_application_tab">
-													Mobile Application
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="mobile_application_tab">
+														Mobile Application
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link eventKey="seo_tab">
-													SEO
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="seo_tab">
+														SEO
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link eventKey="custom_web_tab">
-													Custom Web Development
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="custom_web_tab">
+														Custom Web Development
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 											<Nav.Item>
-												<Nav.Link eventKey="video_art_tab">
-													Video & Art Direction
-													<span><Image src={cross} alt="cross-arrow" /></span>
-												</Nav.Link>
+												<div className="service_wrap">
+													<Nav.Link eventKey="video_art_tab">
+														Video & Art Direction
+														<span><Image src={cross} alt="cross-arrow" /></span>
+													</Nav.Link>
+												</div>
 											</Nav.Item>
 										</Nav>
 									</div>
 								</div>
-								<div className="col-lg-5 offset-lg-1">
+								<div className="col-lg-5">
 									<Tab.Content>
 										<Tab.Pane eventKey="logo_design_tab">
 											<div className="content_box">
@@ -168,4 +178,4 @@ const Services = () => {
 	)
 }
 
-export default Services;
+export default ServicesSection;
