@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import cross from "@/assets/images/cross-arrow.webp";
+import cross from "@/assets/images/orange-cross.svg";
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 
@@ -23,12 +23,10 @@ const ServicesSection = () => {
 					<div className="service_tabsection">
 						<Tab.Container id="tabs_wrapper" defaultActiveKey="logo_design_tab">
 							<div className="row">
-								<div className="col-lg-10 offset-lg-1">
-									<div className="heading">
-										<span>Services</span>
-									</div>
+								<div className="heading">
+									<span>Services</span>
 								</div>
-								<div className="col-lg-5 offset-lg-1">
+								<div className="col-lg-6">
 									<div className="tab_section">
 										<Nav variant="pills">
 											<Nav.Item>
@@ -82,7 +80,7 @@ const ServicesSection = () => {
 										</Nav>
 									</div>
 								</div>
-								<div className="col-lg-5">
+								<div className="col-lg-6">
 									<Tab.Content>
 										<Tab.Pane eventKey="logo_design_tab">
 											<div className="content_box">
