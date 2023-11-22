@@ -15,9 +15,9 @@ const HomeBanner = () => {
 				</div>
 				<div className="container">
 					<div className="banner_textbox">
-						<span>Design & Development company</span>
+						<p>Design & Development company</p>
 						<h1>We help business evolve</h1>
-						<PrimaryBtn name="Learn Now" arrow="yes"/>
+						<PrimaryBtn name="Learn Now" arrow="no" link="#" />
 					</div>
 				</div>
 			</div>

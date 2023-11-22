@@ -10,7 +10,7 @@ const HomeProjectBox = () => {
 		<>
 			<div className="project_text">
 				<h4>You can also view our past projects.</h4>
-				<PrimaryBtn name="View more" arrow="yes"/>
+				<PrimaryBtn name="View more" arrow="no" link="/project" />
 			</div>
 		</>
 	)

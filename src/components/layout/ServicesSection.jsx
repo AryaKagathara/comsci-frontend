@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import cross from "@/assets/images/orange-cross.svg";
+import world from "@/assets/images/world-img.webp";
 import Nav from 'react-bootstrap/Nav';
 import Tab from 'react-bootstrap/Tab';
 
@@ -14,9 +15,9 @@ const ServicesSection = () => {
 						We engineer business solutions that drive measurable results for renowned industry leaders around the 
 						<div className="globe">
 							gl
-							{/* <div className="world_img">
-								<video src={require('../../assets/images/world-animation.mp4')} autoPlay />
-							</div> */}
+							<div className="world_img">
+								<Image src={world} alt="world" />
+							</div>
 							be
 						</div>
 					</div>
@@ -157,17 +158,27 @@ const ServicesSection = () => {
 					<div className="marquee">
 						<ul className="marquee-content scroll">
 							<li className="back_wrapper"><p className="text_box">Award Winning</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">Official WordPress Partner</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">21th Century Best Design</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">5 Star Rated Agency</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">Agile Process</p></li>
+							<div className="dot"></div>
 						</ul>
 						<ul className="marquee-content scroll">
 							<li className="back_wrapper"><p className="text_box">Award Winning</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">Official WordPress Partner</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">21th Century Best Design</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">5 Star Rated Agency</p></li>
+							<div className="dot"></div>
 							<li className="back_wrapper"><p className="text_box">Agile Process</p></li>
+							<div className="dot"></div>
 						</ul>
 					</div>
 				</div>

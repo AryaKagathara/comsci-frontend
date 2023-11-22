@@ -16,7 +16,7 @@ const Footer = () => {
 					<div className="footer_section">
 						<div className="title_box">
 							<h6>Starting a new project or want to collaborate with us?</h6>
-							<PrimaryBtn name="Lets talk" arrow="yes"/>
+							<PrimaryBtn name="Lets talk" arrow="no" link="#"/>
 						</div>
 						<div className="links_section">
 							<div className="use_link">

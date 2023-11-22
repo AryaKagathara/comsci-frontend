@@ -1,8 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Award from "@/assets/images/award-img.webp";
 import HomeProjectBox from "@/components/HomeProjectBox";
-import ProjectListSection from "@/components/ProjectListSection";
+import ProjectListSection from "@/components/layout/ProjectListSection";
 
 
 

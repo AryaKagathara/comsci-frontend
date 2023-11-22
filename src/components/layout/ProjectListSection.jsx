@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import project1 from "@/assets/images/project-pic1.webp";
-import cross from "@/assets/images/cross-arrow.webp";
 
 
 
@@ -9,7 +8,7 @@ import cross from "@/assets/images/cross-arrow.webp";
 const ProjectListSection = () => {
 	return (
 		<>
-			<Link href="#" className="project_wrap">
+			<Link href="/projectdetail" className="project_wrap">
 				<div className="picture">
 					<Image src={project1} alt="project" />
 				</div>

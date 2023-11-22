@@ -20,7 +20,7 @@ const Header = () => {
 					<div className="container">
 						<div className="main_header">
 							<div className="header_logo">
-								<Link href="#"><Image src={Logo} alt="Logo"/></Link>
+								<Link href="/"><Image src={Logo} alt="Logo"/></Link>
 							</div>
 							<div className="menu-toggler">
 								<div className="menu-toggler-icon"></div>
@@ -36,7 +36,7 @@ const Header = () => {
 									</ul>
 								</div>
 								<div className="header_btn">
-									<PrimaryBtn name="Contact" arrow="no"/>
+									<PrimaryBtn name="Contact" arrow="no" link="#" />
 									<div className={`ent_lang dropdown ${state ? 'show' : ' '}`}>
 										<Link className="lang-link" href="javascript:;" onClick={clickHandler}>
 											EN

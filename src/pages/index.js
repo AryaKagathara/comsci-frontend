@@ -8,7 +8,7 @@ import Technologies from "@/components/layout/Technologies";
 import Faqsection from "@/components/layout/Faqsection";
 import StrategySection from "@/components/layout/StrategySection";
 import BlogSection from "@/components/layout/BlogSection";
-import ProjectSection from "@/components/layout/ProjectSection";
+import ProjectSection from "@/components/ProjectSection";
 
 export default function Home() {
   return (
