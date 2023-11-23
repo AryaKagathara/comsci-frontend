@@ -13,8 +13,8 @@ const InnerBanner = () => {
 					<Image src={inner} alt="Banner" />
 				</div>
 				<div className="container">
-					<div className="banner_textbox">
-						
+					<div className="innerbanner_textbox">
+						<h4>BLK RESUME</h4>
 					</div>
 				</div>
 			</div>

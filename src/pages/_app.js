@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'video-react/dist/video-react.css';
 import '@/styles/globals.css';
 import '@/styles/fonts.css';
 import Header from '@/components/layout/Header';
