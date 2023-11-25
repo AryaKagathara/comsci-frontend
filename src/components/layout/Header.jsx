@@ -28,11 +28,11 @@ const Header = () => {
 							<div className="navigation_bar">
 								<div className="nav-bar">
 									<ul>
-										<li><Link href="#">About us</Link></li>
-										<li><Link href="#">Services</Link></li>
+										<li><Link href="/about">About us</Link></li>
+										<li><Link href="/services">Services</Link></li>
 										<li><Link href="#">Portfolio</Link></li>
-										<li><Link href="#">Job Position</Link></li>
-										<li><Link href="#">Approach</Link></li>
+										<li><Link href="/jobposition">Job Position</Link></li>
+										<li><Link href="/approach">Approach</Link></li>
 									</ul>
 								</div>
 								<div className="header_btn">

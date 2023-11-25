@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import blog1 from "@/assets/images/blog-pic1.webp";
-// import blog2 from "@/assets/images/blog-pic2.webp";
-// import blog3 from "@/assets/images/blog-pic3.webp";
 
 
 
@@ -10,7 +8,7 @@ const BlogListSection = () => {
 	return (
 		<>
 			<div className="listing_secting">
-				<Link href="#" className="list_wrap">
+				<Link href="/blogdetail" className="list_wrap">
 					<div className="blog_img">
 						<Image src={blog1} alt="blog" />
 					</div>

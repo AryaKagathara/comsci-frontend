@@ -12,12 +12,12 @@ export default function Home() {
       <Head>
         <title>PROJECTS DETAILS</title>
       </Head>
-	  <InnerBanner />
-    <ModernBusiness />
-    <HomeSiteImage />
-    <ImagesWrapper />
-    <VideoSection />
-	  <TestimonialsSection />
+      <InnerBanner />
+      <ModernBusiness />
+      <HomeSiteImage />
+      <ImagesWrapper />
+      <VideoSection />
+      <TestimonialsSection />
     </>
   )
 }

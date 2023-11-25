@@ -1,0 +1,123 @@
+import Link from "next/link";
+import Image from "next/image";
+import Paige from "@/assets/images/paige-image.webp";
+import Tristan from "@/assets/images/tristan-image.webp";
+import Megan from "@/assets/images/megan-image.webp";
+import Laura from "@/assets/images/laura-image.webp";
+import Katie from "@/assets/images/katie-image.webp";
+import Markus from "@/assets/images/markus-image.webp";
+import Emma from "@/assets/images/emma-image.webp";
+import Brandon from "@/assets/images/brandon-image.webp";
+
+
+
+
+const TeamSection = () => {
+	return (
+		<>
+			<div className="team">
+				<div className="container">
+					<div className="team_section">
+						<div className="title">
+							<h4>Our Team</h4>
+						</div>
+						<div className="team_list">
+							<div className="row">
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Brandon} alt="Brandon" />
+										</div>
+										<div className="text">
+											<p>Brandon Harrar</p>
+											<span>Founder + Creative Director</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Emma} alt="Emma" />
+										</div>
+										<div className="text">
+											<p>Emma De Angelis</p>
+											<span>Senior Graphic Designer</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Markus} alt="Markus" />
+										</div>
+										<div className="text">
+											<p>Markus Specogna</p>
+											<span>Web Developer</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Katie} alt="Katie" />
+										</div>
+										<div className="text">
+											<p>Katie Armstrong</p>
+											<span>Account Director</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Laura} alt="Laura" />
+										</div>
+										<div className="text">
+											<p>Brandon Harrar</p>
+											<span>Web Developer</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Megan} alt="Megan" />
+										</div>
+										<div className="text">
+											<p>Emma De Angelis</p>
+											<span>UI/UX designer</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Tristan} alt="Tristan" />
+										</div>
+										<div className="text">
+											<p>Markus Specogna</p>
+											<span>Web Developer</span>
+										</div>
+									</Link>
+								</div>
+								<div className="col-lg-3">
+									<Link href="#" className="teambox">
+										<div className="image">
+											<Image src={Paige} alt="Paige" />
+										</div>
+										<div className="text">
+											<p>Katie Armstrong</p>
+											<span>Project Manager</span>
+										</div>
+									</Link>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</>
+	)
+}
+
+export default TeamSection;

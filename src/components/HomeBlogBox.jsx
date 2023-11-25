@@ -10,7 +10,7 @@ const HomeBlogBox = () => {
 		<>
 			<div className="blog_text">
 				<h4>Current news & exciting Insights from COMSCI.</h4>
-				<PrimaryBtn name="All News & exciting" arrow="no" link="#"/>
+				<PrimaryBtn name="All News & exciting" arrow="no" link="/bloglist"/>
 			</div>
 		</>
 	)

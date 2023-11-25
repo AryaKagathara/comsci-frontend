@@ -21,10 +21,10 @@ const Footer = () => {
 						<div className="links_section">
 							<div className="use_link">
 								<ul>
-									<li><Link href="#">About us</Link></li>
+									<li><Link href="/about">About us</Link></li>
 									<li><Link href="#">Our Project</Link></li>
-									<li><Link href="#">Job Position</Link></li>
-									<li><Link href="#">Approach</Link></li>
+									<li><Link href="/jobposition">Job Position</Link></li>
+									<li><Link href="/approach">Approach</Link></li>
 									<li><Link href="#">Blog</Link></li>
 									<li><Link href="#">Contact Us</Link></li>
 								</ul>
