@@ -1,0 +1,29 @@
+
+@media (max-width: 767px) {
+
+	h1 { font-size: 60px; }
+	h2 { font-size: 48px; }
+	h4 { font-size: 36px; }
+	h5 { font-size: 24px; }
+	h6 { font-size: 24px; }
+
+	.main_header .menu-toggler { display: flex; align-items: center; }
+	.main_header .navigation_bar { width: 100%; height: calc(100vh - 55px); overflow-y: auto; opacity: 0; visibility: hidden; background: var(--primary-black); position: fixed; top: 55px; left: 0; min-width: auto; z-index: 111; transition: all 300ms ease-in-out; transform: translateX(100%); }
+	.main_header .navigation_bar.slide { opacity: 1; visibility: visible; transform: translateX(0); }
+	.main_header .navigation_bar .navigation_wrap { flex-direction: column; justify-content: flex-start; align-items: flex-start; }
+	.main_header .navigation_bar .nav-bar ul { flex-direction: column; align-items: flex-start; }
+	.main_header .navigation_bar .nav-bar ul li a { font-size: 16px; }
+	.main_header .navigation_bar .nav-bar ul li { padding: 12px !important; }
+	.main_header .navigation_bar .header_btn { flex-direction: column; margin: 20px 0 0 12px; }
+	.main_header .navigation_bar .header_btn .ent_lang { margin: 10px 0 0 0; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) and (max-width: 1300px) {}
+
+@media (min-width: 1301px) and (max-width: 1399px) {}
+
+@media (min-width: 1400px) and (max-width: 1600px) {}

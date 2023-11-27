@@ -5,7 +5,6 @@ import PrimaryBtn from '@/components/layout/PrimaryBtn';
 
 
 
-
 const HomeBanner = () => {
 	return (
 		<>
