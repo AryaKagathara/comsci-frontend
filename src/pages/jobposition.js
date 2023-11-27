@@ -10,7 +10,7 @@ export default function Home() {
       <Head>
         <title>JOB POSITION</title>
       </Head>
-	  <JobpageSection />
+	    <JobpageSection />
     </>
   )
 }

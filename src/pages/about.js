@@ -13,10 +13,10 @@ export default function Home() {
       <Head>
         <title>ABOUT US</title>
       </Head>
-	  <AboutSection />
-	  <TeamSection />
-	  <ResultSection />
-	  <TestimonialsSection />
+      <AboutSection />
+      <TeamSection />
+      <ResultSection />
+      <TestimonialsSection />
     </>
   )
 }

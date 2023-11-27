@@ -12,9 +12,9 @@ export default function Home() {
       <Head>
         <title>APPROACH</title>
       </Head>
-	  <StrategySection />
-	  <ServicesSection />
-	  <Technologies />
+      <StrategySection />
+      <ServicesSection />
+      <Technologies />
     </>
   )
 }

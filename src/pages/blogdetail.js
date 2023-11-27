@@ -9,7 +9,7 @@ export default function Home() {
       <Head>
         <title>BLOG DETAIL</title>
       </Head>
-	  <BlogDetailSection />
+	    <BlogDetailSection />
     </>
   )
 }
