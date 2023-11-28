@@ -9,7 +9,7 @@ const StrategySection = () => {
 			<div className="strategy">
 				<div className="container">
 					<div className="strategy_section">
-						<div className="row" data-scroll data-scroll-speed=".2">
+						<div className="row">
 							<div className="col-lg-5">
 								<div className="text_section">
 									<h4>All things considered from strategy to code</h4>

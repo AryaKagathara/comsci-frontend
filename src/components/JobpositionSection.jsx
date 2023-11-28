@@ -8,7 +8,7 @@ const JobpositionSection = () => {
 	return (
 		<>
 			<div className="jobposition">
-				<div className="container" data-scroll data-scroll-speed=".2">
+				<div className="container">
 					<div className="jobposition_section">
 						<div className="text_box">
 							<h4>Job Position</h4>

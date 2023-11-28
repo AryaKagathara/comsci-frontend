@@ -20,7 +20,7 @@ const Technologies = () => {
 		<>
 			<div className="technologies">
 				<div className="container">
-					<div className="tech_section" data-scroll data-scroll-speed=".2">
+					<div className="tech_section">
 						<div className="text_box">
 							<h4>Web agency tools that are carefully selected, and meticulously perfected</h4>
 							<ContentBox text="Our arsenal of battle-tested and future-proof web technologies allows us to build websites and web applications that perform seamlessly. We consider scalability, support and price among other things to find the perfect match for your project." />

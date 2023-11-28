@@ -192,6 +192,7 @@ p { font-size: 16px; font-style: normal; }
 .service_detail .marquee .marquee-content .back_wrapper::marker { color: transparent; }
 .service_detail .marquee .marquee-content .dot { display: block; width: 6px; height: 6px; border-radius: 50%; background: var(--primary-black); position: relative; top: 50%; transform: translate(0, -50%); }
 .service_detail .marquee .marquee-content .back_wrapper .text_box { width: 100%; color: var(--primary-light-gray); font-size: 36px; font-weight: 500; margin: 0; }
+.mobile_service_tabsection { display: none; }
 
 
 .award { padding: 120px 0; }
@@ -272,7 +273,7 @@ p { font-size: 16px; font-style: normal; }
 .strategy_section .strategy_step::before { content: ""; position: absolute; top: 0; left: 0; height: auto; width: 2px; background: var(--primary-white); background-image: url(../assets/images/step-img.svg); background-position: center; background-size: 16px 16px; background-repeat: no-repeat; }
 .strategy_section .strategy_step .step_box { padding: 60px 0 60px 24px; }
 .strategy_section .strategy_step .step_box .content_box span { color: var(--primary-light-gray); font-size: 24px; font-weight: 700; display: block; margin-bottom: 12px; }
-.strategy_section .strategy_step .step_box .content_box p { color: var(--primary-light-gray); font-weight: 500; line-height: 1.625; }
+.strategy_section .strategy_step .step_box .content_box p { color: var(--primary-light-gray); font-weight: 500; line-height: 1.625; margin: 0; }
 .strategy_section .strategy_step .step_box .content_box.highlight span { color: var(--primary-white); }
 .strategy_section .strategy_step .step_box .content_box.highlight p { color: var(--primary-white); }
 .strategy_section .strategy_step .step_box .content_box + .content_box { margin-top: 96px; }

@@ -13,7 +13,7 @@ const HomeBanner = () => {
 					<Image src={Banner} alt="Banner" />
 				</div>
 				<div className="container">
-					<div className="banner_textbox" data-scroll data-scroll-speed=".2">
+					<div className="banner_textbox">
 						<p>Design & Development company</p>
 						<h1>We help business evolve</h1>
 						<PrimaryBtn name="Learn Now" arrow="no" link="#" />

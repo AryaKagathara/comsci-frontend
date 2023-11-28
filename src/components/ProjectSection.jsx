@@ -10,7 +10,7 @@ const ProjectSection = () => {
 		<>
 			<div className="project">
 				<div className="container">
-					<div className="project_section" data-scroll data-scroll-speed=".2">
+					<div className="project_section">
 						<HomeProjectBox />
 						<div className="projectlist_section">
 							<div className="row">

@@ -4,39 +4,15 @@ import cross from "@/assets/images/orange-cross.svg";
 import world from "@/assets/images/world-img.webp";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect, useRef } from "react";
-import { useIsomorphicLayoutEffect } from "./useIsomorphicLayoutEffect";
-
-gsap.registerPlugin(ScrollTrigger);
+import Accordion from 'react-bootstrap/Accordion';
 
 const ServicesSection = () => {
-  const main = useRef();
-
-  useIsomorphicLayoutEffect(() => {
-    const ctx = gsap.context((self) => {
-      const boxes = self.selector(".service_heading");
-      gsap.to(boxes, {
-        opacity: 0,
-        color: "red",
-        scrollTrigger: {
-          trigger: boxes,
-          start: "bottom bottom",
-          end: "top 50%",
-          scrub: true,
-        },
-      });
-    }, main);
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <>
       <div className="services">
         <div className="container">
-          <div className="service_heading" data-scroll data-scroll-speed=".2">
+          <div className="service_heading">
             <strong>
               We engineer business solutions that drive measurable results for
               renowned industry leaders around the
@@ -295,6 +271,175 @@ const ServicesSection = () => {
                 </div>
               </div>
             </Tab.Container>
+          </div>
+          <div className="mobile_service_tabsection">
+            <div className="heading">
+                  <span>Services</span>
+            </div>
+            <Accordion defaultActiveKey="0">
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Logo Design & Branding</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>UI/UX Design</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Mobile Application</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="3">
+                <Accordion.Header>SEO</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="4">
+                <Accordion.Header>Custom Web Development</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="5">
+                <Accordion.Header>Video & Art Direction</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                      <Link href="javascript:;">SaaS Product</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Dashboard</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Booking</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Marketplace</Link>
+                      </div>
+                      <div className="chip">
+                      <Link href="javascript:;">Software</Link>
+                      </div>
+                    </div>
+                    <span>
+                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
+                    </span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
           </div>
         </div>
         <div className="service_detail">

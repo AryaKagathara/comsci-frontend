@@ -16,6 +16,60 @@
 	.main_header .navigation_bar .nav-bar ul li { padding: 12px !important; }
 	.main_header .navigation_bar .header_btn { flex-direction: column; margin: 20px 0 0 12px; }
 	.main_header .navigation_bar .header_btn .ent_lang { margin: 10px 0 0 0; }
+
+
+	.banner .banner_bg_img img { height: 100%; }
+	.banner_textbox p { font-weight: 500; }
+	.banner_textbox h1 { margin-bottom: 36px; }
+	.banner_textbox .contact_btn a span { font-size: 20px; }
+
+
+	.services { padding: 80px 0; }
+	.service_heading { font-size: 36px; margin: 0 auto 60px auto; text-align: start; }
+	.service_heading .globe .world_img { height: 26px; width: 26px; }
+	.service_detail .marquee { column-gap: normal; }
+	.service_detail .marquee .marquee-content .back_wrapper { max-width: 260px; }
+	.service_detail .marquee .marquee-content .back_wrapper .text_box { font-size: 20px; }
+	.service_detail .marquee .marquee-content .dot { margin: 0 10px; }
+	.service_tabsection { display: none; }
+	.mobile_service_tabsection { display: block; margin-bottom: 124px; }
+	.mobile_service_tabsection .heading span { color: var(--primary-orange); font-size: 20px; font-weight: 500; padding-bottom: 24px; display: block; border-bottom: 1px solid var(--primary-light-white); }
+	.mobile_service_tabsection .accordion .accordion-item { background: transparent; padding: 24px 0; border-bottom: 1px solid var(--primary-light-white); border-left: none; border-right: none; border-radius: 0; border-top: none; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-button { background: transparent; padding: 0; box-shadow: none; color: var(--primary-hover); font-size: 24px; font-weight: 500; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-button::after { display: none; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-button:not(.collapsed)::after { display: none; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-body { color: var(--primary-light-gray); padding-top: 32px !important; font-size: 18px; font-weight: 500; padding: 0; line-height: 1.6; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips .chip a { white-space: nowrap; overflow: hidden; padding: 8px 16px; display: block; border-radius: 57px; background-color: var(--primary-light-white); font-size: 16px; font-weight: 500; transition: all 0.3s ease-in-out; color: var(--primary-black); text-decoration: none; line-height: normal; }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips .chip a:hover { background: var(--primary-dark-white); }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-button.collapsed { background: transparent; padding: 0; box-shadow: none; color: var(--primary-light-gray); font-size: 24px; font-weight: 500; }
+
+
+	.strategy { padding: 100px 0; }
+	.strategy_section .text_section h4 { margin-bottom: 48px; }
+	.strategy_section .strategy_step::before,
+	.strategy_section .strategy_step::after { display: none; }
+	.strategy_section .strategy_step .step_box { padding: 0; }
+	.strategy_section .strategy_step .step_box .content_box span { color: var(--primary-white); }
+	.strategy_section .strategy_step .step_box .content_box p { font-size: 20px; line-height: 1.6; }
+	.strategy_section .strategy_step .step_box .content_box + .content_box { margin-top: 32px; }
+	.strategy_section .strategy_step .step_box .content_box.highlight span { color: var(--primary-white); }
+	.strategy_section .strategy_step .step_box .content_box.highlight p { color: var(--primary-light-gray); }
+
+
+	.award { padding: 100px 0; }
+	.award_section .image { width: 100%; height: 540px; }
+	.award_section .award_text h2 { font-weight: 900; }
+
+
+	.project { padding: 100px 0; }
+
+
+	.testimonials { display: none; }
+
+
+	.blog_section .blog_text .contact_btn { display: none; }
+	.blog_section .bloglist_section .listing_secting .list_wrap { flex-direction: column; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {}

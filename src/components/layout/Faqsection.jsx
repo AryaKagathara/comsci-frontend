@@ -10,7 +10,7 @@ const Faqsection = () => {
 		<>
 			<div className="faq">
 				<div className="container">
-					<div className="faq_section" data-scroll data-scroll-speed=".2">
+					<div className="faq_section">
 						<div className="text_box">
 							<h4>Design and development questions</h4>
 							<ContentBox text="Our creative web design agency based in london crafts custom sites that are easy on the eyes responsive and well - optimized for user experience." />
