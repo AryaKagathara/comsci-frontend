@@ -5,13 +5,26 @@ import '@/styles/responsive.css';
 import '@/styles/fonts.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import { useEffect, useRef } from "react";
 
 export default function App({ Component, pageProps }) {
+
+  useEffect( () => {
+    (
+      async () => {
+          const LocomotiveScroll = (await import('locomotive-scroll')).default
+          const locomotiveScroll = new LocomotiveScroll();
+      }
+    )()
+  }, [])
+
   return (
     <>
-      <Header />
-      <Component {...pageProps} />
-      <Footer />
+      <main>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </main> 
     </>
   )
 }

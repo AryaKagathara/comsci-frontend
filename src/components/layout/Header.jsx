@@ -32,7 +32,7 @@ const Header = () => {
 								<div className="navigation_wrap">
 									<div className="nav-bar">
 										<ul>
-											<li><Link href="/about">About us</Link></li>
+											<li><Link href="/about" className="active">About us</Link></li>
 											<li><Link href="/services">Services</Link></li>
 											<li><Link href="#">Portfolio</Link></li>
 											<li><Link href="/jobposition">Job Position</Link></li>

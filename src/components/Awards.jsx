@@ -11,10 +11,10 @@ const Awards = () => {
 			<div className="award">
 				<div className="container">
 					<div className="award_section">
-						<div className="image">
+						<div className="image" data-scroll data-scroll-speed=".2">
 							<Image src={Award} alt="Award" />
 						</div>
-						<div className="award_text">
+						<div className="award_text" data-scroll data-scroll-speed=".5">
 							<h2>Award Winning Company</h2>
 						</div>
 					</div>

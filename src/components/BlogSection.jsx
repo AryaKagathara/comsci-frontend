@@ -10,7 +10,7 @@ const BlogSection = () => {
 		<>
 			<div className="blog">
 				<div className="container">
-					<div className="blog_section">
+					<div className="blog_section" data-scroll data-scroll-speed=".2">
 						<HomeBlogBox />
 						<div className="bloglist_section">
 							<BlogListSection />
