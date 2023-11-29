@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HomeBlogBox from "@/components/HomeBlogBox";
 import BlogListSection from "@/components/layout/BlogListSection";
-
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
 
 
 const BlogSection = () => {
@@ -16,6 +16,9 @@ const BlogSection = () => {
 							<BlogListSection />
 							<BlogListSection />
 							<BlogListSection />
+						</div>
+						<div className="blogbtn_wrap">
+							<PrimaryBtn name="All News & exciting" arrow="no" link="/bloglist" />
 						</div>
 					</div>
 				</div>

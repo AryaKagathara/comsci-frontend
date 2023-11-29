@@ -9,6 +9,7 @@ import Faqsection from "@/components/layout/Faqsection";
 import StrategySection from "@/components/layout/StrategySection";
 import BlogSection from "@/components/BlogSection";
 import ProjectSection from "@/components/ProjectSection";
+import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 
 export default function Home() {
   return (
@@ -18,14 +19,15 @@ export default function Home() {
       </Head>
       <Banner />
       <ServicesSection />
-      <StrategySection />
       <Awards />
       <ProjectSection />
-      <Technologies />
       <TestimonialsSection />
-      <Faqsection />
-      <BlogSection />
+      <TestiMonialsSlider />
       <JobpositionSection />
+      <Technologies />
+      <Faqsection />
+      <StrategySection />
+      <BlogSection />
     </>
   )
 }
