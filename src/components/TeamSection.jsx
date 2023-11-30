@@ -23,7 +23,7 @@ const TeamSection = () => {
 						</div>
 						<div className="team_list">
 							<div className="row">
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Brandon} alt="Brandon" />
@@ -34,7 +34,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Emma} alt="Emma" />
@@ -45,7 +45,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Markus} alt="Markus" />
@@ -56,7 +56,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Katie} alt="Katie" />
@@ -67,7 +67,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Laura} alt="Laura" />
@@ -78,7 +78,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Megan} alt="Megan" />
@@ -89,7 +89,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Tristan} alt="Tristan" />
@@ -100,7 +100,7 @@ const TeamSection = () => {
 										</div>
 									</Link>
 								</div>
-								<div className="col-lg-3">
+								<div className="col-xxl-3 col-xl-4 col-lg-4 col-md-6">
 									<Link href="#" className="teambox">
 										<div className="image">
 											<Image src={Paige} alt="Paige" />

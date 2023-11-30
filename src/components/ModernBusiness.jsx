@@ -13,14 +13,14 @@ const ModernBusiness = () => {
 				<div className="container">
 					<div className="business_section">
 						<div className="row">
-							<div className="col-lg-7">
+							<div className="col-lg-7 col-md-8">
 								<div className="content_box">
 									<h6>A real modern take on Business US.</h6>
 									<span>When CAMSCI came to us, they were well-established from sea to shining sea. But like a lot of brands, they struggled to balance their long history with engaging new, younger clients.</span>
 									<PrimaryBtn name="Visit project" arrow="no" link="#" />
 								</div>
 							</div>
-							<div className="col-lg-4 offset-lg-1">
+							<div className="col-lg-4 offset-lg-1 col-md-4">
 								<div className="text_box">
 									<i>Services</i>
 									<ul>

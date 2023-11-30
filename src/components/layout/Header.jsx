@@ -34,13 +34,13 @@ const Header = () => {
 										<ul>
 											<li><Link href="/about" className="active">About us</Link></li>
 											<li><Link href="/services">Services</Link></li>
-											<li><Link href="#">Portfolio</Link></li>
+											<li><Link href="/">Portfolio</Link></li>
 											<li><Link href="/jobposition">Job Position</Link></li>
 											<li><Link href="/approach">Approach</Link></li>
 										</ul>
 									</div>
 									<div className="header_btn">
-										<PrimaryBtn name="Contact" arrow="no" link="#" />
+										<PrimaryBtn name="Contact" arrow="no" link="/" />
 										<div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
 											<Link className="lang-link" href="javascript:;" onClick={languageHandler}>
 												EN

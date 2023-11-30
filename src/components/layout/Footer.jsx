@@ -16,17 +16,17 @@ const Footer = () => {
 					<div className="footer_section">
 						<div className="title_box">
 							<h6>Starting a new project or want to collaborate with us?</h6>
-							<PrimaryBtn name="Lets talk" arrow="no" link="#"/>
+							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
 						</div>
 						<div className="links_section">
 							<div className="use_link">
 								<ul>
 									<li><Link href="/about">About us</Link></li>
-									<li><Link href="#">Our Project</Link></li>
+									<li><Link href="/">Our Project</Link></li>
 									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
 									<li><Link href="/bloglist">Blog</Link></li>
-									<li><Link href="#">Contact Us</Link></li>
+									<li><Link href="/">Contact Us</Link></li>
 								</ul>
 							</div>
 							<div className="social_media">

@@ -39,7 +39,10 @@ const TestiMonialsSlider = () => {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		prevArrow: <ArrowLeft />,
-		nextArrow: <ArrowRight />
+		nextArrow: <ArrowRight />,
+		autoplay: true,
+		speed: 2000,
+		autoplaySpeed: 4000
 	};
 	return (
 		<>

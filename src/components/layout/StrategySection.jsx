@@ -1,9 +1,27 @@
 import Link from "next/link";
 import Image from "next/image";
-
+// import { useEffect } from "react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
 const StrategySection = () => {
+	// useEffect(() => {
+	// 	gsap.registerPlugin(ScrollTrigger);
+	
+	// 	const strategyStep = document.querySelector(".strategy_step::before");
+		
+	// 	gsap.from(".strategy_step .step_box", {
+	// 	  	scrollTrigger: {
+	// 			trigger: strategyStep,
+	// 			start: "top bottom",
+	// 			end: "bottom bottom",
+	// 			scrub: 1,
+	// 		},
+	// 		opacity: 0,
+	// 		y: 50,
+	// 	});
+	// }, []);
 	return (
 		<>
 			<div className="strategy">

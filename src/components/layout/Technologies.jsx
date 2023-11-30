@@ -27,84 +27,84 @@ const Technologies = () => {
 						</div>
 						<div className="technologie_images">
 							<div className="row">
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Php} alt="php" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Pythone} alt="pythone" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Javascript} alt="javascript" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Android} alt="android" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Iphone} alt="iphone" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Figma} alt="figma" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Woo} alt="woo" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Wordpress} alt="wordpress" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Photoshop} alt="photoshop" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Ai} alt="ai" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Shopify} alt="shopify" />
 										</div>
 									</div>
 								</div>
-								<div className="col-lg-3 col-12 col-md-6">
+								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Laravel} alt="laravel" />
