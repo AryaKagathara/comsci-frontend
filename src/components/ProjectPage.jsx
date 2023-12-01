@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProjectListSection from "@/components/layout/ProjectListSection";
-
+import ContentBox from "@/components/layout/ContentBox";
 
 
 const ProjectPage = () => {
@@ -11,7 +11,7 @@ const ProjectPage = () => {
 				<div className="container">
 					<div className="project_section">
 						<div className="project_title">
-							<h4>You can also view our past projects.</h4>
+							<ContentBox title="Browse our portfolio for a glimpse into our past work." />
 						</div>
 						<div className="projectlist_section">
 							<div className="row">

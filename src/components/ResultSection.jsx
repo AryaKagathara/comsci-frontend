@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import ContentBox from "@/components/layout/ContentBox";
 
 
 
@@ -12,7 +12,7 @@ const ResultSection = () => {
 				<div className="container">
 					<div className="result_wrap">
 						<div className="result_content">
-							<h4>Our results in numbers</h4>
+							<ContentBox title="Our results in numbers" />
 						</div>
 						<div className="result_detail">
 							<div className="result_textbox">

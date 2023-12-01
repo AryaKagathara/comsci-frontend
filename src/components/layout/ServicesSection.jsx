@@ -94,6 +94,16 @@ const ServicesSection = () => {
                           </Nav.Link>
                         </div>
                       </Nav.Item>
+                      <Nav.Item>
+                        <div className="service_wrap">
+                          <Nav.Link eventKey="artificial_tab">
+                            Artificial Intelligence
+                            <span>
+                              <Image src={cross} alt="cross-arrow" />
+                            </span>
+                          </Nav.Link>
+                        </div>
+                      </Nav.Item>
                     </Nav>
                   </div>
                 </div>
@@ -101,168 +111,172 @@ const ServicesSection = () => {
                   <Tab.Content>
                     <Tab.Pane eventKey="logo_design_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge. Following an
-                          existing brand guideline or a custom component
-                          library, our team will deliver a sleek, clean UI for
-                          any complex interface use case.
-                        </span>
+                        <span>Our branding experts craft unique logos and comprehensive brand identities that resonate with your target audience, leaving a lasting impression.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">SaaS Product</Link>
+                            <Link href="javascript:;">Brand Strategy</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Dashboard</Link>
+                            <Link href="javascript:;">Brand Guidelines</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Booking</Link>
+                            <Link href="javascript:;">Logo Ideas</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Marketplace</Link>
+                            <Link href="javascript:;">Typography</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Software</Link>
+                            <Link href="javascript:;">Colors</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Concept Design</Link>
                           </div>
                         </div>
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="ui_ux_design_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge.
-                        </span>
+                        <span>Elevate your user experience with our innovative UI/UX team, ensuring a seamless and visually appealing design tailored to your audience and brand.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">SaaS Product</Link>
+                            <Link href="javascript:;">User-Centered Design</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Dashboard</Link>
+                            <Link href="javascript:;">Prototyping</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Booking</Link>
+                            <Link href="javascript:;">Interaction Design</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Figma</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Photoshop</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Illustrator</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Design Thinking</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Storyboarding</Link>
                           </div>
                         </div>
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="mobile_application_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge. Following an
-                          existing brand guideline or a custom component
-                          library, our team will deliver a sleek, clean UI for
-                          any complex interface use case.
-                        </span>
+                        <span>From concept to app store, our mobile app development team creates cutting-edge applications that provide a seamless experience on various devices.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">SaaS Product</Link>
+                            <Link href="javascript:;">iOS</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Booking</Link>
+                            <Link href="javascript:;">Android</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Marketplace</Link>
-                          </div>
-                          <div className="chip">
-                            <Link href="javascript:;">Software</Link>
+                            <Link href="javascript:;">Cross-Platform</Link>
                           </div>
                         </div>
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="seo_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge. Following an
-                          existing brand guideline or a custom component
-                          library, our team will deliver a sleek, clean UI for
-                          any complex interface use case.
-                        </span>
+                        <span>Boost your online visibility and reach your target audience with our SEO experts who implement data-driven strategies to optimize your website for search engines.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">SaaS Product</Link>
+                            <Link href="javascript:;">Search Engine Optimization</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Dashboard</Link>
+                            <Link href="javascript:;">Keywords Research</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Booking</Link>
+                            <Link href="javascript:;">SEO Audits</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Marketplace</Link>
-                          </div>
-                          <div className="chip">
-                            <Link href="javascript:;">Software</Link>
+                            <Link href="javascript:;">Social Media</Link>
                           </div>
                         </div>
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="custom_web_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge. Following an
-                          existing brand guideline or a custom component
-                          library, our team will deliver a sleek, clean UI for
-                          any complex interface use case.
-                        </span>
+                        <span>Our experienced developers build tailored web solutions using the latest technologies, ensuring a scalable and efficient digital presence for your business.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">Dashboard</Link>
+                            <Link href="javascript:;">Full Stack Development</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Booking</Link>
+                            <Link href="javascript:;">E-commerce Solutions</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Marketplace</Link>
+                            <Link href="javascript:;">API Integration</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Software</Link>
+                            <Link href="javascript:;">PHP</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Python</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Node.js</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">React</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">WordPress</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Jira/Trello</Link>
                           </div>
                         </div>
                       </div>
                     </Tab.Pane>
                     <Tab.Pane eventKey="video_art_tab">
                       <div className="content_box">
-                        <span>
-                          Our innovative UI/UX team will create the optimal
-                          user-centred UI design with smart UX for your project.
-                          Having both startup and enterprise experience, our
-                          designers consider differing functionality and
-                          audience demographics when designing a pixel-perfect
-                          screen for each unique client challenge. Following an
-                          existing brand guideline or a custom component
-                          library, our team will deliver a sleek, clean UI for
-                          any complex interface use case.
-                        </span>
+                        <span>Bring your brand to life with captivating visuals and storytelling. Our video and art direction team ensures a compelling narrative through engaging multimedia content.</span>
                         <div className="chips">
                           <div className="chip">
-                            <Link href="javascript:;">Marketplace</Link>
+                            <Link href="javascript:;">Storyboarding</Link>
                           </div>
                           <div className="chip">
-                            <Link href="javascript:;">Software</Link>
+                            <Link href="javascript:;">Video Editing</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Creative Direction</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">SEO Audits</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Social Media</Link>
+                          </div>
+                        </div>
+                      </div>
+                    </Tab.Pane>
+                    <Tab.Pane eventKey="artificial_tab">
+                      <div className="content_box">
+                        <span>Harness the power of AI to enhance efficiency and user experience. Our AI solutions leverage cutting-edge technologies to bring intelligence to your applications.</span>
+                        <div className="chips">
+                          <div className="chip">
+                            <Link href="javascript:;">Machine Learning</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Natural Language Processing</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Data Science</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">ChatGPT</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">TensorFlow</Link>
+                          </div>
+                          <div className="chip">
+                            <Link href="javascript:;">Python</Link>
                           </div>
                         </div>
                       </div>
@@ -274,7 +288,7 @@ const ServicesSection = () => {
           </div>
           <div className="mobile_service_tabsection">
             <div className="heading">
-                  <span>Services</span>
+              <span>Services</span>
             </div>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
@@ -283,24 +297,25 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">Brand Strategy</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">Brand Guidelines</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
+                        <Link href="javascript:;">Logo Ideas</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
+                        <Link href="javascript:;">Typography</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Colors</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Concept Design</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>Our branding experts craft unique logos and comprehensive brand identities that resonate with your target audience, leaving a lasting impression.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -310,24 +325,31 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">User-Centered Design</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">Prototyping</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
+                        <Link href="javascript:;">Interaction Design</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
+                        <Link href="javascript:;">Figma</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Photoshop</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Illustrator</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Design Thinking</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Storyboarding</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>Elevate your user experience with our innovative UI/UX team, ensuring a seamless and visually appealing design tailored to your audience and brand.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -337,24 +359,16 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">iOS</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">Android</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
-                      </div>
-                      <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
-                      </div>
-                      <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Cross-Platform</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>From concept to app store, our mobile app development team creates cutting-edge applications that provide a seamless experience on various devices.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -364,24 +378,19 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">Search Engine Optimization</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">Keywords Research</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
+                        <Link href="javascript:;">SEO Audits</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
-                      </div>
-                      <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Social Media</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>Boost your online visibility and reach your target audience with our SEO experts who implement data-driven strategies to optimize your website for search engines.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -391,24 +400,34 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">Full Stack Development</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">E-commerce Solutions</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
+                        <Link href="javascript:;">API Integration</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
+                        <Link href="javascript:;">PHP</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Python</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Node.js</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">React</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">WordPress</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Jira/Trello</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>Our experienced developers build tailored web solutions using the latest technologies, ensuring a scalable and efficient digital presence for your business.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>
@@ -418,24 +437,50 @@ const ServicesSection = () => {
                   <div className="content_box">
                     <div className="chips">
                       <div className="chip">
-                      <Link href="javascript:;">SaaS Product</Link>
+                        <Link href="javascript:;">Storyboarding</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Dashboard</Link>
+                        <Link href="javascript:;">Video Editing</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Booking</Link>
+                        <Link href="javascript:;">Creative Direction</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Marketplace</Link>
+                        <Link href="javascript:;">SEO Audits</Link>
                       </div>
                       <div className="chip">
-                      <Link href="javascript:;">Software</Link>
+                        <Link href="javascript:;">Social Media</Link>
                       </div>
                     </div>
-                    <span>
-                      Our innovative UI/UX team will create the optimal user-centred UI design with smart UX for your project. Having both startup and enterprise experience, our designers consider differing functionality and audience demographics when designing a pixel-perfect	screen for each unique client challenge. Following an existing brand guideline or a custom component library, our team will deliver a sleek, clean UI for any complex interface use case.
-                    </span>
+                    <span>Bring your brand to life with captivating visuals and storytelling. Our video and art direction team ensures a compelling narrative through engaging multimedia content.</span>
+                  </div>
+                </Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="6">
+                <Accordion.Header>Artificial Intelligence</Accordion.Header>
+                <Accordion.Body>
+                  <div className="content_box">
+                    <div className="chips">
+                      <div className="chip">
+                        <Link href="javascript:;">Machine Learning</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Natural Language Processing</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Data Science</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">ChatGPT</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">TensorFlow</Link>
+                      </div>
+                      <div className="chip">
+                        <Link href="javascript:;">Python</Link>
+                      </div>
+                    </div>
+                    <span>Harness the power of AI to enhance efficiency and user experience. Our AI solutions leverage cutting-edge technologies to bring intelligence to your applications.</span>
                   </div>
                 </Accordion.Body>
               </Accordion.Item>

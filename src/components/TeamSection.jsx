@@ -8,7 +8,7 @@ import Katie from "@/assets/images/katie-image.webp";
 import Markus from "@/assets/images/markus-image.webp";
 import Emma from "@/assets/images/emma-image.webp";
 import Brandon from "@/assets/images/brandon-image.webp";
-
+import ContentBox from "@/components/layout/ContentBox";
 
 
 
@@ -19,7 +19,7 @@ const TeamSection = () => {
 				<div className="container">
 					<div className="team_section">
 						<div className="title">
-							<h4>Our Team</h4>
+							<ContentBox title="Our Team" />
 						</div>
 						<div className="team_list">
 							<div className="row">

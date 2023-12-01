@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import BlogListSection from "@/components/layout/BlogListSection";
-
+import ContentBox from "@/components/layout/ContentBox";
 
 
 const BlogpageSection = () => {
@@ -11,7 +11,15 @@ const BlogpageSection = () => {
 				<div className="container">
 					<div className="blog_section">
 						<div className="blogpage_wrapper">
-							<h4>Current news & exciting Insights from COMSCI.</h4>
+							<ContentBox title="Existing insights and articles" />
+						</div>
+						<div className="filter_btn">
+							<ul>
+								<li><Link href="#" className="active">All</Link></li>
+								<li><Link href="#">News</Link></li>
+								<li><Link href="#">Articles</Link></li>
+								<li><Link href="#">Events</Link></li>
+							</ul>
 						</div>
 						<div className="bloglist_section">
 							<BlogListSection />

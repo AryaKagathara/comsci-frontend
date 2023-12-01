@@ -22,89 +22,89 @@ const Technologies = () => {
 				<div className="container">
 					<div className="tech_section">
 						<div className="text_box">
-							<h4>Web agency tools that are carefully selected, and meticulously perfected</h4>
-							<ContentBox text="Our arsenal of battle-tested and future-proof web technologies allows us to build websites and web applications that perform seamlessly. We consider scalability, support and price among other things to find the perfect match for your project." />
+							<ContentBox title="Carefully chosen tools for your needs." />
+							<ContentBox text="Our arsenal of battle-tested and future-proof technologies allows us to build websites and applications that perform seamlessly. We consider scalability, support and price among other things to find the perfect match for your project. There’s no limit of what we use in the technology." />
 						</div>
 						<div className="technologie_images">
 							<div className="row">
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Php} alt="php" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Pythone} alt="pythone" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Javascript} alt="javascript" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Android} alt="android" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Iphone} alt="iphone" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Figma} alt="figma" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Woo} alt="woo" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Wordpress} alt="wordpress" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Photoshop} alt="photoshop" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Ai} alt="ai" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Shopify} alt="shopify" />
 										</div>
 									</div>
 								</div>
-								<div className="col-xl-3 col-12 col-md-6 col-lg-4">
+								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
 										<div className="picture">
 											<Image src={Laravel} alt="laravel" />

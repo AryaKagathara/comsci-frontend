@@ -5,7 +5,8 @@ import Image from "next/image";
 const ContentBox = (props) => {
 	return (
 		<>
-			<p>{props.text}</p>
+			<h4>{ props.title }</h4>
+			<p>{ props.text }</p>
 		</>
 	)
 }

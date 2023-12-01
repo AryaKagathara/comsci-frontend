@@ -29,14 +29,17 @@ const Header = () => {
 								<div className="menu-toggler-icon"></div>
 							</div>
 							<div className={`navigation_bar ${menuBtn ? 'slide' : ' '}`}>
+								<div className="mobile_header_logo">
+									<Link href="/"><Image src={Logo} alt="Logo"/></Link>
+								</div>
 								<div className="navigation_wrap">
 									<div className="nav-bar">
 										<ul>
-											<li><Link href="/about" className="active">About us</Link></li>
 											<li><Link href="/services">Services</Link></li>
-											<li><Link href="/">Portfolio</Link></li>
-											<li><Link href="/jobposition">Job Position</Link></li>
+											<li><Link href="/project">Portfolio</Link></li>
+											<li><Link href="/faq">FAQs</Link></li>
 											<li><Link href="/approach">Approach</Link></li>
+											<li><Link href="/about" className="active">About us</Link></li>
 										</ul>
 									</div>
 									<div className="header_btn">

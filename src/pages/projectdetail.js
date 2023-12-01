@@ -1,11 +1,9 @@
 import Head from "next/head";
-import InnerBanner from "@/components/layout/InnerBanner";
+import ProjectDetailTitle from "@/components/ProjectDetailTitle";
 import ModernBusiness from "@/components/ModernBusiness";
 import HomeSiteImage from "@/components/HomeSiteImage";
 import ImagesWrapper from "@/components/ImagesWrapper";
 import VideoSection from "@/components/VideoSection";
-import TestimonialsSection from "@/components/layout/TestimonialsSection";
-import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 
 export default function Home() {
   return (
@@ -13,13 +11,11 @@ export default function Home() {
       <Head>
         <title>PROJECTS DETAILS</title>
       </Head>
-      <InnerBanner />
+      <ProjectDetailTitle />
       <ModernBusiness />
       <HomeSiteImage />
       <ImagesWrapper />
       <VideoSection />
-      <TestimonialsSection />
-      <TestiMonialsSlider />
     </>
   )
 }

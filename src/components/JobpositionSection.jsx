@@ -11,8 +11,8 @@ const JobpositionSection = () => {
 				<div className="container">
 					<div className="jobposition_section">
 						<div className="text_box">
-							<h4>Job Position</h4>
-							<ContentBox text="Job positions are important help employees understand their roles and responsibilities, allow for the proper allocation of tasks and resources, and facilitate the recruitment and selection process when hiring new personnel" />
+							<ContentBox title="Job Position" />
+							<ContentBox text="Join our team where diversity is celebrated, and we welcome talent from different industries and countries. Even if a specific job isn't available, we encourage you to reach out. We believe in the power of collaboration and are always looking for passionate individuals to join our community. Your skills and unique perspective could be the perfect fit for our next exciting project!" />
 						</div>
 						<Accordion defaultActiveKey="0">
 							<Accordion.Item eventKey="0">

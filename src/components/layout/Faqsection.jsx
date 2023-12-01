@@ -12,8 +12,8 @@ const Faqsection = () => {
 				<div className="container">
 					<div className="faq_section">
 						<div className="text_box">
-							<h4>Design and development questions</h4>
-							<ContentBox text="Our creative web design agency based in london crafts custom sites that are easy on the eyes responsive and well - optimized for user experience." />
+							<ContentBox title="Discover the Answers You Seek" />
+							<ContentBox text="Unlock insights and find the information you're seeking with our FAQ section. Dive into a curated collection of commonly asked questions, offering clear and concise answers to guide you effortlessly through your queries." />
 						</div>
 						<Accordion>
 							<Accordion.Item eventKey="5">

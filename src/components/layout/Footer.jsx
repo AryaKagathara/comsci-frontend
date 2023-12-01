@@ -15,7 +15,7 @@ const Footer = () => {
 				<div className="container">
 					<div className="footer_section">
 						<div className="title_box">
-							<h6>Starting a new project or want to collaborate with us?</h6>
+							<h6>Start a new project or Schedule a Consultation today</h6>
 							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
 						</div>
 						<div className="links_section">
@@ -44,6 +44,8 @@ const Footer = () => {
 									<li><p>401 Broadway Suite 2116 New York, NY 10013</p></li>
 									<li><Link href="tel:+91 12345 67890"><span>+91 12345 67890</span></Link></li>
 									<li><Link href="mailto:hello@comsci.com"><span>hello@comsci.com</span></Link></li>
+									<li><Link href="/privacy">Terms & Conditions</Link></li>
+									<li><Link href="/privacy">Privacy Policy</Link></li>
 								</ul>
 							</div>
 						</div>
