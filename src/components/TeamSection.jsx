@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import Paige from "@/assets/images/paige-image.webp";
-import Tristan from "@/assets/images/tristan-image.webp";
-import Megan from "@/assets/images/megan-image.webp";
-import Laura from "@/assets/images/laura-image.webp";
-import Katie from "@/assets/images/katie-image.webp";
-import Markus from "@/assets/images/markus-image.webp";
-import Emma from "@/assets/images/emma-image.webp";
-import Brandon from "@/assets/images/brandon-image.webp";
+import Paige from "@/../public/images/paige-image.webp";
+import Tristan from "@/../public/images/tristan-image.webp";
+import Megan from "@/../public/images/megan-image.webp";
+import Laura from "@/../public/images/laura-image.webp";
+import Katie from "@/../public/images/katie-image.webp";
+import Markus from "@/../public/images/markus-image.webp";
+import Emma from "@/../public/images/emma-image.webp";
+import Brandon from "@/../public/images/brandon-image.webp";
 import ContentBox from "@/components/layout/ContentBox";
 
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import homepage from "@/assets/images/homepagemacbookimage.webp";
+import homepage from "@/../public/images/homepagemacbookimage.webp";
 
 
 

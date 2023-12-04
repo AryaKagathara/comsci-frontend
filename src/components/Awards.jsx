@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Award from "@/assets/images/award-img.webp";
+import Award from "@/../public/images/award-img.webp";
 
 // import { useEffect } from 'react';
 

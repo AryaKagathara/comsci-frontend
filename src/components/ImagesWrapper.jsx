@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import FSC from "@/assets/images/FSC-image.webp";
-import Homedetail from "@/assets/images/homedetail-img.webp";
+import FSC from "@/../public/images/FSC-image.webp";
+import Homedetail from "@/../public/images/homedetail-img.webp";
 
 
 const ImagesWrapper = () => {

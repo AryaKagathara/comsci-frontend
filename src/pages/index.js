@@ -10,6 +10,8 @@ import StrategySection from "@/components/layout/StrategySection";
 import BlogSection from "@/components/BlogSection";
 import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
+import AwardType from "@/components/AwardTypeSection";
+import RendomLogo from "@/components/RendomLogo";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <Banner />
       <ServicesSection />
       <Awards />
+      <AwardType />
+      <RendomLogo />
       <ProjectSection />
       <TestimonialsSection />
       <TestiMonialsSlider />

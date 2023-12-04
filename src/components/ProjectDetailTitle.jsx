@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Share from "@/assets/images/share-img.svg";
-import Export from "@/assets/images/export-img.svg";
+import Share from "@/../public/images/share-img.svg";
+import Export from "@/../public/images/export-img.svg";
 
 
 

@@ -1,18 +1,18 @@
 import Link from "next/link";
 import Image from "next/image";
 import ContentBox from "@/components/layout/ContentBox";
-import Php from "@/assets/images/php.svg";
-import Pythone from "@/assets/images/pythone.svg";
-import Javascript from "@/assets/images/javascript.svg";
-import Android from "@/assets/images/android.svg";
-import Iphone from "@/assets/images/iphone.svg";
-import Figma from "@/assets/images/figma.svg";
-import Woo from "@/assets/images/woo.svg";
-import Wordpress from "@/assets/images/wordpress.svg";
-import Photoshop from "@/assets/images/photoshop.svg";
-import Ai from "@/assets/images/ai.svg";
-import Shopify from "@/assets/images/shopify.svg";
-import Laravel from "@/assets/images/laravel.svg";
+import Php from "@/../public/images/php.svg";
+import Pythone from "@/../public/images/pythone.svg";
+import Javascript from "@/../public/images/javascript.svg";
+import Android from "@/../public/images/android.svg";
+import Iphone from "@/../public/images/iphone.svg";
+import Figma from "@/../public/images/figma.svg";
+import Woo from "@/../public/images/woo.svg";
+import Wordpress from "@/../public/images/wordpress.svg";
+import Photoshop from "@/../public/images/photoshop.svg";
+import Ai from "@/../public/images/ai.svg";
+import Shopify from "@/../public/images/shopify.svg";
+import Laravel from "@/../public/images/laravel.svg";
 
 
 const Technologies = () => {
@@ -29,85 +29,109 @@ const Technologies = () => {
 							<div className="row">
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Php} alt="php" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Php} alt="php" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Pythone} alt="pythone" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Pythone} alt="pythone" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Javascript} alt="javascript" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Javascript} alt="javascript" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Android} alt="android" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Android} alt="android" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Iphone} alt="iphone" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Iphone} alt="iphone" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Figma} alt="figma" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Figma} alt="figma" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Woo} alt="woo" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Woo} alt="woo" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Wordpress} alt="wordpress" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Wordpress} alt="wordpress" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Photoshop} alt="photoshop" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Photoshop} alt="photoshop" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Ai} alt="ai" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Ai} alt="ai" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Shopify} alt="shopify" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Shopify} alt="shopify" />
+											</div>
 										</div>
 									</div>
 								</div>
 								<div className="col-xl-3 col-6 col-md-6 col-lg-4">
 									<div className="images_box">
-										<div className="picture">
-											<Image src={Laravel} alt="laravel" />
+										<div className="wrapper_box">
+											<div className="picture">
+												<Image src={Laravel} alt="laravel" />
+											</div>
 										</div>
 									</div>
 								</div>

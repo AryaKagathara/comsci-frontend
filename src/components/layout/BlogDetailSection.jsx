@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Detailpicture from "@/assets/images/blogdetail-picture.webp";
+import Detailpicture from "@/../public/images/blogdetail-picture.webp";
 
 
 

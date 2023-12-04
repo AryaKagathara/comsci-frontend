@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
-
+import FtrLogo from '@/../public/images/footer-logo.svg'; 
 
 
 
@@ -15,7 +15,10 @@ const Footer = () => {
 				<div className="container">
 					<div className="footer_section">
 						<div className="title_box">
-							<h6>Start a new project or Schedule a Consultation today</h6>
+							<div className="mail_box">
+								<h6>Start a new project or Schedule a Consultation today</h6>
+								<Link href="mailto:hello@comsci.com">hello@comsci.com</Link>
+							</div>
 							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
 						</div>
 						<div className="links_section">
@@ -51,6 +54,9 @@ const Footer = () => {
 						</div>
 						<div className="copyright">
 							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved</p>
+						</div>
+						<div className="footer_logo">
+							<Image src={FtrLogo} alt="ftrlogo" />
 						</div>
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import project1 from "@/assets/images/project-pic1.webp";
+import project1 from "@/../public/images/project-pic1.webp";
 
 
 

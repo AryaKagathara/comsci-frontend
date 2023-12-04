@@ -3,12 +3,12 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Testimonialimg from "@/assets/images/testimonials_sliderimg.svg";
-import profile1 from "@/assets/images/profile-pic1.png";
-import profile2 from "@/assets/images/profile-pic2.png";
-import profile3 from "@/assets/images/profile-pic3.png";
-import profile4 from "@/assets/images/profile-pic4.png";
-import profile5 from "@/assets/images/profile-pic5.png";
+import Testimonialimg from "@/../public/images/testimonials_sliderimg.svg";
+import profile1 from "@/../public/images/profile-pic1.png";
+import profile2 from "@/../public/images/profile-pic2.png";
+import profile3 from "@/../public/images/profile-pic3.png";
+import profile4 from "@/../public/images/profile-pic4.png";
+import profile5 from "@/../public/images/profile-pic5.png";
 
 
 

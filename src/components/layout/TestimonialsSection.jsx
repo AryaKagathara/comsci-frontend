@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import quote from "@/assets/images/quote-img.svg";
-import profile1 from "@/assets/images/profile-pic1.png";
-import profile2 from "@/assets/images/profile-pic2.png";
-import profile3 from "@/assets/images/profile-pic3.png";
-import profile4 from "@/assets/images/profile-pic4.png";
-import profile5 from "@/assets/images/profile-pic5.png";
+import quote from "@/../public/images/quote-img.svg";
+import profile1 from "@/../public/images/profile-pic1.png";
+import profile2 from "@/../public/images/profile-pic2.png";
+import profile3 from "@/../public/images/profile-pic3.png";
+import profile4 from "@/../public/images/profile-pic4.png";
+import profile5 from "@/../public/images/profile-pic5.png";
 
 
 const TestimonialsSection = () => {

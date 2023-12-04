@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Banner from "@/assets/images/banner-bg.webp";
-import mobileBanner from "@/assets/images/banner-bg-mobile.webp";
+import Banner from "@/../public/images/banner-bg.webp";
+import mobileBanner from "@/../public/images/banner-bg-mobile.webp";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 
 

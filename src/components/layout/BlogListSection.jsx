@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import blog1 from "@/assets/images/blog-pic1.webp";
+import blog1 from "@/../public/images/blog-pic1.webp";
 
 
 

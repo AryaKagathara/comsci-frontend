@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/assets/images/comsci-logo.webp";
+import Logo from "@/../public/images/comsci-logo.webp";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useState } from "react";
 
