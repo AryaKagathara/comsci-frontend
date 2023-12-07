@@ -132,7 +132,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -166,7 +166,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -185,7 +185,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -207,7 +207,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -244,7 +244,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -269,7 +269,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -297,7 +297,7 @@ const ServicesSection = () => {
                           </div>
                         </div>
                         <div className="learn_btn">
-                          <Link href="#">Learn more</Link>
+                          <Link href="/servicesdetail">Learn more</Link>
                         </div>
                       </div>
                     </Tab.Pane>
@@ -337,7 +337,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Our branding experts craft unique logos and comprehensive brand identities that resonate with your target audience, leaving a lasting impression.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -374,7 +374,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Elevate your user experience with our innovative UI/UX team, ensuring a seamless and visually appealing design tailored to your audience and brand.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -396,7 +396,7 @@ const ServicesSection = () => {
                     </div>
                     <span>From concept to app store, our mobile app development team creates cutting-edge applications that provide a seamless experience on various devices.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -421,7 +421,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Boost your online visibility and reach your target audience with our SEO experts who implement data-driven strategies to optimize your website for search engines.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -461,7 +461,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Our experienced developers build tailored web solutions using the latest technologies, ensuring a scalable and efficient digital presence for your business.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -489,7 +489,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Bring your brand to life with captivating visuals and storytelling. Our video and art direction team ensures a compelling narrative through engaging multimedia content.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>
@@ -520,7 +520,7 @@ const ServicesSection = () => {
                     </div>
                     <span>Harness the power of AI to enhance efficiency and user experience. Our AI solutions leverage cutting-edge technologies to bring intelligence to your applications.</span>
                     <div className="learn_btn">
-                      <Link href="#">Learn more</Link>
+                      <Link href="/servicesdetail">Learn more</Link>
                     </div>
                   </div>
                 </Accordion.Body>

@@ -12,7 +12,10 @@ const JobpositionSection = () => {
 					<div className="jobposition_section">
 						<div className="text_box">
 							<ContentBox title="Job Position" />
-							<ContentBox text="Join our team where diversity is celebrated, and we welcome talent from different industries and countries. Even if a specific job isn't available, we encourage you to reach out. We believe in the power of collaboration and are always looking for passionate individuals to join our community. Your skills and unique perspective could be the perfect fit for our next exciting project!" />
+							<div className="connect_box">
+								<ContentBox text="Join our team where diversity is celebrated, and we welcome talent from different industries and countries. Even if a specific job isn't available, we encourage you to reach out. We believe in the power of collaboration and are always looking for passionate individuals to join our community. Your skills and unique perspective could be the perfect fit for our next exciting project!" />
+								<Link href="#">Connect with us</Link>
+							</div>
 						</div>
 						<Accordion defaultActiveKey="0">
 							<Accordion.Item eventKey="0">

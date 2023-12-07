@@ -32,6 +32,7 @@
 	.banner_textbox p { font-weight: 500; }
 	.banner_textbox h1 { margin-bottom: 36px; }
 	.banner_textbox .contact_btn a span { font-size: 20px; }
+	.innerbanner .banner_img { height: 600px; }
 
 
 	.services { padding: 80px 0; }
@@ -69,12 +70,16 @@
 	.strategy_section .strategy_step .step_box .content_box.highlight p { color: var(--primary-light-gray); }
 
 
-	.award { padding: 100px 0; }
+	.award { padding: 0; }
 	.award_section .image { width: 100%; height: auto; }
 	.award_section .award_text h2 { font-weight: 900; }
-	.awardtype { padding: 80px 0; }
+	.awardtype { padding: 0 0 80px 0; }
 	.type_section ul { gap: 70px; }
 	.type_section ul li { width: 220px; height: 150px; }
+	.award_section .first_img,
+	.award_section .second_img,
+	.award_section .third_img,
+	.award_section .fourth_img { display: none; }
 
 
 	.logo_section { gap: 50px; }
@@ -170,6 +175,8 @@
 	.footer_section .links_section .social_media ul { display: flex; flex-wrap: wrap; column-gap: 20px; row-gap: 10px; }
 	.footer_section .links_section .social_media ul li + li { margin: 0; }
 	.footer_section .footer_logo { display: none; }
+	.footer .new_projectbtn { bottom: 10%; right: 30px; }
+	.footer .new_projectbtn a { padding: 14px 20px; }
 
 
 	.business { padding: 0 0 80px 0; }
@@ -236,6 +243,18 @@
 	.default_page_content h4 { font-size: 20px; padding-bottom: 12px; }
 	.default_page_content h5 { font-size: 18px; padding-bottom: 12px; }
 	.default_page_content p + h2 { padding-top: 40px; }
+
+
+	.process_section .row { row-gap: 20px; }
+	.process_section .caption_box p { font-size: 18px; }
+
+
+	.bookpop_section .modal-dialog .modal-content .modal-body .orange_circle { width: 100%; }
+
+
+	.error_section { flex-direction: column-reverse; row-gap: 20px; align-items: flex-start; padding: 0 15px; }
+	.error_section .maze_wrap .maze_img { height: 310px; width: 340px; }
+	.error_section .maze_content .maze_btn { margin-top: 30px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -300,11 +319,15 @@
 	.strategy_section .strategy_step .step_box .content_box.highlight p { color: var(--primary-light-gray); }
 
 
-	.award { padding: 100px 0; }
+	.award { padding: 0; }
 	.award_section .image { width: 350px; height: 600px; }
-	.awardtype { padding: 80px 0; }
+	.awardtype { padding: 0 0 80px 0; }
 	.type_section ul { gap: 70px; }
 	.type_section ul li { width: 220px; height: 150px; }
+	.award_section .first_img,
+	.award_section .second_img,
+	.award_section .third_img,
+	.award_section .fourth_img { display: none; }
 
 
 	.logo_section { gap: 60px; }
@@ -359,6 +382,7 @@
 	.footer_section .links_section .social_media ul li a:hover,
 	.footer_section .links_section .contactbox ul li a:hover { text-decoration: none; }
 	.footer_section .footer_logo { display: none; }
+	.footer .new_projectbtn { bottom: 10%; }
 
 
 	.business { padding: 0 0 90px 0; }
@@ -415,6 +439,18 @@
 
 
 	.default_page_content p + h2 { padding-top: 40px; }
+
+
+	.innerbanner .banner_img { height: 650px; }
+
+
+	.process_section .row { row-gap: 20px; }
+	.process_section .caption_box p { font-size: 18px; }
+
+
+	.error_section { padding: 0 15px; }
+	.error_section .maze_wrap .maze_img { height: 310px; width: 340px; }
+	.error_section .maze_content .maze_btn { margin-top: 30px; }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -437,8 +473,12 @@
 	.service_tabsection .tab_section .nav .nav-link span { width: 20px; height: 20px; }
 	
 
-	.award { padding: 100px 0; }
+	.award { padding: 0; }
 	.award_section .image { width: 350px; height: 600px; }
+	.award_section .first_img { top: 36%; left: 8%; }
+	.award_section .second_img { right: 6%; }
+	.award_section .third_img { bottom: 8%; left: 18%; }
+	.awardtype { padding: 0 0 120px 0; }
 
 
 	.project { padding: 100px 0; }
@@ -477,6 +517,7 @@
 	.blog_section .blog_text h4 { max-width: 500px; }
 
 
+	.footer { padding: 80px 0 60px 0; }
 	.footer_section .title_box h6 { max-width: 600px; }
 	.footer_section .title_box .contact_btn a span { padding: 12px 32px; }
 	.footer_section .footer_logo { display: none; }
@@ -522,6 +563,11 @@
 
 
 	.default_page_content p + h2 { padding-top: 40px; }
+
+
+	.error_section { padding: 0 15px; }
+	.error_section .maze_wrap .maze_img { height: 348px; width: 380px; }
+	.error_section .maze_content .maze_btn { margin-top: 30px; }
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -544,8 +590,9 @@
 	.service_detail .marquee .marquee-content .dot { margin: 0 16px; }
 
 
-	.award { padding: 100px 0; }
+	.award { padding: 0; }
 	.award_section .image { width: 400px; height: 660px; }
+	.awardtype { padding: 0 0 120px 0; }
 
 
 	.project { padding: 100px 0; }
@@ -575,6 +622,7 @@
 	.blog { padding: 100px 0; }
 	
 	
+	.footer { padding: 80px 0 200px 0; }
 	.footer_section .title_box .contact_btn a span { padding: 12px 32px; }
 
 
@@ -647,6 +695,7 @@
 	.blog { padding: 120px 0; }
 	
 	
+	.footer { padding: 80px 0 200px 0; }
 	.footer_section .title_box .contact_btn a span { padding: 12px 32px; }
 
 

@@ -34,6 +34,9 @@ const RendomLogo = () => {
 		<>
 			<div className="rendom">
 				<div className="container">
+					<div className="text">
+						<p>WORKED WITH</p>
+					</div>
 					<div className="logo_section" id="ren_logo">
 						{numbers.map((num) => (
 							<RandomImage key={num} num={num} />

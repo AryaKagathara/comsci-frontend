@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
-import FtrLogo from '@/../public/images/footer-logo.svg'; 
+import FtrLogo from '@/../public/images/footer-logo.svg';
 
 
 
@@ -29,7 +29,7 @@ const Footer = () => {
 									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
 									<li><Link href="/bloglist">Blog</Link></li>
-									<li><Link href="/">Contact Us</Link></li>
+									<li><Link href="/404">Contact Us</Link></li>
 								</ul>
 							</div>
 							<div className="social_media">
@@ -47,18 +47,19 @@ const Footer = () => {
 									<li><p>401 Broadway Suite 2116 New York, NY 10013</p></li>
 									<li><Link href="tel:+91 12345 67890"><span>+91 12345 67890</span></Link></li>
 									<li><Link href="mailto:hello@comsci.com"><span>hello@comsci.com</span></Link></li>
-									<li><Link href="/privacy">Terms & Conditions</Link></li>
-									<li><Link href="/privacy">Privacy Policy</Link></li>
 								</ul>
 							</div>
 						</div>
 						<div className="copyright">
-							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved</p>
+							<p>© 2023 COMSCI TECHNOLOGIES All rights reserved<Link href="/privacy">Terms & Conditions</Link><Link href="/privacy">Privacy Policy</Link></p>
 						</div>
 						<div className="footer_logo">
 							<Image src={FtrLogo} alt="ftrlogo" />
 						</div>
 					</div>
+				</div>
+				<div className="new_projectbtn">
+					<Link href="#">New Project?</Link>
 				</div>
 			</footer>
 		</>

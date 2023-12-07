@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import BlogListSection from "@/components/layout/BlogListSection";
 import ContentBox from "@/components/layout/ContentBox";
-
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
 
 const BlogpageSection = () => {
 	return (
@@ -28,6 +28,9 @@ const BlogpageSection = () => {
 							<BlogListSection />
 							<BlogListSection />
 							<BlogListSection />
+						</div>
+						<div className="blog_loadbtn">
+							<PrimaryBtn name="Load more" arrow="no" link="#"/>
 						</div>
 					</div>
 				</div>
