@@ -12,6 +12,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Awards = () => {
+
   const awardElBig = useRef(null);
   const awardEl1 = useRef(null);
   const awardEl2 = useRef(null);
@@ -19,31 +20,74 @@ const Awards = () => {
   const awardEl4 = useRef(null);
 
   useEffect(() => {
-    // Initialize Locomotive Scroll
 
     async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
       const scroll = new LocomotiveScroll();
     };
 
-    // GSAP pinning animation
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#scroll-container",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-      },
-    });
-
-    tl.fromTo([awardElBig.current, awardEl1.current, awardEl2.current, awardEl3.current, awardEl4.current],
-      {
-        y: 400,
-      },
-      {
-        y: -1500,
+    const animateElement = (element, animation) => {
+      if (!element) {
+        console.error("Element is undefined");
+        return;
       }
-    );
+
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: "#scroll-container",
+          start: "top top",
+          end: "bottom bottom",
+          scrub: true,
+        },
+      });
+
+      tl.fromTo(element, animation.from, animation.to);
+    };
+
+    animateElement(awardElBig.current,{
+      from:{
+        y: 400 
+      },
+      to: {
+        y: -1500 
+      } 
+    });
+    animateElement(awardEl1.current,{
+      from: {
+        y: 400 
+      },
+      to: {
+        y: -1500,
+        rotation: 360
+      }
+    });
+    animateElement(awardEl2.current,{
+      from: {
+        y: 400
+      },
+      to: {
+        y: -1500,
+        rotation: -360 
+      } 
+    });
+    animateElement(awardEl3.current, {
+      from: {
+        y: 400
+      },
+      to: {
+        y: -1500,
+        rotation: 360 
+      } 
+    });
+    animateElement(awardEl4.current, { 
+      from: { 
+        y: 400 
+      },
+      to: { 
+        y: -1500,
+        rotation: -360 
+      } 
+    });
   }, []);
 
   return (
