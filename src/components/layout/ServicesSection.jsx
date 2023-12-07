@@ -12,7 +12,7 @@ const ServicesSection = () => {
     <>
       <div className="services">
         <div className="container">
-          <div className="service_heading">
+          <div className="service_heading" data-scroll data-scroll-speed=".2">
             <strong>
               We engineer business solutions that drive measurable results for renowned industry leaders around the&nbsp;
               <div className="globe">

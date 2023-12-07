@@ -17,10 +17,10 @@ const HomeBanner = () => {
 					<Image src={mobileBanner} alt="mobileBanner" />
 				</div>
 				<div className="container">
-					<div className="banner_textbox">
-						<p>Design & Development Company</p>
-						<h1>We help business evolve</h1>
-						<PrimaryBtn name="Learn Now" arrow="no" link="/" />
+					<div className="banner_textbox" data-scroll data-scroll-speed=".2">
+						<p className="fadeInUp">Design & Development Company</p>
+						<h1 className="fadeInUp">We help business evolve</h1>
+						<PrimaryBtn name="Learn Now" arrow="no" link="/" isFadeInUp="true"  />
 					</div>
 				</div>
 			</div>

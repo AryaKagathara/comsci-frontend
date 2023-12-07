@@ -20,10 +20,9 @@ const Technologies = () => {
 		<>
 			<div className="technologies">
 				<div className="container">
-					<div className="tech_section">
-						<div className="text_box">
-							<ContentBox title="Carefully chosen tools for your needs." />
-							<ContentBox text="Our arsenal of battle-tested and future-proof technologies allows us to build websites and applications that perform seamlessly. We consider scalability, support and price among other things to find the perfect match for your project. There’s no limit of what we use in the technology." />
+					<div className="tech_section" data-scroll data-scroll-speed=".2">
+						<div className="text_box fadeInUp">
+							<ContentBox title="Carefully chosen tools for your needs." text="Our arsenal of battle-tested and future-proof technologies allows us to build websites and applications that perform seamlessly. We consider scalability, support and price among other things to find the perfect match for your project. There’s no limit of what we use in the technology." />
 						</div>
 						<div className="technologie_images">
 							<div className="row">

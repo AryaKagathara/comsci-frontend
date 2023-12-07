@@ -1,13 +1,42 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
-
-
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 const StrategySection = () => {
+
+	useEffect(() => {
+		const sections = gsap.utils.toArray(".content_box");
+
+		sections.forEach(elem => {
+			var tl = gsap.timeline({
+				scrollTrigger: {
+					trigger: elem,
+					scrub: true,
+					start: "top center",
+					end: 'bottom top',
+					toggleClass: 'highlight',
+				},
+			});
+		});
+		gsap.to(".timeline-line .line-fill", {
+			height: '100%',
+			ease: 'linear',
+			scrollTrigger: {
+				trigger: ".strategy_section",
+				scrub: true,
+				start: "top center",
+				end: 'bottom center',
+			}
+		});
+	}, []);
+
 	return (
 		<>
 			<div className="strategy">
@@ -15,7 +44,7 @@ const StrategySection = () => {
 					<div className="strategy_section">
 						<div className="row">
 							<div className="col-lg-5">
-								<div className="text_section">
+								<div className="text_section fadeInUp">
 									<h4>All things considered from strategy to code</h4>
 								</div>
 							</div>
@@ -42,6 +71,10 @@ const StrategySection = () => {
 											<span>Delivery</span>
 											<p>In the final phase, we work closely with clients to ensure satisfaction and provide training and support for website management. We strive to establish long-term relationships to help clients achieve their business objectives, monitoring website performance and providing ongoing optimization for continued results.</p>
 										</div>
+									</div>
+									<div class="timeline-line">
+										<div class="line-default"></div>
+										<div class="line-fill"></div>
 									</div>
 								</div>
 							</div>

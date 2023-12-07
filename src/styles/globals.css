@@ -311,8 +311,8 @@ p { font-size: 16px; font-style: normal; }
 .strategy { padding: 160px 0; }
 .strategy_section .text_section h4 { color: var(--primary-white); font-weight: 700; margin: 0; max-width: 480px; }
 .strategy_section .strategy_step { position: relative; }
-.strategy_section .strategy_step::after { content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 2px; background: var(--primary-light-gray); }
-.strategy_section .strategy_step::before { content: ""; position: absolute; top: 0; left: 0; height: auto; width: 2px; background: var(--primary-white); background-image: url(../../public/images/step-img.svg); background-position: center; background-size: 16px 16px; background-repeat: no-repeat; }
+.strategy_section .strategy_step .timeline-line .line-default { position: absolute; top: 0; left: 0; height: 100%; width: 2px; background: var(--primary-light-gray); }
+.strategy_section .strategy_step .timeline-line .line-fill { position: absolute; top: 0; left: 0; width: 2px; background: var(--primary-white); z-index: 2; }
 .strategy_section .strategy_step .step_box { padding: 60px 0 60px 24px; }
 .strategy_section .strategy_step .step_box .content_box span { color: var(--primary-light-gray); font-size: 24px; font-weight: 700; display: block; margin-bottom: 12px; }
 .strategy_section .strategy_step .step_box .content_box p { color: var(--primary-light-gray); font-weight: 500; line-height: 1.625; margin: 0; }
@@ -585,3 +585,19 @@ p { font-size: 16px; font-style: normal; }
 .error_section .maze_content h6 { margin: 0; color: var(--primary-black); font-weight: 700; }
 .error_section .maze_content p { margin: 0; color: var(--primary-black); font-weight: 500; }
 .error_section .maze_content .maze_btn { margin-top: 48px; display: flex; justify-content: flex-start; }
+
+
+/* .anilog { position: relative; }
+.anilog .scene {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100% ;
+	width: 100%; }
+.anilog .viewer { max-width: 100%; max-height: 100%; margin-left: auto; margin-right: auto; object-fit: contain; background-image: url(../../public/images/Logo-Animation-2.webp); background-repeat: no-repeat; background-position: 0 0; } */

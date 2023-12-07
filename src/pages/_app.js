@@ -5,7 +5,11 @@ import '@/styles/responsive.css';
 import '@/styles/fonts.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function App({ Component, pageProps }) {
 
@@ -15,7 +19,11 @@ export default function App({ Component, pageProps }) {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
       }
-    )()
+      )()
+      gsap.set(".fadeInUp", {y: "30%", opacity: 0,});
+      ScrollTrigger.batch(".fadeInUp", {
+        onEnter: batch => gsap.to(batch, {  opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y:0}),
+      });
   }, [])
 
   return (

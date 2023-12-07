@@ -8,7 +8,7 @@ import ContentBox from "@/components/layout/ContentBox";
 const HomeBlogBox = () => {
 	return (
 		<>
-			<div className="blog_text">
+			<div className="blog_text fadeInUp">
 				<ContentBox title="Current news & exciting Insights from COMSCI." />
 				<PrimaryBtn name="All News & exciting" arrow="no" link="/bloglist"/>
 			</div>

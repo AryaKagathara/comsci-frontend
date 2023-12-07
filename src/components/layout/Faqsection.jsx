@@ -11,9 +11,8 @@ const Faqsection = () => {
 			<div className="faq">
 				<div className="container">
 					<div className="faq_section">
-						<div className="text_box">
-							<ContentBox title="Discover the Answers You Seek" />
-							<ContentBox text="Unlock insights and find the information you're seeking with our FAQ section. Dive into a curated collection of commonly asked questions, offering clear and concise answers to guide you effortlessly through your queries." />
+						<div className="text_box fadeInUp">
+							<ContentBox title="Discover the Answers You Seek" text="Unlock insights and find the information you're seeking with our FAQ section. Dive into a curated collection of commonly asked questions, offering clear and concise answers to guide you effortlessly through your queries." />
 						</div>
 						<Accordion>
 							<Accordion.Item eventKey="5">

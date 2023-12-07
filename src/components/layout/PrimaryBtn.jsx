@@ -8,7 +8,7 @@ import Link from "next/link";
 const PrimaryBtn = (props) => {
 	return (
 		<>
-			<div className="contact_btn">
+			<div className={`contact_btn ${props.isFadeInUp ? 'fadeInUp' : ''}`}>
 				<Link href={ props.link }>
 					<span>
 						{ props.name }
