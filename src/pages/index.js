@@ -12,7 +12,6 @@ import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import AwardType from "@/components/AwardTypeSection";
 import RendomLogo from "@/components/RendomLogo";
-import LogoAnimation from "@/components/layout/LogoAnimation";
 
 export default function Home() {
   return (
@@ -27,7 +26,6 @@ export default function Home() {
       <RendomLogo />
       <TestiMonialsSlider />
       <StrategySection />
-      <LogoAnimation />
       <Technologies />
       <ProjectSection />
       <TestimonialsSection />

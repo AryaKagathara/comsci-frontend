@@ -264,8 +264,6 @@ p { font-size: 16px; font-style: normal; }
 .testimonial_wrap .test_sec .testi_wrap .image img { width: 100%; height: auto; max-width: 100%; max-height: 100%; object-fit: cover; }
 .testimonial_wrap .test_sec .testi_wrap .contentbox h5 { color: var(--primary-black); font-weight: 400; line-height: 1.25; margin-bottom: 20px; }
 .testimonial_wrap .test_sec .testi_wrap .contentbox .profile_box { display: flex; justify-content: flex-start; align-items: center; }
-.testimonial_wrap .test_sec .testi_wrap .contentbox .profile_box .picture { display: flex; height: 48px; width: 48px; border-radius: 50%; overflow: hidden; margin-right: 15px; }
-.testimonial_wrap .test_sec .testi_wrap .contentbox .profile_box .picture img { width: 100%; height: auto; max-width: 100%; max-height: 100%; object-fit: cover; }
 .testimonial_wrap .test_sec .testi_wrap .contentbox .profile_box .caption p { color: var(--primary-black); text-transform: capitalize; font-weight: 500; margin-bottom: 4px; }
 .testimonial_wrap .test_sec .testi_wrap .contentbox .profile_box .caption span { color: var(--primary-light-gray); font-size: 16px; font-weight: 400; line-height: 1.15; }
 .testimonials_slider { display: none; }
@@ -457,8 +455,8 @@ p { font-size: 16px; font-style: normal; }
 .result_wrap .result_content { max-width: 510px; margin: 0 auto 64px auto; }
 .result_wrap .result_content h4 { color: var(--primary-white); text-align: center; margin: 0; font-weight: 700; }
 .result_wrap .result_detail {display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row;}
-.result_wrap .result_detail .result_textbox h5 { color: var(--primary-orange); font-weight: 700; margin: 0 0 16px 0; text-align: center; }
-.result_wrap .result_detail .result_textbox span { text-align: center; color: var(--primary-white); font-size: 24px; font-weight: 700; display: block; }
+.result_wrap .result_detail .result_textbox span { color: var(--primary-orange); font-size: 40px; font-weight: 700; display: flex; justify-content: center; margin-bottom: 16px; }
+.result_wrap .result_detail .result_textbox h5 { margin: 0; text-align: center; font-size: 24px; font-weight: 700; }
 .result_wrap .result_detail .result_textbox { width: 100%; max-width: 25%; position: relative; }
 
 
@@ -585,19 +583,3 @@ p { font-size: 16px; font-style: normal; }
 .error_section .maze_content h6 { margin: 0; color: var(--primary-black); font-weight: 700; }
 .error_section .maze_content p { margin: 0; color: var(--primary-black); font-weight: 500; }
 .error_section .maze_content .maze_btn { margin-top: 48px; display: flex; justify-content: flex-start; }
-
-
-/* .anilog { position: relative; }
-.anilog .scene {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: 100;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100% ;
-	width: 100%; }
-.anilog .viewer { max-width: 100%; max-height: 100%; margin-left: auto; margin-right: auto; object-fit: contain; background-image: url(../../public/images/Logo-Animation-2.webp); background-repeat: no-repeat; background-position: 0 0; } */

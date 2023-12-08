@@ -10,7 +10,7 @@ const ProjectPage = () => {
 			<div className="project">
 				<div className="container">
 					<div className="project_section">
-						<div className="project_title">
+						<div className="project_title fadeInUp">
 							<ContentBox title="Browse our portfolio for a glimpse into our past work." />
 						</div>
 						<div className="projectlist_section">

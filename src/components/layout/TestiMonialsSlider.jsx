@@ -4,11 +4,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Testimonialimg from "@/../public/images/testimonials_sliderimg.svg";
-import profile1 from "@/../public/images/profile-pic1.png";
-import profile2 from "@/../public/images/profile-pic2.png";
-import profile3 from "@/../public/images/profile-pic3.png";
-import profile4 from "@/../public/images/profile-pic4.png";
-import profile5 from "@/../public/images/profile-pic5.png";
 
 
 
@@ -54,13 +49,10 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>The quality of coding, along with their communication and timeliness, were unlike anything we've seen from previous devs.</h5>
+								<h5>I can’t believe that something is so well done.</h5>
 								<div className="profile_box">
-									<div className="picture">
-										<Image src={profile1} alt="profile"/>
-									</div>
 									<div className="caption">
-										<p>Geoff Raicer</p>
+										<p>Samhita B</p>
 										<span>Founder & CEO</span>
 									</div>
 								</div>
@@ -71,14 +63,11 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>From start to finish, everything was perfect.</h5>
+								<h5>It was great pleasure working on the project. Happy to work on future projects. Highly recommending.</h5>
 								<div className="profile_box">
-									<div className="picture">
-										<Image src={profile2} alt="profile"/>
-									</div>
 									<div className="caption">
-										<p>Vitali Dudin</p>
-										<span>CEO</span>
+										<p>Martin B</p>
+										<span>Founder & CEO</span>
 									</div>
 								</div>
 							</div>
@@ -90,12 +79,9 @@ const TestiMonialsSlider = () => {
 							<div className="contentbox">
 								<h5>The quality of the work has been great.</h5>
 								<div className="profile_box">
-									<div className="picture">
-										<Image src={profile3} alt="profile"/>
-									</div>
 									<div className="caption">
-										<p>Hemal Parekh</p>
-										<span>Managing Director</span>
+										<p>Joaquin M</p>
+										<span>Technical Director</span>
 									</div>
 								</div>
 							</div>
@@ -105,14 +91,11 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>Our sales went up by almost 20% due to the new design of the website.</h5>
+								<h5>Yes am happy. It worth to paid up to date for the hard work.</h5>
 								<div className="profile_box">
-									<div className="picture">
-										<Image src={profile4} alt="profile"/>
-									</div>
 									<div className="caption">
-										<p>Eric Bernstein</p>
-										<span>President</span>
+										<p>Josh B</p>
+										<span>CEO</span>
 									</div>
 								</div>
 							</div>
@@ -122,13 +105,10 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>I was excited to take advantage of their expertise again.</h5>
+								<h5>You guys are truly understanding the pain points which I care about alot.</h5>
 								<div className="profile_box">
-									<div className="picture">
-										<Image src={profile5} alt="profile"/>
-									</div>
 									<div className="caption">
-										<p>Todd Lininger</p>
+										<p>Quentin D</p>
 										<span>Owner</span>
 									</div>
 								</div>
