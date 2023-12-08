@@ -1,7 +1,7 @@
 import Head from "next/head";
 import PrivacyPage from "@/components/layout/PrivacyPage";
 
-export default function Home() {
+export default function Privacy() {
   return (
     <>
       <Head>

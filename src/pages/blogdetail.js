@@ -3,7 +3,7 @@ import BlogDetailSection from "@/components/layout/BlogDetailSection";
 
 
 
-export default function Home() {
+export default function BlogDetail() {
   return (
     <>
       <Head>

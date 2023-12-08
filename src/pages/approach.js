@@ -6,7 +6,7 @@ import ProjectSection from "@/components/ProjectSection";
 
 
 
-export default function Home() {
+export default function Approach() {
   return (
     <>
       <Head>

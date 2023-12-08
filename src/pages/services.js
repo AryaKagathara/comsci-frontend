@@ -5,7 +5,7 @@ import Technologies from "@/components/layout/Technologies";
 
 
 
-export default function Home() {
+export default function Services() {
   return (
     <>
       <Head>

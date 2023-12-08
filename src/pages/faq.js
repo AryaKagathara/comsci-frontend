@@ -4,7 +4,7 @@ import Faqsection from "@/components/layout/Faqsection";
 
 
 
-export default function Home() {
+export default function Faq() {
   return (
     <>
       <Head>

@@ -4,7 +4,7 @@ import JobpageSection from "@/components/JobpageSection";
 
 
 
-export default function Home() {
+export default function JobPosition() {
   return (
     <>
       <Head>

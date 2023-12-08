@@ -5,7 +5,7 @@ import HomeSiteImage from "@/components/HomeSiteImage";
 import ImagesWrapper from "@/components/ImagesWrapper";
 import VideoSection from "@/components/VideoSection";
 
-export default function Home() {
+export default function ProjectDetail() {
   return (
     <>
       <Head>

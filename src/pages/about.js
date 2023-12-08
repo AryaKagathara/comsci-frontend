@@ -10,7 +10,7 @@ import RendomLogo from "@/components/RendomLogo";
 
 
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>

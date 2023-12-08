@@ -4,7 +4,7 @@ import BlogpageSection from "@/components/BlogpageSection";
 
 
 
-export default function Home() {
+export default function BlogList() {
   return (
     <>
       <Head>
