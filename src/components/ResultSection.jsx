@@ -11,7 +11,7 @@ const ResultSection = () => {
 			<div className="result">
 				<div className="container">
 					<div className="result_wrap">
-						<div className="result_content">
+						<div className="result_content fadeInUp">
 							<ContentBox title="Our results in numbers" />
 						</div>
 						<div className="result_detail">
