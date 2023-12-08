@@ -456,8 +456,8 @@ p { font-size: 16px; font-style: normal; }
 .result_wrap .result_content { max-width: 510px; margin: 0 auto 64px auto; }
 .result_wrap .result_content h4 { color: var(--primary-white); text-align: center; margin: 0; font-weight: 700; }
 .result_wrap .result_detail {display: flex; justify-content: center; flex-wrap: wrap; flex-direction: row;}
-.result_wrap .result_detail .result_textbox span { color: var(--primary-orange); font-size: 40px; font-weight: 700; display: flex; justify-content: center; margin-bottom: 16px; }
-.result_wrap .result_detail .result_textbox h5 { margin: 0; text-align: center; font-size: 24px; font-weight: 700; }
+.result_wrap .result_detail .result_textbox h5 { color: var(--primary-orange); font-weight: 700; margin: 0 0 16px 0; text-align: center; }
+.result_wrap .result_detail .result_textbox span { text-align: center; color: var(--primary-white); font-size: 24px; font-weight: 700; display: block; }
 .result_wrap .result_detail .result_textbox { width: 100%; max-width: 25%; position: relative; }
 
 
