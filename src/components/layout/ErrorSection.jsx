@@ -15,10 +15,10 @@ const ErrorSection = () => {
 							<Image src={Maze} alt="maze" />
 						</div>
 						<div className="help_btn">
-							<Link href="#">Please help me, I can’t find where am I.</Link>
+							<Link href="#" className="fadeInUp">Please help me, I can’t find where am I.</Link>
 						</div>
 					</div>
-					<div className="maze_content">
+					<div className="maze_content fadeInUp">
 						<h6>Looks like you are in a maze.</h6>
 						<p>The page you’re looking for is not available</p>
 						<div className="maze_btn">

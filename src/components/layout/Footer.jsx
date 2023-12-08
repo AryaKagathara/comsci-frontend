@@ -29,7 +29,7 @@ const Footer = () => {
 									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
 									<li><Link href="/bloglist">Blog</Link></li>
-									<li><Link href="/404">Contact Us</Link></li>
+									<li><Link href="/errorpage">Contact Us</Link></li>
 								</ul>
 							</div>
 							<div className="social_media">
