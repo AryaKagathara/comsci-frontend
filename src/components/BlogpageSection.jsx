@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import BlogListSection from "@/components/layout/BlogListSection";
 import ContentBox from "@/components/layout/ContentBox";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';

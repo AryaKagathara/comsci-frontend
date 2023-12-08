@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import HomeProjectBox from "@/components/HomeProjectBox";
 import ProjectListSection from "@/components/layout/ProjectListSection";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';

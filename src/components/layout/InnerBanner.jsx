@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import InnerImg from "@/../public/images/innerbanner-img.webp";
 

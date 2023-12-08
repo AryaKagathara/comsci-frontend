@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import FSC from "@/../public/images/FSC-image.webp";
 import Homedetail from "@/../public/images/homedetail-img.webp";

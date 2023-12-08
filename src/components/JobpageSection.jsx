@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import ContentBox from "@/components/layout/ContentBox";
 import Accordion from 'react-bootstrap/Accordion';
 

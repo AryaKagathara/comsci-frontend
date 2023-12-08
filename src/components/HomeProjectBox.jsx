@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import ContentBox from "@/components/layout/ContentBox";
 

@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import HomeBlogBox from "@/components/HomeBlogBox";
 import BlogListSection from "@/components/layout/BlogListSection";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';

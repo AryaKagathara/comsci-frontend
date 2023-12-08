@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Banner from "@/../public/images/banner-bg.webp";
 import mobileBanner from "@/../public/images/banner-bg-mobile.webp";

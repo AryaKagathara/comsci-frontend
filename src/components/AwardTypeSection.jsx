@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import Winner from "@/../public/images/winner-of-the-contest.webp";
 import DesignAward from "@/../public/images/design-award-winner.webp";

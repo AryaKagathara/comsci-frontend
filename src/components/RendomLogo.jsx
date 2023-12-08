@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const imgQty = 18;

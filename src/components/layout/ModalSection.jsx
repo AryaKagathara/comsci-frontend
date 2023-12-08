@@ -1,10 +1,8 @@
-import Link from "next/link";
 import Image from "next/image";
 import OrangeCircle from '@/../public/images/orange-circle.svg';
 import Current from '@/../public/images/current-img.svg';
 import Novice from '@/../public/images/novice-img.svg';
 import Work from '@/../public/images/popup-work-img.svg';
-import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
