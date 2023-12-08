@@ -251,7 +251,7 @@
 	.bookpop_section .modal-dialog .modal-content .modal-body .orange_circle { width: 100%; }
 
 
-	.error_section { flex-direction: column-reverse; row-gap: 20px; align-items: flex-start; padding: 0 15px; }
+	.error_section { flex-direction: column-reverse; justify-content: center; row-gap: 20px; align-items: flex-start; padding: 0 15px; }
 	.error_section .maze_wrap .maze_img { height: 310px; width: 340px; }
 	.error_section .maze_content .maze_btn { margin-top: 30px; }
 }

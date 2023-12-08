@@ -8,13 +8,19 @@ import Footer from '@/components/layout/Footer';
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import { useRouter } from 'next/router';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App({ Component, pageProps }) {
 
+  const router = useRouter();
+
+  const is404Page = router.isFallback || router.pathname == '/404';
+  
   useEffect( () => {
     (
+
       async () => {
           const LocomotiveScroll = (await import('locomotive-scroll')).default
           const locomotiveScroll = new LocomotiveScroll();
@@ -29,9 +35,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <main>
-        <Header />
+        {!is404Page && <Header />}
         <Component {...pageProps} />
-        <Footer />
+        {!is404Page && <Footer />}
       </main> 
     </>
   )

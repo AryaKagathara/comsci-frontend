@@ -1,12 +1,7 @@
 import Head from "next/head";
 import ErrorSection from "@/components/layout/ErrorSection";
 
-
-
-
-
-
-export default function Home() {
+function NotFoundPage() {
 	return (
 		<>
 			<Head>
@@ -16,3 +11,5 @@ export default function Home() {
 		</>
 	)
 }
+
+export default NotFoundPage
