@@ -11,7 +11,7 @@ export default function Faq() {
         <title>FAQ</title>
       </Head>
 	    <Faqsection />
-      {/* <ModalSection /> */}
+      <ModalSection />
     </>
   )
 }
