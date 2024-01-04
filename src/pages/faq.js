@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Faqsection from "@/components/layout/Faqsection";
-// import ModalSection from "@/components/layout/ModalSection";
+import ModalSection from "@/components/layout/ModalSection";
 
 
 
