@@ -71,8 +71,8 @@ const StrategySection = () => {
 										</div>
 									</div>
 									<div class="timeline-line">
-										<div class="line-default"></div>
-										<div class="line-fill"></div>
+										<div className="line-default"></div>
+										<div className="line-fill"></div>
 									</div>
 								</div>
 							</div>

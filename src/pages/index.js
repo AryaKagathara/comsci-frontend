@@ -17,7 +17,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>HOME PAGE</title>
+        <title>Comsci - Leading Design & Development Company | Elevate Your Business with Us</title>
+        <meta name="description" content="Comsci - Unlock unparalleled design and development solutions for your business. Partner with us for award-winning services and agile processes. Explore our portfolio now!" key="desc" />
       </Head>
       <Banner />
       <ServicesSection />
