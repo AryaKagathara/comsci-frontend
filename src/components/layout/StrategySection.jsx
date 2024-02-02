@@ -61,7 +61,7 @@ const StrategySection = () => {
 											</div>
 											<div className="content_box">
 												<span>Strategy</span>
-												<p>Our process begins with developing a comprehensive strategy that aligns with clients' goals through thorough research, ensuring the final product meets their needs and delivers tangible results.</p>
+												<p>Our process begins with developing a comprehensive strategy that aligns with clients goals through thorough research, ensuring the final product meets their needs and delivers tangible results.</p>
 											</div>
 										</div>
 										<div className="image_content">
@@ -70,7 +70,7 @@ const StrategySection = () => {
 											</div>
 											<div className="content_box">
 												<span>Creative</span>
-												<p>Our creative team develops a website design that conveys clients' unique value proposition and drives results by creating an intuitive and engaging user experience, ensuring every aspect of the design meets their business objectives.</p>
+												<p>Our creative team develops a website design that conveys clients unique value proposition and drives results by creating an intuitive and engaging user experience, ensuring every aspect of the design meets their business objectives.</p>
 											</div>
 										</div>
 										<div className="image_content">
