@@ -5,6 +5,13 @@ import world from "@/../public/images/world-img.webp";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 import Accordion from 'react-bootstrap/Accordion';
+import servicImg1 from '@/../public/images/service-img1.png';
+import servicImg2 from '@/../public/images/service-img2.webp';
+import servicImg3 from '@/../public/images/service-img3.webp';
+import servicImg4 from '@/../public/images/service-img4.webp';
+import servicImg5 from '@/../public/images/service-img5.webp';
+import servicImg6 from '@/../public/images/service-img6.webp';
+import servicImg7 from '@/../public/images/service-img7.webp';
 
 const ServicesSection = () => {
 
@@ -110,6 +117,9 @@ const ServicesSection = () => {
                   <Tab.Content>
                     <Tab.Pane eventKey="logo_design_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg1} alt="image"/>
+                        </div>
                         <span>Our branding experts craft unique logos and comprehensive brand identities that resonate with your target audience, leaving a lasting impression.</span>
                         <div className="chips">
                           <div className="chip">
@@ -138,6 +148,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="ui_ux_design_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg2} alt="image"/>
+                        </div>
                         <span>Elevate your user experience with our innovative UI/UX team, ensuring a seamless and visually appealing design tailored to your audience and brand.</span>
                         <div className="chips">
                           <div className="chip">
@@ -172,6 +185,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="mobile_application_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg3} alt="image"/>
+                        </div>
                         <span>From concept to app store, our mobile app development team creates cutting-edge applications that provide a seamless experience on various devices.</span>
                         <div className="chips">
                           <div className="chip">
@@ -191,6 +207,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="seo_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg4} alt="image"/>
+                        </div>
                         <span>Boost your online visibility and reach your target audience with our SEO experts who implement data-driven strategies to optimize your website for search engines.</span>
                         <div className="chips">
                           <div className="chip">
@@ -213,6 +232,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="custom_web_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg5} alt="image"/>
+                        </div>
                         <span>Our experienced developers build tailored web solutions using the latest technologies, ensuring a scalable and efficient digital presence for your business.</span>
                         <div className="chips">
                           <div className="chip">
@@ -250,6 +272,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="video_art_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg6} alt="image"/>
+                        </div>
                         <span>Bring your brand to life with captivating visuals and storytelling. Our video and art direction team ensures a compelling narrative through engaging multimedia content.</span>
                         <div className="chips">
                           <div className="chip">
@@ -275,6 +300,9 @@ const ServicesSection = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="artificial_tab">
                       <div className="content_box">
+                        <div className="img_wrap">
+                          <Image src={servicImg7} alt="image"/>
+                        </div>
                         <span>Harness the power of AI to enhance efficiency and user experience. Our AI solutions leverage cutting-edge technologies to bring intelligence to your applications.</span>
                         <div className="chips">
                           <div className="chip">
@@ -315,6 +343,9 @@ const ServicesSection = () => {
                 <Accordion.Header>Logo Design & Branding</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg1} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">Brand Strategy</Link>
@@ -346,6 +377,9 @@ const ServicesSection = () => {
                 <Accordion.Header>UI/UX Design</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg2} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">User-Centered Design</Link>
@@ -383,6 +417,9 @@ const ServicesSection = () => {
                 <Accordion.Header>Mobile Application</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg5} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">iOS</Link>
@@ -405,6 +442,9 @@ const ServicesSection = () => {
                 <Accordion.Header>SEO</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg6} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">Search Engine Optimization</Link>
@@ -430,6 +470,9 @@ const ServicesSection = () => {
                 <Accordion.Header>Custom Web Development</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg3} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">Full Stack Development</Link>
@@ -470,6 +513,9 @@ const ServicesSection = () => {
                 <Accordion.Header>Video & Art Direction</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg7} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">Storyboarding</Link>
@@ -498,6 +544,9 @@ const ServicesSection = () => {
                 <Accordion.Header>Artificial Intelligence</Accordion.Header>
                 <Accordion.Body>
                   <div className="content_box">
+                    <div className="image_wrap">
+                      <Image src={servicImg4} alt="image" />
+                    </div>
                     <div className="chips">
                       <div className="chip">
                         <Link href="javascript:;">Machine Learning</Link>

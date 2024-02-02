@@ -2,7 +2,7 @@ import Head from "next/head";
 import Banner from "@/components/layout/HomeBanner";
 import ServicesSection from "@/components/layout/ServicesSection";
 import Awards from "@/components/Awards";
-import JobpositionSection from "@/components/JobpositionSection";
+// import JobpositionSection from "@/components/JobpositionSection";
 import TestimonialsSection from "@/components/layout/TestimonialsSection";
 import Technologies from "@/components/layout/Technologies";
 import Faqsection from "@/components/layout/Faqsection";
@@ -32,7 +32,7 @@ export default function Home() {
       <TestimonialsSection />
       <Faqsection />
       <BlogSection />
-      <JobpositionSection />
+      {/* <JobpositionSection /> */}
     </>
   )
 }

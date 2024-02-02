@@ -1,21 +1,44 @@
 import Link from "next/link";
 import Image from "next/image";
-import Maze from "@/../public/images/maze-img.png";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
-
+import { useEffect } from 'react';
 
 
 const ErrorSection = () => {
+
+	useEffect(() => {
+		const eyeball = (event) => {
+			const eyes = document.querySelectorAll('.eyes');
+			const eyeball = document.querySelectorAll('.eyeball');
+		
+			let posX = event.clientX - screen.width;
+  			let posY = event.clientY - screen.height;
+
+			eyeball.forEach((eye) => {
+				eye.style.transform = "translate("+posX*0.1+"%, "+posY*0.1+"%)"
+			});
+		};
+	
+		document.querySelector('body').addEventListener('mousemove', eyeball);
+	
+		return () => {
+		  	document.querySelector('body').removeEventListener('mousemove', eyeball);
+		};
+	}, []);
+
 	return (
 		<>
 			<div className="error">
 				<div className="error_section">
 					<div className="maze_wrap">
-						<div className="maze_img">
-							<Image src={Maze} alt="maze" />
-						</div>
-						<div className="help_btn">
-							<Link href="#" className="fadeInUp">Please help me, I can’t find where am I.</Link>
+						<div class="eyebrow"></div>
+						<div className="eye_box">
+							<div class="eyes">
+							<div class="eyeball"></div>
+							</div>
+							<div class="eyes">
+							<div class="eyeball" ></div>
+							</div>
 						</div>
 					</div>
 					<div className="maze_content fadeInUp">

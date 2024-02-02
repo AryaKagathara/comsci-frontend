@@ -37,7 +37,7 @@ const Footer = () => {
 									<li><Link href="#">Instagram</Link></li>
 									<li><Link href="#">Facebook</Link></li>
 									<li><Link href="#">Behance</Link></li>
-									<li><Link href="#">Dribbble</Link></li>
+									<li><Link href="#">Linkedin</Link></li>
 									<li><Link href="#">Youtube</Link></li>
 									<li><Link href="#">twitter</Link></li>
 								</ul>
@@ -57,9 +57,6 @@ const Footer = () => {
 							<Image src={FtrLogo} alt="ftrlogo" />
 						</div>
 					</div>
-				</div>
-				<div className="new_projectbtn">
-					<Link href="#">New Project?</Link>
 				</div>
 			</footer>
 		</>

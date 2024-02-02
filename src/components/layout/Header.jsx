@@ -68,6 +68,9 @@ const Header = () => {
 							</div>
 						</div>
 					</div>
+					<div className="new_projectbtn">
+						<Link href="#">New Project?</Link>
+					</div>
 				</div>
 			</header>
 		</>
