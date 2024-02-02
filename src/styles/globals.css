@@ -127,7 +127,7 @@ p { font-size: 16px; font-style: normal; }
 
 /* ========== Default css:end ========== */
 
-.header { position: fixed; z-index: 1000; left: 0; top: 0; right: 0; width: 100%; background: var(--primary-black); }
+.header { position: fixed; z-index: 100; left: 0; top: 0; right: 0; width: 100%; background: var(--primary-black); }
 .header .header_wrap { position: relative; }
 .main_header { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
 .main_header .header_logo { width: auto; }
@@ -584,3 +584,25 @@ p { font-size: 16px; font-style: normal; }
 .error_section .maze_content h6 { margin: 0; color: var(--primary-black); font-weight: 700; }
 .error_section .maze_content p { margin: 0; color: var(--primary-black); font-weight: 500; }
 .error_section .maze_content .maze_btn { margin-top: 48px; display: flex; justify-content: flex-start; }
+
+.slide-in {
+	z-index: 150;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--primary-orange);
+	transform-origin: bottom;
+}
+
+.slide-out {
+	z-index: 150;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--primary-orange);
+	transform-origin: top;
+}
