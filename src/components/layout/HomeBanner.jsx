@@ -19,7 +19,7 @@ const HomeBanner = () => {
 					<div className="banner_textbox" data-scroll data-scroll-speed=".2">
 						<p className="fadeInUp">Design & Development Company</p>
 						<h1 className="fadeInUp">We help business evolve</h1>
-						<PrimaryBtn name="Learn Now" arrow="no" link="/" isFadeInUp="true"  />
+						<PrimaryBtn name="Learn more" arrow="no" link="/" isFadeInUp="true"  />
 					</div>
 				</div>
 			</div>

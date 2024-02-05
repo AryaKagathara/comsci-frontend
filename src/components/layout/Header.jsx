@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/../public/images/comsci-logo.webp";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import downArrow from "@/../public/images/dropdown-arrow.svg";
 import { useState } from "react";
 
 
@@ -35,7 +36,19 @@ const Header = () => {
 								<div className="navigation_wrap">
 									<div className="nav-bar">
 										<ul>
-											<li><Link href="/services">Services</Link></li>
+											<li>
+												<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
+												<ul class="dropdown_menu">
+													<li><Link href="#">Logo & Branding</Link></li>
+													<li><Link href="#">UX/UI Design</Link></li>
+													<li><Link href="#">Custom Web Development</Link></li>
+													<li><Link href="#">SEO</Link></li>
+													<li><Link href="#">Mobile Application</Link></li>
+													<li><Link href="#">Video Editing</Link></li>
+													<li><Link href="#">Artificial Intelligence</Link></li>
+													<li><Link href="#" className="drop_learn_btn">Learn more</Link></li>
+												</ul>
+											</li>
 											<li><Link href="/project">Portfolio</Link></li>
 											<li><Link href="/faq">FAQs</Link></li>
 											<li><Link href="/approach">Approach</Link></li>

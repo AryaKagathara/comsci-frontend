@@ -12,6 +12,7 @@ import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import AwardType from "@/components/AwardTypeSection";
 import RendomLogo from "@/components/RendomLogo";
+// import Video3Danimation from "@/components/Video3Danimation";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <Awards />
       <AwardType />
       <RendomLogo />
+      {/* <Video3Danimation /> */}
       <TestiMonialsSlider />
       <StrategySection />
       <Technologies />
