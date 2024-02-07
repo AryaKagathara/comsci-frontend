@@ -5,9 +5,6 @@ import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import downArrow from "@/../public/images/dropdown-arrow.svg";
 import { useState } from "react";
 
-
-
-
 const Header = () => {
 	const [menuBtn, setMenuBtn] = useState(false);
 	const menuHandler = () => {
@@ -46,18 +43,18 @@ const Header = () => {
 													<li><Link href="#">Mobile Application</Link></li>
 													<li><Link href="#">Video Editing</Link></li>
 													<li><Link href="#">Artificial Intelligence</Link></li>
-													<li><Link href="#" className="drop_learn_btn">Learn more</Link></li>
+													<li><Link href="/services" className="drop_learn_btn">Learn more</Link></li>
 												</ul>
 											</li>
-											<li><Link href="/project">Portfolio</Link></li>
-											<li><Link href="/faq">FAQs</Link></li>
+											<li><Link href="/projects">Projects</Link></li>
+											<li><Link href="/blogs">Blogs</Link></li>
 											<li><Link href="/approach">Approach</Link></li>
 											<li><Link href="/about" className="active">About us</Link></li>
 										</ul>
 									</div>
 									<div className="header_btn">
-										<PrimaryBtn name="Contact" arrow="no" link="/" />
-										<div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
+										<PrimaryBtn name="Contact Us" arrow="no" link="/" />
+										{/* <div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
 											<Link className="lang-link" href="javascript:;" onClick={languageHandler}>
 												EN
 												<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,7 +72,7 @@ const Header = () => {
 												<li><Link href="#">ES</Link></li>
 												<li><Link href="#">EN</Link></li>
 											</ul>
-										</div>
+										</div> */}
 									</div>
 								</div>
 							</div>

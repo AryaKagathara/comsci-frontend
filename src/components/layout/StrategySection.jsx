@@ -8,10 +8,7 @@ import StrategyImg3 from '@/../public/images/strategy-img3.svg';
 import StrategyImg4 from '@/../public/images/strategy-img4.svg';
 import StrategyImg5 from '@/../public/images/strategy-img5.svg';
 
-
 gsap.registerPlugin(ScrollTrigger);
-
-
 
 const StrategySection = () => {
 

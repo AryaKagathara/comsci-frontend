@@ -1,7 +1,6 @@
 import ProjectListSection from "@/components/layout/ProjectListSection";
 import ContentBox from "@/components/layout/ContentBox";
 
-
 const ProjectPage = () => {
 	return (
 		<>
@@ -9,7 +8,7 @@ const ProjectPage = () => {
 				<div className="container">
 					<div className="project_section">
 						<div className="project_title fadeInUp">
-							<ContentBox title="Browse our portfolio for a glimpse into our past work." />
+							<ContentBox title="Browse our projects for a glimpse into our past work." />
 						</div>
 						<div className="projectlist_section">
 							<div className="row">

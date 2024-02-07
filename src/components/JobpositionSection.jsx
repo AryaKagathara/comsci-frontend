@@ -2,7 +2,6 @@ import Link from "next/link";
 import ContentBox from "@/components/layout/ContentBox";
 import Accordion from 'react-bootstrap/Accordion';
 
-
 const JobpositionSection = () => {
 	return (
 		<>

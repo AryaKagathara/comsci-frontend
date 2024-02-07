@@ -4,8 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Testimonialimg from "@/../public/images/testimonials_sliderimg.svg";
 
-
-
 const TestiMonialsSlider = () => {
 	const ArrowLeft = (props) => (
 		<button {...props} className="left">

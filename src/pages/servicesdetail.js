@@ -4,11 +4,6 @@ import Process from "@/components/Process";
 import ProjectSection from "@/components/ProjectSection";
 import ServicesType from "@/components/ServicesType";
 
-
-
-
-
-
 export default function ServicesDetail() {
 	return (
 	  <>

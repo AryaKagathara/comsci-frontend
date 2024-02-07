@@ -13,7 +13,6 @@ import Ai from "@/../public/images/ai.svg";
 import Shopify from "@/../public/images/shopify.svg";
 import Laravel from "@/../public/images/laravel.svg";
 
-
 const Technologies = () => {
 	return (
 		<>

@@ -1,11 +1,6 @@
 import Image from "next/image";
 import Detailpicture from "@/../public/images/blogdetail-picture.webp";
 
-
-
-
-
-
 const BlogDetailSection = () => {
 	return (
 		<>

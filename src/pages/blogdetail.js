@@ -1,8 +1,6 @@
 import Head from "next/head";
 import BlogDetailSection from "@/components/layout/BlogDetailSection";
 
-
-
 export default function BlogDetail() {
   return (
     <>

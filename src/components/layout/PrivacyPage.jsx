@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 const PrivacyPage = () => {
 	return (
 		<>

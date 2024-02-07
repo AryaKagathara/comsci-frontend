@@ -1,9 +1,6 @@
 import Image from "next/image";
 import Business from "@/../public/images/business-img.webp";
 
-
-
-
 const ModernBusiness = () => {
 	return (
 		<>

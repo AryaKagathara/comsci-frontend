@@ -1,7 +1,6 @@
 import Image from "next/image";
 import quote from "@/../public/images/quote-img.svg";
 
-
 const TestimonialsSection = () => {
 	return (
 		<>

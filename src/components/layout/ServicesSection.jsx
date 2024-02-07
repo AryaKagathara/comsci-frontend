@@ -581,7 +581,7 @@ const ServicesSection = () => {
           <div className="marquee">
             <ul className="marquee-content scroll">
               <li className="back_wrapper">
-                <p className="text_box">Award Winning</p>
+                <p className="text_box">Best MVP Developers</p>
               </li>
               <div className="dot"></div>
               <li className="back_wrapper">

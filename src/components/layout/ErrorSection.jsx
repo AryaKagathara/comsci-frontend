@@ -3,7 +3,6 @@ import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useEffect } from 'react';
 
-
 const ErrorSection = () => {
 
 	useEffect(() => {

@@ -3,11 +3,6 @@ import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import FtrLogo from '@/../public/images/footer-logo.svg';
 
-
-
-
-
-
 const Footer = () => {
 	return (
 		<>
@@ -25,10 +20,10 @@ const Footer = () => {
 							<div className="use_link">
 								<ul>
 									<li><Link href="/about">About us</Link></li>
-									<li><Link href="/">Our Project</Link></li>
+									<li><Link href="/projects">Our Project</Link></li>
 									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
-									<li><Link href="/bloglist">Blog</Link></li>
+									<li><Link href="/blogs">Blog</Link></li>
 									<li><Link href="/errorpages">Contact Us</Link></li>
 								</ul>
 							</div>

@@ -3,8 +3,6 @@ import Image from "next/image";
 import Share from "@/../public/images/share-img.svg";
 import Export from "@/../public/images/export-img.svg";
 
-
-
 const ProjectDetailTitle = () => {
 	return (
 		<>

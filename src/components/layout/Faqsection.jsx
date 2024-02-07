@@ -1,8 +1,6 @@
 import ContentBox from "@/components/layout/ContentBox";
 import Accordion from 'react-bootstrap/Accordion';
 
-
-
 const Faqsection = () => {
 	return (
 		<>
