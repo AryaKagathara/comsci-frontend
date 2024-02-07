@@ -14,7 +14,7 @@ function RandomImage(props) {
 	};
 
 	return (
-		<Link href="#" style={style} />
+		<div href="" style={style} />
 	);
 }
 

@@ -6,7 +6,7 @@ import Testimonialimg from "@/../public/images/testimonials_sliderimg.svg";
 
 const TestiMonialsSlider = () => {
 	const ArrowLeft = (props) => (
-		<button {...props} className="left">
+		<button {...props} className="left" aria-label="left">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="arrow-left">
 					<path id="Shape" d="M10 19L3 12M3 12L10 5M3 12L21 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -15,7 +15,7 @@ const TestiMonialsSlider = () => {
 		</button>
 	);
 	const ArrowRight = (props) => (
-		<button {...props} className="right">
+		<button {...props} className="right" aria-label="right">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="arrow-right">
 					<path id="Shape" d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,7 +46,7 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>I can’t believe that something is so well done.</h5>
+								<h4>I can’t believe that something is so well done.</h4>
 								<div className="profile_box">
 									<div className="caption">
 										<p>Samhita B</p>
@@ -60,7 +60,7 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>It was great pleasure working on the project. Happy to work on future projects. Highly recommending.</h5>
+								<h4>It was great pleasure working on the project. Happy to work on future projects. Highly recommending.</h4>
 								<div className="profile_box">
 									<div className="caption">
 										<p>Martin B</p>
@@ -74,7 +74,7 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>The quality of the work has been great.</h5>
+								<h4>The quality of the work has been great.</h4>
 								<div className="profile_box">
 									<div className="caption">
 										<p>Joaquin M</p>
@@ -88,7 +88,7 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>Yes am happy. It worth to paid up to date for the hard work.</h5>
+								<h4>Yes am happy. It worth to paid up to date for the hard work.</h4>
 								<div className="profile_box">
 									<div className="caption">
 										<p>Josh B</p>
@@ -102,7 +102,7 @@ const TestiMonialsSlider = () => {
 								<Image src={Testimonialimg} alt="Test" />
 							</div>
 							<div className="contentbox">
-								<h5>You guys are truly understanding the pain points which I care about alot.</h5>
+								<h4>You guys are truly understanding the pain points which I care about alot.</h4>
 								<div className="profile_box">
 									<div className="caption">
 										<p>Quentin D</p>

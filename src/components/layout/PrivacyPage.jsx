@@ -4,7 +4,7 @@ const PrivacyPage = () => {
 			<div className="default_page_content">
 				<div className="container">
 					<h2>Terms & Conditions</h2>
-					<h5>Effective date: July 09, 2021</h5>
+					<h4>Effective date: July 09, 2021</h4>
 					<p>Please carefully read these terms & conditions before agreeing to join our service. These terms & conditions contain important information about your legal rights, limitations and exclusions, and the resolution of any possible disputes arising from the use of our services.</p>
 					<h2>Introduction</h2>
 					<p>Passion marketing does not promise, guarantee, or even suggest that the information provided by the service is correct, complete, or up-to-date, or appropriate to your unique situation and internet subscribers and online readers should not act based upon this information without first seeking professional counsel who can advise you based on your specific situation, business, and location.</p>

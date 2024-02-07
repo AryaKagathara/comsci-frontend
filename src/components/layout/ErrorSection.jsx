@@ -41,7 +41,7 @@ const ErrorSection = () => {
 						</div>
 					</div>
 					<div className="maze_content fadeInUp">
-						<h6>Looks like you are in a maze.</h6>
+						<h4>Looks like you are in a maze.</h4>
 						<p>The page you’re looking for is not available</p>
 						<div className="maze_btn">
 							<PrimaryBtn name="Go back Home" arrow="no" link="/"/>

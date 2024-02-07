@@ -7,7 +7,7 @@ const HomeBlogBox = () => {
 			<div className="blog_text fadeInUp">
 				<ContentBox title="Current news & exciting Insights from COMSCI." />
 				<div className='fadeInUp learn_btn_3'>
-                          <Link href="/servicesdetail">Find more</Link>
+                          <Link href="/blogs">Explore Our Blogs</Link>
                 </div>
 			</div>
 		</>

@@ -46,7 +46,7 @@ const StrategySection = () => {
 						<div className="row">
 							<div className="col-lg-5">
 								<div className="text_section fadeInUp">
-									<h4>All things considered from strategy to code</h4>
+									<h3>All things considered from strategy to code</h3>
 								</div>
 							</div>
 							<div className="col-lg-6 offset-lg-1">

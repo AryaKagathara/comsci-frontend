@@ -13,7 +13,7 @@ const TestimonialsSection = () => {
 									<Image src={quote} alt="quote" />
 								</div>
 								<div className="contentbox">
-									<h5>I can’t believe that something is so well done.</h5>
+									<h4>I can’t believe that something is so well done.</h4>
 									<div className="profile_box">
 										<div className="caption">
 											<p>Samhita B</p>
@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
 									<Image src={quote} alt="quote" />
 								</div>
 								<div className="contentbox">
-									<h5>It was great pleasure working on the project. Happy to work on future projects. Highly recommending.</h5>
+									<h4>It was great pleasure working on the project. Happy to work on future projects. Highly recommending.</h4>
 									<div className="profile_box">
 										<div className="caption">
 											<p>Martin B</p>
@@ -45,7 +45,7 @@ const TestimonialsSection = () => {
 									<Image src={quote} alt="quote" />
 								</div>
 								<div className="contentbox">
-									<h5>The quality of the work has been great.</h5>
+									<h4>The quality of the work has been great.</h4>
 									<div className="profile_box">
 										<div className="caption">
 											<p>Joaquin M</p>
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
 									<Image src={quote} alt="quote" />
 								</div>
 								<div className="contentbox">
-									<h5>Yes am happy. It worth to paid up to date for the hard work.</h5>
+									<h4>Yes am happy. It worth to paid up to date for the hard work.</h4>
 									<div className="profile_box">
 										<div className="caption">
 											<p>Josh B</p>
@@ -77,7 +77,7 @@ const TestimonialsSection = () => {
 									<Image src={quote} alt="quote" />
 								</div>
 								<div className="contentbox">
-									<h5>You guys are truly understanding the pain points which I care about alot.</h5>
+									<h4>You guys are truly understanding the pain points which I care about alot.</h4>
 									<div className="profile_box">
 										<div className="caption">
 											<p>Quentin D</p>

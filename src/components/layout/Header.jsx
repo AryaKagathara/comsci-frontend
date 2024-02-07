@@ -43,7 +43,7 @@ const Header = () => {
 													<li><Link href="#">Mobile Application</Link></li>
 													<li><Link href="#">Video Editing</Link></li>
 													<li><Link href="#">Artificial Intelligence</Link></li>
-													<li><Link href="/services" className="drop_learn_btn">Learn more</Link></li>
+													<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li>
 												</ul>
 											</li>
 											<li><Link href="/projects">Projects</Link></li>

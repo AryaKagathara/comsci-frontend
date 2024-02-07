@@ -9,7 +9,7 @@ const JobpositionSection = () => {
 				<div className="container">
 					<div className="jobposition_section">
 						<div className="text_box">
-							<h4>Job Position</h4>
+							<h3>Job Position</h3>
 							<div className="connect_box">
 								<ContentBox text="We’re on the lookout for people who want to create. We build actionable plans, innovative experiences and use our creative talent to execute a bold vision – on time, on budget and on point. If this sounds like something that’s up your alley, have a look-see at your potential dream job. Don't see the position you’re looking for? Get in touch anyway." />
 								<Link href="#">Connect with us</Link>
