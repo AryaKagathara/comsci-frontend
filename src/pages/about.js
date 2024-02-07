@@ -7,8 +7,6 @@ import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import Awards from "@/components/Awards";
 import RendomLogo from "@/components/RendomLogo";
 
-
-
 export default function About() {
   return (
     <>
@@ -23,5 +21,5 @@ export default function About() {
       <TestimonialsSection />
       <TestiMonialsSlider />
     </>
-  )``
+  )
 }
