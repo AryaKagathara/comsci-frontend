@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
 								</div>
 							</div>
 						</div>
-						<div className="test_sec" data-scroll data-scroll-speed=".4">
+						<div className="test_sec" data-scroll data-scroll-speed=".3">
 							<div className="testi_wrap">
 							<div className="image">
 									<Image src={quote} alt="quote" />
@@ -55,7 +55,7 @@ const TestimonialsSection = () => {
 								</div>
 							</div>
 						</div>
-						<div className="test_sec" data-scroll data-scroll-speed=".2">
+						<div className="test_sec" data-scroll data-scroll-speed=".3">
 							<div className="testi_wrap">
 							<div className="image">
 									<Image src={quote} alt="quote" />

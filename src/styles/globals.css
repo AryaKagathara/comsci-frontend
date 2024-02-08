@@ -632,6 +632,31 @@ p { font-size: 16px; font-style: normal; }
 .learn_btn_3 a:hover::before { transform: translate3d(0,-100%,0); }
 .learn_btn_3 a:hover { color: var(--primary-orange); }
 
+.cursor{
+	position: fixed;
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	margin-top: -20px;
+	border-radius: 50%;
+	border: 2px solid var(--primary-orange);
+	transition: transform 0.3s ease;
+	transform-origin: center center;
+	pointer-events: none;
+	z-index: 1000;
+  }
+  
+  .grow, .grow-small{
+	transform: scale(4);
+	background: white;
+	mix-blend-mode: difference; 
+	border: none;
+  }
+  
+  .grow-small{
+	transform: scale(2);
+  }
+
 /* .video_animation { padding: 160px 0; background: var(--primary-black); }
 .video_animation .video-react .video-react-big-play-button { display: none; }
 .video_animation .video-react .video-react-control-bar { display: none; }

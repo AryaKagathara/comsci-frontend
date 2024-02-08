@@ -35,7 +35,7 @@ const Header = () => {
 										<ul>
 											<li>
 												<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
-												<ul class="dropdown_menu">
+												<ul className="dropdown_menu">
 													<li><Link href="#">Logo & Branding</Link></li>
 													<li><Link href="#">UX/UI Design</Link></li>
 													<li><Link href="#">Custom Web Development</Link></li>

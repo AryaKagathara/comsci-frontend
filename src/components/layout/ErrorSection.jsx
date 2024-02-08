@@ -30,13 +30,13 @@ const ErrorSection = () => {
 			<div className="error">
 				<div className="error_section">
 					<div className="maze_wrap">
-						<div class="eyebrow"></div>
+						<div className="eyebrow"></div>
 						<div className="eye_box">
-							<div class="eyes">
-							<div class="eyeball"></div>
+							<div className="eyes">
+							<div className="eyeball"></div>
 							</div>
-							<div class="eyes">
-							<div class="eyeball" ></div>
+							<div className="eyes">
+							<div className="eyeball" ></div>
 							</div>
 						</div>
 					</div>

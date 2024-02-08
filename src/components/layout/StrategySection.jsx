@@ -98,7 +98,7 @@ const StrategySection = () => {
 											</div>
 										</div>
 									</div>
-									<div class="timeline-line">
+									<div className="timeline-line">
 										<div className="line-default"></div>
 										<div className="line-fill"></div>
 									</div>
