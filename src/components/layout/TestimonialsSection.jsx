@@ -17,13 +17,13 @@ const TestimonialsSection = () => {
 									<div className="profile_box">
 										<div className="caption">
 											<p>Samhita B</p>
-											<span>Founder & CEO</span>
+											<span>Founder & CEO, Multia</span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="test_sec" data-scroll data-scroll-speed=".3">
+						<div className="test_sec" data-scroll data-scroll-speed=".4">
 							<div className="testi_wrap">
 							<div className="image">
 									<Image src={quote} alt="quote" />
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
 									<div className="profile_box">
 										<div className="caption">
 											<p>Martin B</p>
-											<span>Founder & CEO</span>
+											<span>Founder & CEO, Mipo</span>
 										</div>
 									</div>
 								</div>
@@ -49,13 +49,13 @@ const TestimonialsSection = () => {
 									<div className="profile_box">
 										<div className="caption">
 											<p>Joaquin M</p>
-											<span>Technical Director</span>
+											<span>Technical Director, Coslett</span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div className="test_sec" data-scroll data-scroll-speed=".3">
+						<div className="test_sec" data-scroll data-scroll-speed=".4">
 							<div className="testi_wrap">
 							<div className="image">
 									<Image src={quote} alt="quote" />
@@ -65,7 +65,7 @@ const TestimonialsSection = () => {
 									<div className="profile_box">
 										<div className="caption">
 											<p>Josh B</p>
-											<span>CEO</span>
+											<span>CEO, GDF</span>
 										</div>
 									</div>
 								</div>
@@ -81,7 +81,23 @@ const TestimonialsSection = () => {
 									<div className="profile_box">
 										<div className="caption">
 											<p>Quentin D</p>
-											<span>Owner</span>
+											<span>Owner, BLKResumes</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div className="test_sec" data-scroll data-scroll-speed=".4">
+							<div className="testi_wrap">
+							<div className="image">
+									<Image src={quote} alt="quote" />
+								</div>
+								<div className="contentbox">
+									<h4>From the first day till the end. It was a perfect execution by the team on the website.</h4>
+									<div className="profile_box">
+										<div className="caption">
+											<p>Steffano S</p>
+											<span>Owner, Scozzese Agency</span>
 										</div>
 									</div>
 								</div>

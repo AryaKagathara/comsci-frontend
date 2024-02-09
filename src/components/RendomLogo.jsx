@@ -33,8 +33,8 @@ const RendomLogo = () => {
 		<>
 			<div className="rendom">
 				<div className="container">
-					<div className="text">
-						<p>WORKED WITH</p>
+					<div className="text mt-2">
+						<h2>Clients</h2>
 					</div>
 					<div className="logo_section" id="ren_logo">
 						{numbers.map((num) => (

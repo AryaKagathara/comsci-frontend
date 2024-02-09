@@ -19,11 +19,12 @@ const Footer = () => {
 						<div className="links_section">
 							<div className="use_link">
 								<ul>
-									<li><Link href="/about">About us</Link></li>
-									<li><Link href="/projects">Our Project</Link></li>
-									<li><Link href="/jobposition">Job Position</Link></li>
+									<li><Link href="/services">Services</Link></li>
+									<li><Link href="/projects">Project</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
+									<li><Link href="/about">About us</Link></li>
 									<li><Link href="/blogs">Blog</Link></li>
+									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/errorpages">Contact Us</Link></li>
 								</ul>
 							</div>
