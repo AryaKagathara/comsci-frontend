@@ -5,7 +5,7 @@ import '@/styles/responsive.css';
 import '@/styles/fonts.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRouter } from 'next/router';
@@ -17,8 +17,8 @@ export default function App({ Component, pageProps }) {
 
   const router = useRouter();
 
-  const [mouseX, setMouseX] = useState(0);
-  const [mouseY, setMouseY] = useState(0);
+  // const [mouseX, setMouseX] = useState(0);
+  // const [mouseY, setMouseY] = useState(0);
 
   const is404Page = router.isFallback || router.pathname == '/404';
   
@@ -32,54 +32,54 @@ export default function App({ Component, pageProps }) {
         onEnter: batch => gsap.to(batch, {  opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y:0}),
       });
 
-      gsap.set('.cursor_cursor__WX5Wi', {
-        css: {
-          left: mouseX,
-          top: mouseY,
-        },
-      });
+      // gsap.set('.cursor_cursor__WX5Wi', {
+      //   css: {
+      //     left: mouseX,
+      //     top: mouseY,
+      //   },
+      // });
   
-      window.addEventListener('mouseenter', (e) => {
-        setMouseX(e.clientX);
-        setMouseY(e.clientY);
-      });
+      // window.addEventListener('mouseenter', (e) => {
+      //   setMouseX(e.clientX);
+      //   setMouseY(e.clientY);
+      // });
   
-      return () => {
-        window.removeEventListener('mouseenter', (e) => {
-          setMouseX(e.clientX);
-          setMouseY(e.clientY);
-        });
-      };
+      // return () => {
+      //   window.removeEventListener('mouseenter', (e) => {
+      //     setMouseX(e.clientX);
+      //     setMouseY(e.clientY);
+      //   });
+      // };
   }, [])
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    gsap.set('.cursor_cursor__WX5Wi', {
-      css: {
-        left: mouseX,
-        top: mouseY,
-      },
-    });
+  //   gsap.set('.cursor_cursor__WX5Wi', {
+  //     css: {
+  //       left: mouseX,
+  //       top: mouseY,
+  //     },
+  //   });
 
-    window.addEventListener('mousemove', (e) => {
-      setMouseX(e.clientX);
-      setMouseY(e.clientY);
-    });
+  //   window.addEventListener('mousemove', (e) => {
+  //     setMouseX(e.clientX);
+  //     setMouseY(e.clientY);
+  //   });
 
-    return () => {
-      window.removeEventListener('mousemove', (e) => {
-        setMouseX(e.clientX);
-        setMouseY(e.clientY);
-      });
-    };
-  }, [mouseX, mouseY]);
+  //   return () => {
+  //     window.removeEventListener('mousemove', (e) => {
+  //       setMouseX(e.clientX);
+  //       setMouseY(e.clientY);
+  //     });
+  //   };
+  // }, [mouseX, mouseY]);
 
   return (
     <>
       <AnimatePresence mode='wait'>
         <motion.dev key={router.pathname}>
       <main>
-      <div className='cursor_cursor__WX5Wi'>
+      {/* <div className='cursor_cursor__WX5Wi'>
               <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clipPath="url(#clip0_2032_259)">
                   <path d="M34.5 0.5H38.5V30.5H34.5V0.5ZM42.5 38.5V34.5H72.5V38.5H42.5ZM0.5 38.5V34.5H30.5V38.5H0.5ZM34.5 42.5H38.5V72.5H34.5V42.5Z" fill="white" stroke="black" />
@@ -91,7 +91,7 @@ export default function App({ Component, pageProps }) {
                 </defs>
               </svg>
 
-            </div>
+            </div> */}
         {!is404Page && <Header />}
         <Component {...pageProps} />
         {!is404Page && <Footer />}
