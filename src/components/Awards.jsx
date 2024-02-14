@@ -33,7 +33,6 @@ const Awards = () => {
 
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: "#scroll-container",
           start: "top top",
           end: "bottom bottom",
           scrub: true,

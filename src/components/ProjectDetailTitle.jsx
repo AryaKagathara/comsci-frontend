@@ -15,7 +15,7 @@ const ProjectDetailTitle = () => {
 							<Link href="#"><Image src={Share} alt="share" /></Link>
 							<Link href="#"><Image src={Export} alt="export" /></Link>
 						</div>
-						<i className="fadeInUp">When CAMSCI came to us, they were well-established from sea to shining sea. But like a lot of brands, they struggled to balance their long history with engaging new, younger clients.</i>
+						<i className="fadeInUp">When Comsci came to us, they were well-established from sea to shining sea. But like a lot of brands, they struggled to balance their long history with engaging new, younger clients.</i>
 					</div>
 				</div>
 			</div>

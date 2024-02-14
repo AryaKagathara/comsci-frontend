@@ -9,7 +9,7 @@ const TestiMonialsSlider = () => {
 		<button {...props} className="left" aria-label="left">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="arrow-left">
-					<path id="Shape" d="M10 19L3 12M3 12L10 5M3 12L21 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path id="Shape" d="M10 19L3 12M3 12L10 5M3 12L21 12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 				</g>
 			</svg>
 		</button>
@@ -18,7 +18,7 @@ const TestiMonialsSlider = () => {
 		<button {...props} className="right" aria-label="right">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="arrow-right">
-					<path id="Shape" d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path id="Shape" d="M14 5L21 12M21 12L14 19M21 12L3 12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 				</g>
 			</svg>
 		</button>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Logo from "@/../public/images/comsci-logo.webp";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import downArrow from "@/../public/images/dropdown-arrow.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = () => {
 	const [menuBtn, setMenuBtn] = useState(false);
@@ -14,21 +14,48 @@ const Header = () => {
 	const languageHandler = () => {
 		setLanguageDropdown(!languageDropdown);
 	}
+
+	const [scrolling, setScrolling] = useState(false);
+
+	useEffect(() => {
+		let lastScroll = 0;
+
+		const handleScroll = () => {
+			const currentScroll = window.scrollY;
+
+			if (currentScroll > lastScroll) {
+				// Scrolling down
+				setScrolling(true);
+			} else {
+				// Scrolling up
+				setScrolling(false);
+			}
+
+			lastScroll = currentScroll;
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<>
-			<header className="header">
+			<header className={`header ${scrolling ? "scrolling" : ""}`}>
 				<div className="header_wrap">
 					<div className="container">
 						<div className="main_header">
 							<div className="header_logo">
-								<Link href="/"><Image src={Logo} alt="Logo"/></Link>
+								<Link href="/"><Image src={Logo} alt="Logo" /></Link>
 							</div>
 							<div className={`menu-toggler ${menuBtn ? 'active' : ' '}`} onClick={menuHandler}>
 								<div className="menu-toggler-icon"></div>
 							</div>
 							<div className={`navigation_bar ${menuBtn ? 'slide' : ' '}`}>
 								<div className="mobile_header_logo">
-									<Link href="/"><Image src={Logo} alt="Logo"/></Link>
+									<Link href="/"><Image src={Logo} alt="Logo" /></Link>
 								</div>
 								<div className="navigation_wrap">
 									<div className="nav-bar">
@@ -78,11 +105,11 @@ const Header = () => {
 							</div>
 						</div>
 					</div>
-					<div className="new_projectbtn">
-						<Link href="#">New Project?</Link>
-					</div>
 				</div>
 			</header>
+			<div className="new_projectbtn">
+				<Link href="#">New Project?</Link>
+			</div>
 		</>
 	)
 }
