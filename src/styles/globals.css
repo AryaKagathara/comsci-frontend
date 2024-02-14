@@ -70,7 +70,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  cursor: none;
 }
 
 html {
@@ -635,7 +634,7 @@ p { font-size: 16px; font-style: normal; }
 .learn_btn_3 a:hover::before { transform: translate3d(0,-100%,0); }
 .learn_btn_3 a:hover { color: var(--primary-orange); }
 
-.cursor_cursor__WX5Wi {
+/* .cursor_cursor__WX5Wi {
     position: fixed;
 	left: -100%;
 	bottom: -100%;
@@ -654,7 +653,7 @@ p { font-size: 16px; font-style: normal; }
     perspective: 1000px;
     transition: opacity var(--duration-fast) var(--ease);
 	transform: translateX(calc(-50%)) translateY(calc(-50%)) translateZ(0px);
-}
+} */
 
 /* .video_animation { padding: 160px 0; background: var(--primary-black); }
 .video_animation .video-react .video-react-big-play-button { display: none; }
