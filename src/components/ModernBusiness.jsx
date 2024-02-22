@@ -5,7 +5,7 @@ const ModernBusiness = () => {
 	return (
 		<>
 			<div className="business">
-				<div className="container">
+				<div>
 					<div className="business_section">
 						<Image src={Business} alt="business" />
 					</div>

@@ -5,7 +5,7 @@ const VideoSection = () => {
 	return (
 		<>
 			<div className="video_wrapper">
-				<div className="container">
+				<div>
 					<div className="video_player">
 						<Player>
 							<source src="https://joinrebelution.com/wp-content/uploads/2023/04/Rebelution-Intro_compressed.mp4" />
