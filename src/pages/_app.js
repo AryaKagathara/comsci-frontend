@@ -17,20 +17,20 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   const is404Page = router.isFallback || router.pathname == '/404';
-  
-  useEffect( () => {
-    (
 
-      async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
-      }
-      )()
-      gsap.set(".fadeInUp", {y: "30%", opacity: 0,});
-      ScrollTrigger.batch(".fadeInUp", {
-        onEnter: batch => gsap.to(batch, {  opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y:0}),
-      });
-  }, [])
+  // useEffect( () => {
+  //   (
+
+  //     async () => {
+  //         const LocomotiveScroll = (await import('locomotive-scroll')).default
+  //         const locomotiveScroll = new LocomotiveScroll();
+  //     }
+  //     )()
+  //     gsap.set(".fadeInUp", {y: "30%", opacity: 0,});
+  //     ScrollTrigger.batch(".fadeInUp", {
+  //       onEnter: batch => gsap.to(batch, {  opacity: 1, duration: .8, delay:0.5, stagger: 0.2, y:0}),
+  //     });
+  // }, [])
 
   return (
     <>
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
         {!is404Page && <Header />}
         <Component {...pageProps} />
         {!is404Page && <Footer />}
-      </main> 
+      </main>
     </>
   )
 }

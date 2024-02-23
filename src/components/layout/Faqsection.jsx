@@ -14,7 +14,7 @@ const Faqsection = () => {
 						</div>
 						<Accordion>
 							<Accordion.Item eventKey="5">
-								<Accordion.Header>What types of website do you build?</Accordion.Header>
+								<Accordion.Header>abcWhat types of website do you build?</Accordion.Header>
 								<Accordion.Body>Bachelor's degree in Computer Science, Information Technology, or a similar field.In-depth knowledge of JavaScript, CSS, HTML and front-end languages.Knowledge of REACT tools including React.js, Webpack, Enzyme, Redux, and Flux.Experience with user interface design.Knowledge of performance testing frameworks including Mocha and Jest.Experience with browser-based debugging and performance testing software.Excellent troubleshooting skills.Good project management skills.</Accordion.Body>
 							</Accordion.Item>
 							<Accordion.Item eventKey="6">

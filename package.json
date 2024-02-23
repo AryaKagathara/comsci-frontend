@@ -20,6 +20,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18",
     "react-slick": "^0.29.0",
+    "request": "^2.88.2",
     "slick-carousel": "^1.8.1",
     "splitting": "^1.0.6",
     "three": "^0.138.3",
