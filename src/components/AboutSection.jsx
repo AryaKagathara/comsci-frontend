@@ -1,8 +1,5 @@
 import ContentBox from "@/components/layout/ContentBox";
 
-
-
-
 const AboutSection = () => {
 	return (
 		<>

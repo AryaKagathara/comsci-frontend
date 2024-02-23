@@ -1,12 +1,11 @@
 import HomeProjectBox from "@/components/HomeProjectBox";
 import ProjectListSection from "@/components/layout/ProjectListSection";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
-
 
 const ProjectSection = () => {
 
@@ -40,7 +39,7 @@ const ProjectSection = () => {
 							</div>
 						</div>
 						<div className="projectbtn_wrap">
-							<PrimaryBtn name="View more" arrow="no" link="/project" />
+							<PrimaryBtn name="View more" arrow="no" link="/projects" />
 						</div>
 					</div>
 				</div>

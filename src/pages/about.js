@@ -5,10 +5,7 @@ import ResultSection from "@/components/ResultSection";
 import TestimonialsSection from "@/components/layout/TestimonialsSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import Awards from "@/components/Awards";
-import AwardType from "@/components/AwardTypeSection";
 import RendomLogo from "@/components/RendomLogo";
-
-
 
 export default function About() {
   return (
@@ -18,7 +15,6 @@ export default function About() {
       </Head>
       <AboutSection />
       <Awards />
-      <AwardType />
       <RendomLogo />
       <TeamSection />
       <ResultSection />

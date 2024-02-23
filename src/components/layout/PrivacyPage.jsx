@@ -1,20 +1,12 @@
-
-
-
-
-
-
-
 const PrivacyPage = () => {
 	return (
 		<>
 			<div className="default_page_content">
 				<div className="container">
 					<h2>Terms & Conditions</h2>
-					<h5>Effective date: July 09, 2021</h5>
+					<h4>Effective date: July 09, 2021</h4>
 					<p>Please carefully read these terms & conditions before agreeing to join our service. These terms & conditions contain important information about your legal rights, limitations and exclusions, and the resolution of any possible disputes arising from the use of our services.</p>
 					<h2>Introduction</h2>
-					<p>Showbuilder, llc (“passion marketing”, "Showbuilder", “us”, “we”, or “our”) operates the passion marketing site, apps, email list, videos, podcast, coaching, e-books, webinars, checklists, lead magnets, infographics, worksheets, documents, youtube channel, social channels, courses, community, events and/or other services (hereinafter referred to as the “service”).</p>
 					<p>Passion marketing does not promise, guarantee, or even suggest that the information provided by the service is correct, complete, or up-to-date, or appropriate to your unique situation and internet subscribers and online readers should not act based upon this information without first seeking professional counsel who can advise you based on your specific situation, business, and location.</p>
 					<p>By using our service you agree to be bound these terms & conditions and to use the service in accordance with these terms & conditions, our privacy policy, and any additional terms and conditions that are referenced herein or that otherwise may apply to specific sections of the service, or to products and services that we make available to you through the service (all of which are deemed part of these terms & conditions). Accessing the service, in any manner, whether automated or otherwise, constitutes use of the service and your agreement to be bound these terms & conditions.</p>
 					<p>We reserve the right, in our sole and absolute discretion, to change, modify, add, or remove any portion of these terms & conditions, in whole or in part, at any time. Changes will be effective when posted. Your continued use of the service after any changes are posted will be considered acceptance of those changes. It is your responsibility to review the terms & conditions, and if at any time you find these terms unacceptable, you must immediately leave the service and cease all use of the service.</p>

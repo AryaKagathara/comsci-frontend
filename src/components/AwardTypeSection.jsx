@@ -5,7 +5,6 @@ import Expert from "@/../public/images/expert-img.webp";
 import StarAgency from "@/../public/images/5-star-agency.webp";
 import Professionals from "@/../public/images/a1-professionals.webp";
 
-
 const AwardType = () => {
 	return (
 		<>

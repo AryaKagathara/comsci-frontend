@@ -14,7 +14,7 @@ function RandomImage(props) {
 	};
 
 	return (
-		<Link href="#" style={style} />
+		<div href="" style={style} />
 	);
 }
 
@@ -33,10 +33,11 @@ const RendomLogo = () => {
 		<>
 			<div className="rendom">
 				<div className="container">
-					<div className="text">
-						<p>WORKED WITH</p>
+					<div className="text mt-2" data-scroll data-scroll-speed=".1">
+						<h2>Clients</h2>
+						<p>We&apos;ve had the pleasure of collaborating with some distinguished clients, showcasing our expertise and delivering notable outcomes.</p>
 					</div>
-					<div className="logo_section" id="ren_logo">
+					<div className="logo_section" id="ren_logo" data-scroll data-scroll-speed=".4">
 						{numbers.map((num) => (
 							<RandomImage key={num} num={num} />
 						))}

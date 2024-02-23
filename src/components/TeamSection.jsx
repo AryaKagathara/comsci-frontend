@@ -10,8 +10,6 @@ import Emma from "@/../public/images/emma-image.webp";
 import Brandon from "@/../public/images/brandon-image.webp";
 import ContentBox from "@/components/layout/ContentBox";
 
-
-
 const TeamSection = () => {
 	return (
 		<>

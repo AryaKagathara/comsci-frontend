@@ -1,8 +1,6 @@
 import Image from "next/image";
 import homepage from "@/../public/images/homepagemacbookimage.webp";
 
-
-
 const HomeSiteImage = () => {
 	return (
 		<>

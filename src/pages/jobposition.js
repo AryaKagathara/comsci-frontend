@@ -1,9 +1,6 @@
 import Head from "next/head";
 import JobpageSection from "@/components/JobpageSection";
 
-
-
-
 export default function JobPosition() {
   return (
     <>

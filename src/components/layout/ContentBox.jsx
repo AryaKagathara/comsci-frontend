@@ -1,12 +1,7 @@
-
-
-
-
-
 const ContentBox = (props) => {
 	return (
 		<>
-			<h4>{ props.title }</h4>
+			<h3>{ props.title }</h3>
 			<p>{ props.text }</p>
 		</>
 	)

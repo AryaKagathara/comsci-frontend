@@ -8,9 +8,6 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import ContentBox from "@/components/layout/ContentBox";
 
-
-
-
 const ModalSection = () => {
 	const [book, setBook] = useState(false);
 	const handleBookClose = () => setBook(false);

@@ -1,8 +1,5 @@
 import ContentBox from "@/components/layout/ContentBox";
 
-
-
-
 const ResultSection = () => {
 	return (
 		<>
@@ -14,19 +11,19 @@ const ResultSection = () => {
 						</div>
 						<div className="result_detail">
 							<div className="result_textbox">
-								<h5>99%</h5>
+								<h4>99%</h4>
 								<span>Customer satisfaction</span>
 							</div>
 							<div className="result_textbox">
-								<h5>32M</h5>
+								<h4>32M</h4>
 								<span>Active users</span>
 							</div>
 							<div className="result_textbox">
-								<h5>51+</h5>
+								<h4>51+</h4>
 								<span>Team members</span>
 							</div>
 							<div className="result_textbox">
-								<h5>240%</h5>
+								<h4>240%</h4>
 								<span>Company growth</span>
 							</div>
 						</div>

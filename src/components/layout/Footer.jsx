@@ -3,11 +3,6 @@ import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import FtrLogo from '@/../public/images/footer-logo.svg';
 
-
-
-
-
-
 const Footer = () => {
 	return (
 		<>
@@ -16,7 +11,7 @@ const Footer = () => {
 					<div className="footer_section">
 						<div className="title_box">
 							<div className="mail_box">
-								<h6>Start a new project or Schedule a Consultation today</h6>
+								<h4>Start a new project or Schedule a Consultation today</h4>
 								<Link href="mailto:hello@comsci.com">hello@comsci.com</Link>
 							</div>
 							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
@@ -24,11 +19,12 @@ const Footer = () => {
 						<div className="links_section">
 							<div className="use_link">
 								<ul>
-									<li><Link href="/about">About us</Link></li>
-									<li><Link href="/">Our Project</Link></li>
-									<li><Link href="/jobposition">Job Position</Link></li>
+									<li><Link href="/services">Services</Link></li>
+									<li><Link href="/projects">Project</Link></li>
 									<li><Link href="/approach">Approach</Link></li>
-									<li><Link href="/bloglist">Blog</Link></li>
+									<li><Link href="/about">About us</Link></li>
+									<li><Link href="/blogs">Blog</Link></li>
+									<li><Link href="/jobposition">Job Position</Link></li>
 									<li><Link href="/errorpages">Contact Us</Link></li>
 								</ul>
 							</div>
@@ -37,7 +33,7 @@ const Footer = () => {
 									<li><Link href="#">Instagram</Link></li>
 									<li><Link href="#">Facebook</Link></li>
 									<li><Link href="#">Behance</Link></li>
-									<li><Link href="#">Dribbble</Link></li>
+									<li><Link href="#">Linkedin</Link></li>
 									<li><Link href="#">Youtube</Link></li>
 									<li><Link href="#">twitter</Link></li>
 								</ul>
@@ -57,9 +53,6 @@ const Footer = () => {
 							<Image src={FtrLogo} alt="ftrlogo" />
 						</div>
 					</div>
-				</div>
-				<div className="new_projectbtn">
-					<Link href="#">New Project?</Link>
 				</div>
 			</footer>
 		</>

@@ -33,7 +33,6 @@ const Awards = () => {
 
       const tl = gsap.timeline({
         scrollTrigger: {
-          trigger: "#scroll-container",
           start: "top top",
           end: "bottom bottom",
           scrub: true,
@@ -110,7 +109,7 @@ const Awards = () => {
               <Image src={Award4} alt="award" ref={awardEl4} />
             </div>
             <div className="award_text">
-              <h2>Award Winning Company</h2>
+              <h2>Excellence in User Experience</h2>
             </div>
           </div>
         </div>
