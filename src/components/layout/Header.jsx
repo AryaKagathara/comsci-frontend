@@ -5,7 +5,10 @@ import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import downArrow from "@/../public/images/dropdown-arrow.svg";
 import { useState, useEffect } from "react";
 
-const Header = () => {
+const Header = ({ pageProps }) => {
+	console.log("FROM HEADER ", pageProps?.result)
+	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
+	const menuItem = pageProps?.result?.menuItems;
 	const [menuBtn, setMenuBtn] = useState(false);
 	const menuHandler = () => {
 		setMenuBtn(!menuBtn);
@@ -57,28 +60,56 @@ const Header = () => {
 								<div className="mobile_header_logo">
 									<Link href="/"><Image src={Logo} alt="Logo" /></Link>
 								</div>
+								{/* {JSON.stringify(menuItem)} */}
 								<div className="navigation_wrap">
-									<div className="nav-bar">
-										<ul>
-											<li>
-												<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
-												<ul className="dropdown_menu">
-													<li><Link href="#">Logo & Branding</Link></li>
-													<li><Link href="#">UX/UI Design</Link></li>
-													<li><Link href="#">Custom Web Development</Link></li>
-													<li><Link href="#">SEO</Link></li>
-													<li><Link href="#">Mobile Application</Link></li>
-													<li><Link href="#">Video Editing</Link></li>
-													<li><Link href="#">Artificial Intelligence</Link></li>
-													<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li>
-												</ul>
-											</li>
-											<li><Link href="/projects">Projects</Link></li>
-											<li><Link href="/blogs">Blogs</Link></li>
-											<li><Link href="/approach">Approach</Link></li>
-											<li><Link href="/about" className="active">About us</Link></li>
-										</ul>
-									</div>
+									{menuItem &&
+										<div className="nav-bar">
+											<ul>
+												{menuItem.nodes.map((item, index) => {
+													return (
+														<li key={index}>
+															<Link href="/projects">{item.label}</Link>
+															{(item.childItems.nodes) &&
+																item.childItems.nodes.map((subitem, index) => {
+
+																	return (
+																		<ul className="dropdown_menu" key={index}>
+																			<li><Link href="#">{subitem.label}</Link></li>
+																			{/* <li><Link href="#">UX/UI Design</Link></li>
+																			<li><Link href="#">Custom Web Development</Link></li>
+																			<li><Link href="#">SEO</Link></li>
+																			<li><Link href="#">Mobile Application</Link></li>
+																			<li><Link href="#">Video Editing</Link></li>
+																			<li><Link href="#">Artificial Intelligence</Link></li>
+																			<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li> */}
+																		</ul>
+																	)
+																})
+
+															}
+														</li >
+													)
+												})}
+												{/* <li>
+													<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
+													<ul className="dropdown_menu">
+														<li><Link href="#">Logo & Branding</Link></li>
+														<li><Link href="#">UX/UI Design</Link></li>
+														<li><Link href="#">Custom Web Development</Link></li>
+														<li><Link href="#">SEO</Link></li>
+														<li><Link href="#">Mobile Application</Link></li>
+														<li><Link href="#">Video Editing</Link></li>
+														<li><Link href="#">Artificial Intelligence</Link></li>
+														<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li>
+													</ul>
+												</li>
+												<li><Link href="/projects">Projects</Link></li>
+												<li><Link href="/blogs">Blogs</Link></li>
+												<li><Link href="/approach">Approach</Link></li>
+												<li><Link href="/about" className="active">About us</Link></li> */}
+											</ul>
+										</div>
+									}
 									<div className="header_btn">
 										<PrimaryBtn name="Contact Us" arrow="no" link="/" />
 										{/* <div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>

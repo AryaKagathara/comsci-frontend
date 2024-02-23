@@ -3,7 +3,7 @@ import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import FtrLogo from '@/../public/images/footer-logo.svg';
 
-const Footer = () => {
+const Footer = ({ pageProps }) => {
 	return (
 		<>
 			<footer className="footer">
@@ -14,7 +14,7 @@ const Footer = () => {
 								<h4>Start a new project or Schedule a Consultation today</h4>
 								<Link href="mailto:hello@comsci.com">hello@comsci.com</Link>
 							</div>
-							<PrimaryBtn name="Lets talk" arrow="no" link="/"/>
+							<PrimaryBtn name="Lets talk" arrow="no" link="/" />
 						</div>
 						<div className="links_section">
 							<div className="use_link">

@@ -1,25 +1,23 @@
 import Image from "next/image";
-import Banner from "@/../public/images/banner-bg.webp";
-import mobileBanner from "@/../public/images/banner-bg-mobile.webp";
 import Link from "next/link";
 
-const HomeBanner = () => {
+const HomeBanner = (props) => {
 	return (
 		<>
 			<div className="banner">
 				<div className="banner_bg_img">
-					<Image src={Banner} alt="Banner" />
+					<Image src={props?.bannerImage?.sourceUrl} alt={props?.bannerImage?.altText} width={1400} height={700} />
 				</div>
 				<div className="mobile_banner_img">
-					<Image src={mobileBanner} alt="mobileBanner" />
+					<Image src={props?.bannerImage?.sourceUrl} alt={props?.bannerImage?.altText} width={1400} height={700} />
 				</div>
 				<div className="container">
 					<div className="banner_textbox" data-scroll data-scroll-speed=".2">
-						<p className="fadeInUp">Design & Development Company</p>
-						<h1 className="fadeInUp">We help business evolve</h1>
+						<p className="fadeInUp">{props?.bannerSubTitle}</p>
+						<h1 className="fadeInUp">{props?.bannerTitle}</h1>
 						<div className='fadeInUp learn_btn_2'>
-                          <Link href="/servicesdetail">Explore Our Services</Link>
-                        </div>
+							<Link href={props?.bannerButton?.url}>{props?.bannerButton?.title}</Link>
+						</div>
 					</div>
 				</div>
 			</div>

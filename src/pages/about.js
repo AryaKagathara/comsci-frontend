@@ -13,13 +13,16 @@ export default function About() {
       <Head>
         <title>ABOUT US</title>
       </Head>
-      <AboutSection />
-      <Awards />
-      <RendomLogo />
-      <TeamSection />
-      <ResultSection />
-      <TestimonialsSection />
-      <TestiMonialsSlider />
+      <h1>Aboout page</h1>
     </>
   )
 }
+
+
+export const getStaticProps = async () => {
+  return {
+    props: {
+      themeOptions: "from about page"
+    }
+  }
+};

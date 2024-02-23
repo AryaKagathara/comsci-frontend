@@ -118,7 +118,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="logo_design_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg1} alt="image"/>
+                          <Image src={servicImg1} alt="image" />
                         </div>
                         <span>Our branding experts craft unique logos and comprehensive brand identities that resonate with your target audience, leaving a lasting impression.</span>
                         <div className="chips">
@@ -149,7 +149,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="ui_ux_design_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg2} alt="image"/>
+                          <Image src={servicImg2} alt="image" />
                         </div>
                         <span>Elevate your user experience with our innovative UI/UX team, ensuring a seamless and visually appealing design tailored to your audience and brand.</span>
                         <div className="chips">
@@ -186,7 +186,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="mobile_application_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg3} alt="image"/>
+                          <Image src={servicImg3} alt="image" />
                         </div>
                         <span>From concept to app store, our mobile app development team creates cutting-edge applications that provide a seamless experience on various devices.</span>
                         <div className="chips">
@@ -208,7 +208,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="seo_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg4} alt="image"/>
+                          <Image src={servicImg4} alt="image" />
                         </div>
                         <span>Boost your online visibility and reach your target audience with our SEO experts who implement data-driven strategies to optimize your website for search engines.</span>
                         <div className="chips">
@@ -233,7 +233,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="custom_web_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg5} alt="image"/>
+                          <Image src={servicImg5} alt="image" />
                         </div>
                         <span>Our experienced developers build tailored web solutions using the latest technologies, ensuring a scalable and efficient digital presence for your business.</span>
                         <div className="chips">
@@ -273,7 +273,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="video_art_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg6} alt="image"/>
+                          <Image src={servicImg6} alt="image" />
                         </div>
                         <span>Bring your brand to life with captivating visuals and storytelling. Our video and art direction team ensures a compelling narrative through engaging multimedia content.</span>
                         <div className="chips">
@@ -301,7 +301,7 @@ const ServicesSection = () => {
                     <Tab.Pane eventKey="artificial_tab">
                       <div className="content_box">
                         <div className="img_wrap">
-                          <Image src={servicImg7} alt="image"/>
+                          <Image src={servicImg7} alt="image" />
                         </div>
                         <span>Harness the power of AI to enhance efficiency and user experience. Our AI solutions leverage cutting-edge technologies to bring intelligence to your applications.</span>
                         <div className="chips">
