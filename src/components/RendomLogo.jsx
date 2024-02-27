@@ -1,7 +1,6 @@
-import Link from "next/link";
+
 import React, { useState, useEffect } from "react";
 
-const imgQty = 18;
 
 function RandomImage(props) {
 	const style = {
@@ -9,8 +8,11 @@ function RandomImage(props) {
 		height: 80,
 		display: 'inline-flex',
 		boxSizing: 'border-box',
-		backgroundImage: `url("images/rendom-type-${props.num}.svg")`,
-		transition: 'all 1s ease-in-out'
+		backgroundImage: `url("${props.url}")`,
+		transition: 'all 1s ease-in-out',
+		backgroundRepeat: 'no-repeat',
+		backgroundSize: 'contain',
+		backgroundPosition: 'center center'
 	};
 
 	return (
@@ -18,8 +20,7 @@ function RandomImage(props) {
 	);
 }
 
-const RendomLogo = () => {
-	const [numbers, setNumbers] = useState(Array(imgQty).fill().map((_, i) => i + 1));
+const RendomLogo = (props) => {
 
 	useEffect(() => {
 		// const interval = setInterval(() => {
@@ -33,13 +34,13 @@ const RendomLogo = () => {
 		<>
 			<div className="rendom">
 				<div className="container">
-					<div className="text mt-2" data-scroll data-scroll-speed=".1">
-						<h2>Clients</h2>
-						<p>We&apos;ve had the pleasure of collaborating with some distinguished clients, showcasing our expertise and delivering notable outcomes.</p>
+					<div className="text mt-5" data-scroll data-scroll-speed=".1">
+						<h2>{props?.title}</h2>
+						<p>{props?.shortDescription}</p>
 					</div>
 					<div className="logo_section" id="ren_logo" data-scroll data-scroll-speed=".4">
-						{numbers.map((num) => (
-							<RandomImage key={num} num={num} />
+						{props?.clientLogos.map((image, index) => (
+							<RandomImage key={index} num={index} url={image?.clientLogoImage?.sourceUrl} />
 						))}
 					</div>
 				</div>

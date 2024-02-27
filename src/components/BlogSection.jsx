@@ -1,17 +1,20 @@
 import HomeBlogBox from "@/components/HomeBlogBox";
 import BlogListSection from "@/components/layout/BlogListSection";
 
-const BlogSection = () => {
+const BlogSection = (props) => {
 	return (
 		<>
 			<div className="blog">
 				<div className="container">
 					<div className="blog_section">
-						<HomeBlogBox />
+						<HomeBlogBox title={props?.title} buttonName={props?.blogButtonName} />
 						<div className="bloglist_section">
-							<BlogListSection />
-							<BlogListSection />
-							<BlogListSection />
+							{
+								(props?.selectedBlogs.length > 0) &&
+								props.selectedBlogs.map((blogs, index) => (
+									<BlogListSection key={index} blog={blogs} />
+								))
+							}
 						</div>
 					</div>
 				</div>

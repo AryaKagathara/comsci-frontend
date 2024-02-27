@@ -1,14 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "@/../public/images/comsci-logo.webp";
-import PrimaryBtn from '@/components/layout/PrimaryBtn';
-import downArrow from "@/../public/images/dropdown-arrow.svg";
+// import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useState, useEffect } from "react";
-
 const Header = ({ pageProps }) => {
-	console.log("FROM HEADER ", pageProps?.result)
 	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
-	const menuItem = pageProps?.result?.menuItems;
+	const menuItem = pageProps?.result?.primary;
 	const [menuBtn, setMenuBtn] = useState(false);
 	const menuHandler = () => {
 		setMenuBtn(!menuBtn);
@@ -51,14 +47,14 @@ const Header = ({ pageProps }) => {
 					<div className="container">
 						<div className="main_header">
 							<div className="header_logo">
-								<Link href="/"><Image src={Logo} alt="Logo" /></Link>
+								<Link href="/"><Image src={themeSettings?.headerLogo?.sourceUrl} alt={themeSettings?.headerLogo?.altText} width={127} height={30} /></Link>
 							</div>
 							<div className={`menu-toggler ${menuBtn ? 'active' : ' '}`} onClick={menuHandler}>
 								<div className="menu-toggler-icon"></div>
 							</div>
 							<div className={`navigation_bar ${menuBtn ? 'slide' : ' '}`}>
 								<div className="mobile_header_logo">
-									<Link href="/"><Image src={Logo} alt="Logo" /></Link>
+									<Link href="/"><Image src={themeSettings?.headerLogo?.sourceUrl} alt={themeSettings?.headerLogo?.altText} width={127} height={30} /></Link>
 								</div>
 								{/* {JSON.stringify(menuItem)} */}
 								<div className="navigation_wrap">
@@ -68,50 +64,28 @@ const Header = ({ pageProps }) => {
 												{menuItem.nodes.map((item, index) => {
 													return (
 														<li key={index}>
-															<Link href="/projects">{item.label}</Link>
-															{(item.childItems.nodes) &&
-																item.childItems.nodes.map((subitem, index) => {
+															<Link href="#">{item.label}</Link>
+															{(item?.childItems?.nodes?.length > 0) &&
 
-																	return (
-																		<ul className="dropdown_menu" key={index}>
-																			<li><Link href="#">{subitem.label}</Link></li>
-																			{/* <li><Link href="#">UX/UI Design</Link></li>
-																			<li><Link href="#">Custom Web Development</Link></li>
-																			<li><Link href="#">SEO</Link></li>
-																			<li><Link href="#">Mobile Application</Link></li>
-																			<li><Link href="#">Video Editing</Link></li>
-																			<li><Link href="#">Artificial Intelligence</Link></li>
-																			<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li> */}
-																		</ul>
-																	)
-																})
-
+																<ul className="dropdown_menu">
+																	{
+																		item.childItems.nodes.map((subitem, index) => {
+																			return (
+																				<li key={index}><Link href="#">{subitem.label}</Link></li>
+																			)
+																		})
+																	}
+																</ul>
 															}
 														</li >
 													)
 												})}
-												{/* <li>
-													<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
-													<ul className="dropdown_menu">
-														<li><Link href="#">Logo & Branding</Link></li>
-														<li><Link href="#">UX/UI Design</Link></li>
-														<li><Link href="#">Custom Web Development</Link></li>
-														<li><Link href="#">SEO</Link></li>
-														<li><Link href="#">Mobile Application</Link></li>
-														<li><Link href="#">Video Editing</Link></li>
-														<li><Link href="#">Artificial Intelligence</Link></li>
-														<li><Link href="/services" className="drop_learn_btn">Explore Our Services</Link></li>
-													</ul>
-												</li>
-												<li><Link href="/projects">Projects</Link></li>
-												<li><Link href="/blogs">Blogs</Link></li>
-												<li><Link href="/approach">Approach</Link></li>
-												<li><Link href="/about" className="active">About us</Link></li> */}
 											</ul>
 										</div>
 									}
 									<div className="header_btn">
-										<PrimaryBtn name="Contact Us" arrow="no" link="/" />
+										{/* <PrimaryBtn name="Contact Us" arrow="no" link="/" /> */}
+										{/* <PrimaryBtn name={themeSettings?.headerButtonName?.title} arrow="no" link={themeSettings?.headerButtonName?.url} /> */}
 										{/* <div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
 											<Link className="lang-link" href="javascript:;" onClick={languageHandler}>
 												EN

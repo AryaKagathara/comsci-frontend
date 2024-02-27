@@ -1,17 +1,11 @@
 import Image from "next/image";
-import Award from "@/../public/images/award-img.webp";
-import Award1 from "@/../public/images/award-img1.webp";
-import Award2 from "@/../public/images/award-img2.webp";
-import Award3 from "@/../public/images/award-img3.webp";
-import Award4 from "@/../public/images/award-img3.webp";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Awards = () => {
-
+const Awards = (props) => {
   const awardElBig = useRef(null);
   const awardEl1 = useRef(null);
   const awardEl2 = useRef(null);
@@ -42,31 +36,31 @@ const Awards = () => {
       tl.fromTo(element, animation.from, animation.to);
     };
 
-    animateElement(awardElBig.current,{
-      from:{
-        y: 400 
+    animateElement(awardElBig.current, {
+      from: {
+        y: 400
       },
       to: {
-        y: -1500 
-      } 
+        y: -1500
+      }
     });
-    animateElement(awardEl1.current,{
+    animateElement(awardEl1.current, {
       from: {
-        y: 400 
+        y: 400
       },
       to: {
         y: -1500,
         rotation: 360
       }
     });
-    animateElement(awardEl2.current,{
+    animateElement(awardEl2.current, {
       from: {
         y: 400
       },
       to: {
         y: -1500,
-        rotation: -360 
-      } 
+        rotation: -360
+      }
     });
     animateElement(awardEl3.current, {
       from: {
@@ -74,17 +68,17 @@ const Awards = () => {
       },
       to: {
         y: -1500,
-        rotation: 360 
-      } 
+        rotation: 360
+      }
     });
-    animateElement(awardEl4.current, { 
-      from: { 
-        y: 400 
+    animateElement(awardEl4.current, {
+      from: {
+        y: 400
       },
-      to: { 
+      to: {
         y: -1500,
-        rotation: -360 
-      } 
+        rotation: -360
+      }
     });
   }, []);
 
@@ -94,22 +88,22 @@ const Awards = () => {
         <div className="container">
           <div className="award_section">
             <div className="image">
-              <Image src={Award} alt="award" ref={awardElBig} />
+              <Image src={props?.awardsImage?.sourceUrl} alt={props?.awardsImage?.altText} width={364} height={687} ref={awardElBig} />
             </div>
             <div className="first_img">
-              <Image src={Award1} alt="award" ref={awardEl1} />
+              <Image src={props?.awardsImage?.sourceUrl} alt={props?.awardsImage?.altText} width={149} height={239} ref={awardEl1} />
             </div>
             <div className="second_img">
-              <Image src={Award2} alt="award" ref={awardEl2} />
+              <Image src={props?.awardsImage?.sourceUrl} alt={props?.awardsImage?.altText} width={149} height={239} ref={awardEl2} />
             </div>
             <div className="third_img">
-              <Image src={Award3} alt="award" ref={awardEl3} />
+              <Image src={props?.awardsImage?.sourceUrl} alt={props?.awardsImage?.altText} width={112} height={179} ref={awardEl3} />
             </div>
             <div className="fourth_img">
-              <Image src={Award4} alt="award" ref={awardEl4} />
+              <Image src={props?.awardsImage?.sourceUrl} alt={props?.awardsImage?.altText} width={112} height={179} ref={awardEl4} />
             </div>
             <div className="award_text">
-              <h2>Excellence in User Experience</h2>
+              <h2>{props?.Heading}</h2>
             </div>
           </div>
         </div>

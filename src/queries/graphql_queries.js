@@ -1,4 +1,4 @@
-const THEME_QUERY = `themeGeneralSettings {
+const THEME_QUERY = `  themeGeneralSettings {
   themeOptions {
     headerLogo {
       altText
@@ -18,9 +18,46 @@ const THEME_QUERY = `themeGeneralSettings {
       title
       url
     }
+    mailBoxTitle
+    selectPages {
+      ... on Page {
+        id
+        title
+        slug
+      }
+    }
+    footerLogo {
+      altText
+      sourceUrl
+      srcSet
+    }
   }
 }
-menuItems(where: {location: PRIMARY, parentId: "0"}) {
+primary: menuItems(where: {location: PRIMARY, parentId: "0"}) {
+  nodes {
+    id
+    label
+    childItems {
+      nodes {
+        id
+        label
+      }
+    }
+  }
+}
+footer1: menuItems(where: {location: FOOTER_MENU_1, parentId: "0"}) {
+  nodes {
+    id
+    label
+    childItems {
+      nodes {
+        id
+        label
+      }
+    }
+  }
+}
+footer2: menuItems(where: {location: FOOTER_MENU_2, parentId: "0"}) {
   nodes {
     id
     label
@@ -51,17 +88,20 @@ export const GET_HOME_PAGE_DATA = {
             bannerShortTitle
             serviceTitle
             sShortTitle
+            serviceDetailButtonTitle
             selectService {
               ... on Service {
                 id
                 title
+                slug
                 featuredImage {
                   node {
                     sourceUrl
                     altText
                   }
                 }
-                content(format: RAW)
+                content
+
                 tags {
                   nodes {
                     name
@@ -156,6 +196,13 @@ export const GET_HOME_PAGE_DATA = {
                 }
                 slug
                 title
+                date
+                categories {
+                  nodes {
+                    name
+                    slug
+                  }
+                }
               }
             }
           }

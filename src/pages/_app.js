@@ -9,15 +9,15 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useRouter } from 'next/router';
-import { motion, AnimatePresence } from 'framer-motion';
+// import { motion, AnimatePresence } from 'framer-motion';
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App({ Component, pageProps }) {
-  console.log("pageProps : ", pageProps);
+  // console.log("pageProps : ", pageProps);
   const router = useRouter();
 
-  const is404Page = router.isFallback || router.pathname == '/404';
+  // const is404Page = router.isFallback || router.pathname == '/404';
 
   useEffect(() => {
     (async () => {
@@ -33,17 +33,20 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <AnimatePresence mode='wait'>
-        <motion.dev key={router.pathname}>
-          <main>
-            {!is404Page && <Header pageProps={pageProps} />}
+      {/* <AnimatePresence mode='wait'>
+        <motion.dev key={router.pathname}> */}
+      <main>
+        <Header pageProps={pageProps} />
+        <Component {...pageProps} />
+        <Footer pageProps={pageProps} />
+        {/* {!is404Page && <Header pageProps={pageProps} />}
             <Component {...pageProps} />
-            {!is404Page && <Footer pageProps={pageProps} />}
-          </main>
-          <motion.div className='slide-in' initial={{ scaleY: 0 }} animate={{ scaleY: 0 }} exit={{ scaleY: 1 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}></motion.div>
+            {!is404Page && <Footer pageProps={pageProps} />} */}
+      </main>
+      {/* <motion.div className='slide-in' initial={{ scaleY: 0 }} animate={{ scaleY: 0 }} exit={{ scaleY: 1 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}></motion.div>
           <motion.div className='slide-out' initial={{ scaleY: 1 }} animate={{ scaleY: 0 }} exit={{ scaleY: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}></motion.div>
         </motion.dev>
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   )
 }

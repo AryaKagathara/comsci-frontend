@@ -14,7 +14,7 @@ import AwardType from "@/components/AwardTypeSection";
 import { GET_HOME_PAGE_DATA, GET_THEME_GENERAL_DATA } from "@/queries/graphql_queries";
 import axios from "axios";
 export default function Home(props) {
-  // console.log("result_theme : ", props.result_theme)
+  const HomePageData = props?.result?.page?.homePageOptions;
   return (
     <>
 
@@ -22,18 +22,53 @@ export default function Home(props) {
         <title>Comsci - Leading Design & Development Company | Elevate Your Business with Us</title>
         <meta name="description" content="Comsci - Unlock unparalleled design and development solutions for your business. Partner with us for award-winning services and agile processes. Explore our projects now!" key="desc" />
       </Head>
-      <Banner bannerTitle={props?.result?.page?.homePageOptions?.bannerTitle} bannerSubTitle={props?.result?.page?.homePageOptions?.bannerShortTitle} bannerImage={props?.result?.page?.homePageOptions?.bannerImage} bannerButton={props?.result?.page?.homePageOptions?.bannerButton} />
-      <ServicesSection />
-      <Awards />
-      <AwardType />
-      <RendomLogo />
-      <TestiMonialsSlider />
-      <StrategySection />
-      <Technologies />
-      <ProjectSection />
-      <TestimonialsSection />
-      <Faqsection />
-      <BlogSection />
+
+
+      <Banner bannerTitle={HomePageData?.bannerTitle} bannerSubTitle={HomePageData?.bannerShortTitle} bannerImage={HomePageData?.bannerImage} bannerButton={HomePageData?.bannerButton} />
+
+
+      <ServicesSection serviceTitle={HomePageData?.serviceTitle} services={HomePageData?.selectService} shortTitle={HomePageData?.sShortTitle} serviceDetailButtonTitle={HomePageData?.serviceDetailButtonTitle} marqueeContent={HomePageData?.marqueeContent} />
+
+
+      <Awards Heading={HomePageData?.awardText} awardsImage={HomePageData?.awardImage} />
+
+
+      <AwardType logos={HomePageData?.awardLogos} />
+
+
+      <RendomLogo clientLogos={HomePageData?.clientLogos} title={HomePageData?.cTitle} shortDescription={HomePageData?.shortDescription} />
+
+
+      {(HomePageData != null && HomePageData.testimonialsMeta != null) && <TestiMonialsSlider testimonialsMeta={HomePageData?.testimonialsMeta} />}
+
+
+      {
+        (HomePageData != null && HomePageData.strategyTitle != null && HomePageData.strategySection != null) &&
+        <StrategySection strategyTitle={HomePageData?.strategyTitle} strategySection={HomePageData?.strategySection} />
+      }
+
+      {
+        (HomePageData?.technologieTitle != null && HomePageData?.technologieDescription != null && HomePageData?.technologiesLogos != null) &&
+        <Technologies technologieTitle={HomePageData?.technologieTitle} technologieDescription={HomePageData?.technologieDescription} technologiesLogos={HomePageData?.technologiesLogos} />
+      }
+
+
+      {
+        (HomePageData?.pTitle != null && HomePageData?.pButtonName != null && HomePageData?.selectProject != null) &&
+        < ProjectSection projectTitle={HomePageData?.pTitle} projectButtonName={HomePageData?.pButtonName} selectProject={HomePageData?.selectProject} />
+      }
+
+      {(HomePageData?.testimonialsMeta != null) && <TestimonialsSection testimonialsMeta={HomePageData?.testimonialsMeta} />}
+
+      {
+        (HomePageData != null && HomePageData.faqContent != null && HomePageData.faqTitle != null && HomePageData.faqDescription != null) &&
+        <Faqsection faqContent={HomePageData?.faqContent} faqTitle={HomePageData.faqTitle} faqDescription={HomePageData?.faqDescription} />
+      }
+
+      {(HomePageData != null && HomePageData.bTitle != null && HomePageData.blogSectionButtonName != null && HomePageData.selectedBlogs != null) &&
+        <BlogSection title={HomePageData?.bTitle} blogButtonName={HomePageData?.blogSectionButtonName} selectedBlogs={HomePageData?.selectedBlogs} />
+      }
+
     </>
   )
 }
@@ -45,16 +80,8 @@ export const getStaticProps = async () => {
       'Content-Type': 'application/json'
     }
   })
-    .then(res => res.data.data)
-    .catch(error => error);
+    .then(res => res.data.data).catch(error => error);
 
-  // const result_theme = await axios.post(process.env.NEXT_PUBLIC_WORDPRESS_SITE_URL, GET_THEME_GENERAL_DATA, {
-  //   headers: {
-  //     'Content-Type': 'application/json'
-  //   }
-  // })
-  //   .then(res => res)
-  //   .catch(error => error);
   return {
     props: {
       result,
