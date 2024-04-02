@@ -1,12 +1,11 @@
 import Image from "next/image";
-import InnerImg from "@/../public/images/innerbanner-img.webp";
 
-const InnerBanner = () => {
+const InnerBanner = (props) => {
 	return (
 		<>
 			<div className="innerbanner">
 				<div className="banner_img">
-					<Image src={InnerImg} alt="banner" />
+					<Image src={props?.bannerImage?.node?.sourceUrl} height={props?.bannerImage?.node?.mediaDetails?.height} width={props?.bannerImage?.node?.mediaDetails?.width} alt={props?.bannerImage?.node?.altText} />
 				</div>
 			</div>
 		</>

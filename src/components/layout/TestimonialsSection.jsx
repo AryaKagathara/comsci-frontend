@@ -14,7 +14,7 @@ const TestimonialsSection = (props) => {
 								<div className="test_sec" data-scroll data-scroll-speed={(index == 0 ? '.2' : '.4')} key={index}>
 									<div className="testi_wrap">
 										<div className="image">
-											<Image src={quote} alt="quote" />
+											<Image src={data?.tmImage?.sourceUrl} alt={data?.tmImage?.altText} height={data?.tmImage?.mediaDetails?.height} width={data?.tmImage?.mediaDetails?.width} />
 										</div>
 										<div className="contentbox">
 											<h4>{data?.testtimonialsTitle}</h4>

@@ -1,6 +1,6 @@
 import HomeProjectBox from "@/components/HomeProjectBox";
 import ProjectListSection from "@/components/layout/ProjectListSection";
-// import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
@@ -34,9 +34,9 @@ const ProjectSection = (props) => {
 								}
 							</div>
 						</div>
-						{/* <div className="projectbtn_wrap">
+						<div className="projectbtn_wrap">
 							<PrimaryBtn name={props?.projectButtonName?.title} arrow="no" link={props?.projectButtonName?.url} />
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>

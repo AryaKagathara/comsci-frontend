@@ -11,7 +11,7 @@ import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import RendomLogo from "@/components/RendomLogo";
 import AwardType from "@/components/AwardTypeSection";
-import { GET_HOME_PAGE_DATA, GET_THEME_GENERAL_DATA } from "@/queries/graphql_queries";
+import { GET_HOME_PAGE_DATA } from "@/queries/graphql_queries";
 import axios from "axios";
 export default function Home(props) {
   const HomePageData = props?.result?.page?.homePageOptions;
@@ -88,3 +88,4 @@ export const getStaticProps = async () => {
     }
   }
 };
+

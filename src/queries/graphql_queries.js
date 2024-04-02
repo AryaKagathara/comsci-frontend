@@ -1,8 +1,12 @@
-const THEME_QUERY = `  themeGeneralSettings {
+const THEME_QUERY = `themeGeneralSettings {
   themeOptions {
     headerLogo {
       altText
       sourceUrl
+      mediaDetails {
+        width
+        height
+      }
     }
     headerButtonName {
       target
@@ -29,6 +33,10 @@ const THEME_QUERY = `  themeGeneralSettings {
     footerLogo {
       altText
       sourceUrl
+      mediaDetails {
+        width
+        height
+      }
       srcSet
     }
   }
@@ -78,6 +86,10 @@ export const GET_HOME_PAGE_DATA = {
             bannerImage {
               altText
               sourceUrl
+              mediaDetails {
+                width
+                height
+              }
             }
             bannerButton {
               target
@@ -97,6 +109,10 @@ export const GET_HOME_PAGE_DATA = {
                 featuredImage {
                   node {
                     sourceUrl
+                    mediaDetails {
+                      width
+                      height
+                    }
                     altText
                   }
                 }
@@ -116,11 +132,19 @@ export const GET_HOME_PAGE_DATA = {
             awardImage {
               altText
               sourceUrl
+              mediaDetails {
+                width
+                height
+              }
             }
             awardLogos {
               awardLogoImage {
                 altText
                 sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
               }
             }
             cTitle
@@ -129,6 +153,10 @@ export const GET_HOME_PAGE_DATA = {
               clientLogoImage {
                 altText
                 sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
               }
             }
             strategyTitle
@@ -138,6 +166,10 @@ export const GET_HOME_PAGE_DATA = {
               straImage {
                 altText
                 sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
               }
             }
             technologieTitle
@@ -146,6 +178,10 @@ export const GET_HOME_PAGE_DATA = {
               technologieLogos {
                 altText
                 sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
               }
             }
             pTitle
@@ -161,6 +197,10 @@ export const GET_HOME_PAGE_DATA = {
                   node {
                     altText
                     sourceUrl
+                    mediaDetails {
+                      width
+                      height
+                    }
                   }
                 }
                 title
@@ -192,6 +232,10 @@ export const GET_HOME_PAGE_DATA = {
                   node {
                     altText
                     sourceUrl
+                    mediaDetails {
+                      width
+                      height
+                    }
                   }
                 }
                 slug
@@ -209,4 +253,89 @@ export const GET_HOME_PAGE_DATA = {
         }
         ${THEME_QUERY}
       }`
+}
+
+
+export const GET_PROJECT_PAGE_DATA = {
+  query: `query Project($id: ID = "") {
+    page(id: $id, idType: URI) {
+      projectOptions {
+        testimonialsMeta {
+          testtimonialsName
+          testtimonialsPosition
+          testtimonialsTitle
+          tmImage {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        pEnterTopText
+      }
+    }
+    projects {
+      nodes {
+        content
+        slug
+        title
+        featuredImage {
+          node {
+            sourceUrl
+            altText
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+      }
+      }
+        ${THEME_QUERY}
+      }`
+}
+
+export const GET_SERVIDE_DETAIL_PAGE_DATA = {
+  query: `query ServiceDetailData($id: ID = "") {
+    service(id: $id, idType: SLUG) {
+      content
+      title
+      tags {
+        nodes {
+          name
+        }
+      }
+      featuredImage {
+        node {
+          altText
+          mediaDetails {
+            width
+            height
+          }
+          sourceUrl
+        }
+      }
+      serviceDetailOptions {
+        smDetails {
+          smdDescription
+          smdTitle
+        }
+      }
+    }
+    ${THEME_QUERY}
+  }`
+}
+
+
+export const GET_ALL_SERVICE_SLUG = {
+  query: `query getAllServiceSlug {
+    services {
+      nodes {
+        slug
+      }
+    }
+    ${THEME_QUERY}
+  }`
 }

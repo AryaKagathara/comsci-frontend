@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-// import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
 const Footer = ({ pageProps }) => {
 	// console.log('Footer', pageProps);
 	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
@@ -14,7 +14,7 @@ const Footer = ({ pageProps }) => {
 								<h4>{themeSettings?.mailBoxTitle}</h4>
 								<Link href={`mailto:${themeSettings?.footerEmail}`}>{themeSettings?.footerEmail}</Link>
 							</div>
-							{/* <PrimaryBtn name={themeSettings?.footerContactButton?.title} arrow="no" link={themeSettings?.footerContactButton?.url} /> */}
+							<PrimaryBtn name={themeSettings?.footerContactButton?.title} arrow="no" link={themeSettings?.footerContactButton?.url} />
 						</div>
 						<div className="links_section">
 							<div className="use_link">

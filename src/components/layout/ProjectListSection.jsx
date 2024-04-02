@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ProjectListSection = (props) => {
+
+	console.log('-------------->',props);
 	return (
 		<>
 			<Link href={props?.projectDetails?.slug} className="project_wrap">

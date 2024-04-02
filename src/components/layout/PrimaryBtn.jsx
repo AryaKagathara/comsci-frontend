@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 const PrimaryBtn = (props) => {
-	console.log("PORPS", props)
 	return (
 		<>
 			<div className={`contact_btn`}>

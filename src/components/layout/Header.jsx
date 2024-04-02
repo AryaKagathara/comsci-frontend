@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-// import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import PrimaryBtn from '@/components/layout/PrimaryBtn';
 import { useState, useEffect } from "react";
 const Header = ({ pageProps }) => {
 	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
@@ -85,7 +85,7 @@ const Header = ({ pageProps }) => {
 									}
 									<div className="header_btn">
 										{/* <PrimaryBtn name="Contact Us" arrow="no" link="/" /> */}
-										{/* <PrimaryBtn name={themeSettings?.headerButtonName?.title} arrow="no" link={themeSettings?.headerButtonName?.url} /> */}
+										<PrimaryBtn name={themeSettings?.headerButtonName?.title} arrow="no" link={themeSettings?.headerButtonName?.url} />
 										{/* <div className={`ent_lang dropdown ${languageDropdown ? 'show' : ' '}`}>
 											<Link className="lang-link" href="javascript:;" onClick={languageHandler}>
 												EN

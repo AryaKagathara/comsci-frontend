@@ -3,6 +3,8 @@ import ContentBox from "@/components/layout/ContentBox";
 
 const Technologies = (props) => {
 
+	console.log('props:', props);
+
 	return (
 		<>
 			<div className="technologies">
@@ -20,7 +22,7 @@ const Technologies = (props) => {
 											<div className="images_box">
 												<div className="wrapper_box">
 													<div className="picture">
-														<Image src={tech?.technologieLogos?.sourceUrl} alt={tech?.technologieLogos?.altText} width={102} height={51} />
+														<Image src={tech?.technologieLogos?.sourceUrl} alt={tech?.technologieLogos?.altText} width={tech?.technologieLogos?.mediaDetails?.width} height={tech?.technologieLogos?.mediaDetails?.height} />
 													</div>
 												</div>
 											</div>
