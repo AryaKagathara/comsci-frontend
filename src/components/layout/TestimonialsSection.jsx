@@ -12,13 +12,18 @@ const TestimonialsSection = (props) => {
 							(props?.testimonialsMeta?.length > 0) &&
 							props.testimonialsMeta.map((data, index) => (
 								<div className="test_sec" data-scroll data-scroll-speed={(index == 0 ? '.2' : '.4')} key={index}>
+
 									<div className="testi_wrap">
 										<div className="image">
-											<Image src={data?.tmImage?.sourceUrl} alt={data?.tmImage?.altText} height={data?.tmImage?.mediaDetails?.height} width={data?.tmImage?.mediaDetails?.width} />
+											<Image src={quote} alt="quote" />
 										</div>
+
 										<div className="contentbox">
 											<h4>{data?.testtimonialsTitle}</h4>
 											<div className="profile_box">
+												<div className="image">
+													<Image src={data?.testimonialImage?.sourceUrl} alt={data?.testimonialImage?.altText} height={data?.testimonialImage?.mediaDetails?.height} width={data?.testimonialImage?.mediaDetails?.width} />
+												</div>
 												<div className="caption">
 													<p>{data?.testtimonialsName}</p>
 													<span>{data?.testtimonialsPosition}</span>

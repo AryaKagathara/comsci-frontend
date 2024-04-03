@@ -2,10 +2,8 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Testimonialimg from "@/../public/images/testimonials_sliderimg.svg";
-
+import quote from "@/../public/images/quote-img.svg";
 const TestiMonialsSlider = (props) => {
-	// console.log('props::::::', props);
 	const ArrowLeft = (props) => (
 		<button {...props} className="left" aria-label="left">
 			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,12 +45,16 @@ const TestiMonialsSlider = (props) => {
 							(props?.testimonialsMeta.length > 0) &&
 							props.testimonialsMeta.map((data, index) => (
 								<div className="testimg-text" key={index}>
-									<div className="textimgbox">
-										<Image src={data?.tmImage?.sourceUrl} alt={data?.tmImage?.altText} height={data?.tmImage?.mediaDetails?.height} width={data?.tmImage?.mediaDetails?.width} />
-									</div>
+
+									<div className="image">
+										<Image src={quote} alt="quote" />
+									</div>									
 									<div className="contentbox">
 										<h4>{data?.testtimonialsTitle}</h4>
 										<div className="profile_box">
+										<div className="textimgbox">
+										<Image src={data?.testimonialImage?.sourceUrl} alt={data?.testimonialImage?.altText} height={data?.testimonialImage?.mediaDetails?.height} width={data?.testimonialImage?.mediaDetails?.width} />
+									</div>
 											<div className="caption">
 												<p>{data?.testtimonialsName}</p>
 												<span>{data?.testtimonialsPosition}</span>

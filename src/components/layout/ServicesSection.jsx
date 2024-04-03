@@ -7,6 +7,7 @@ import Tab from "react-bootstrap/Tab";
 import Accordion from 'react-bootstrap/Accordion';
 
 const ServicesSection = (props) => {
+  console.log('props.services',props.services);
   return (
     <>
       <div className="services">
@@ -62,8 +63,9 @@ const ServicesSection = (props) => {
                               <div className="img_wrap">
                                 <Image src={services?.featuredImage?.node?.sourceUrl} alt="image" width={600} height={200} />
                               </div>
-                              <span dangerouslySetInnerHTML={{ __html: services?.content }}>
+                              <span dangerouslySetInnerHTML={{ __html: services?.excerpt }}>
                               </span>
+                           
                               <div className="chips">
                                 {
                                   (services?.tags?.nodes?.length > 0) &&
@@ -78,7 +80,7 @@ const ServicesSection = (props) => {
 
                               </div>
                               <div className="learn_btn">
-                                <Link href={services?.slug}>{props?.serviceDetailButtonTitle}</Link>
+                              <Link href={`service/${services?.slug}`}>{props?.serviceDetailButtonTitle} {services?.title}</Link>
                               </div>
                             </div>
                           </Tab.Pane>
@@ -140,7 +142,7 @@ const ServicesSection = (props) => {
                 props.marqueeContent.map((marquee, index) => (
                   <>
                     <li className="back_wrapper" key={index}>
-                      <p className="text_box">{marquee?.marqueeText}</p>
+                      <p className="text_box">{marquee?.marqueeText} </p>
                     </li>
                     <li className="dot"></li>
                   </>)

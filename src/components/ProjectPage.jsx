@@ -2,6 +2,8 @@ import ProjectListSection from "@/components/layout/ProjectListSection";
 import ContentBox from "@/components/layout/ContentBox";
 
 const ProjectPage = (props) => {
+
+	console.log('props::::::::::::::::::',props);
 	return (
 		<>
 			<div className="project">

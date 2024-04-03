@@ -3,7 +3,7 @@ import ContentBox from "@/components/layout/ContentBox";
 
 const Technologies = (props) => {
 
-	console.log('props:', props);
+	// console.log('props:', props);
 
 	return (
 		<>

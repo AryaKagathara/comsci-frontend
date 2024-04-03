@@ -1,4 +1,130 @@
 const THEME_QUERY = `themeGeneralSettings {
+
+
+  commanComponentOption {
+    technologieTitle
+    technologieDescription
+    strategyTitle
+    shortDescription
+    serviceTitle
+    serviceDetailButtonTitle
+    sShortTitle
+    pTitle
+    pButtonName {
+      url
+      title
+      target
+    }
+    awardLogos {
+      awardLogoImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    cTitle
+    shortDescription
+    clientLogos {
+      clientLogoImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    faqTitle
+    faqDescription
+    faqContent {
+      faqMetaTitle
+      faqMetaDescription
+    }
+    marqueeContent {
+      marqueeText
+    }
+    selectProject {
+      ... on Project {
+        id
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        title
+        slug
+      }
+    }
+    selectService {
+      ... on Service {
+        id
+        title
+        slug
+        featuredImage {
+          node {
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+            altText
+          }
+        }
+        content
+        tags {
+          nodes {
+            name
+          }
+        }
+        excerpt
+      }
+    }
+    strategySection {
+      straTitle
+      straDescription
+      straImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    technologiesLogos {
+      technologieLogos {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    testimonialsMeta {
+      testtimonialsName
+      testtimonialsPosition
+      testtimonialsTitle
+      testimonialImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+  }
+
+
   themeOptions {
     headerLogo {
       altText
@@ -91,6 +217,7 @@ export const GET_HOME_PAGE_DATA = {
                 height
               }
             }
+            bannerShortDescription
             bannerButton {
               target
               title
@@ -255,16 +382,43 @@ export const GET_HOME_PAGE_DATA = {
       }`
 }
 
-
-export const GET_PROJECT_PAGE_DATA = {
-  query: `query Project($id: ID = "") {
+export const GET_SERVICE_PAGE_DATA = {
+  query: `query ServicePageQuery($id: ID = "/services") {
     page(id: $id, idType: URI) {
-      projectOptions {
-        testimonialsMeta {
-          testtimonialsName
-          testtimonialsPosition
-          testtimonialsTitle
-          tmImage {
+      servicePageOption {
+        serviceTitle
+        sShortTitle
+        serviceDetailButtonTitle
+        selectService {
+          ... on Service {
+            id
+            title
+            slug
+            featuredImage {
+              node {
+                sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
+                altText
+              }
+            }
+            content
+            tags {
+              nodes {
+                name
+              }
+            }
+          }
+        }
+        marqueeContent {
+          marqueeText
+        }
+        technologieTitle
+        technologieDescription
+        technologiesLogos {
+          technologieLogos {
             altText
             sourceUrl
             mediaDetails {
@@ -273,6 +427,20 @@ export const GET_PROJECT_PAGE_DATA = {
             }
           }
         }
+      }
+      
+    }
+    ${THEME_QUERY}
+  }`
+}
+
+
+
+
+export const GET_PROJECT_PAGE_DATA = {
+  query: `query Project($id: ID = "/projects") {
+    page(id: $id, idType: URI) {
+      projectOptions {
         pEnterTopText
       }
     }
@@ -322,6 +490,29 @@ export const GET_SERVIDE_DETAIL_PAGE_DATA = {
           smdDescription
           smdTitle
         }
+        selectProject {
+          ... on Project {
+            id
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
+              }
+            }
+            title
+            slug
+          }
+        }
+        pButtonName {
+          target
+          title
+          url
+        }
+        pTitle
       }
     }
     ${THEME_QUERY}

@@ -10,7 +10,8 @@ import axios from "axios";
 export default function ServicesDetail(props) {
     
     let serviceDetail = props?.result?.service;
-    // console.log('props:', serviceDetail?.serviceDetailOptions?.smDetails);
+    const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
+    console.log('props:', serviceDetail?.serviceDetailOptions?.pTitle);
 
     return (
         <>
@@ -18,9 +19,12 @@ export default function ServicesDetail(props) {
                 <title>SERVICES DETAIL</title>
             </Head>
             <InnerBanner bannerImage={serviceDetail?.featuredImage} />
-            <Process tags={serviceDetail?.tags} serviceTitle={serviceDetail?.title} />
+            <Process tags={serviceDetail?.tags} serviceTitle={serviceDetail?.title} serviceDescription={serviceDetail?.content} />
             <ServicesType serviceData={serviceDetail?.serviceDetailOptions?.smDetails} />
-            <ProjectSection />
+            <ProjectSection projectTitle={serviceDetail?.serviceDetailOptions?.pTitle} projectButtonName={serviceDetail?.serviceDetailOptions?.pButtonName} selectProject={serviceDetail?.serviceDetailOptions?.selectProject} />
+
+
+            {/* < ProjectSection projectTitle={HomePageData?.pTitle} projectButtonName={HomePageData?.pButtonName} selectProject={HomePageData?.selectProject} /> */}
         </>
     )
 }

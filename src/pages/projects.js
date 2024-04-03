@@ -2,33 +2,39 @@ import Head from "next/head";
 import ProjectPage from "@/components/ProjectPage";
 import TestimonialsSection from "@/components/layout/TestimonialsSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
-
 import { GET_PROJECT_PAGE_DATA } from "@/queries/graphql_queries";
 import axios from "axios";
 
 export default function Projects(props) {
-  console.log('Project Page data:', props?.result?.page?.projectOptions?.testimonialsMeta);
-  console.log('Project Page data:', props);
+  console.log('props?.result?.page?.projectOptions?.pEnterTopText', props?.result);
+
+  const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
 
   return (
     <>
       <Head>
         <title>PROJECTS</title>
       </Head>
-      <ProjectPage projectDetails={props?.result?.projects} projectPageTitle={props?.result?.page?.projectOptions?.pEnterTopText} />
-      <TestimonialsSection testimonialsMeta={props?.result?.page?.projectOptions?.testimonialsMeta} />
-      {/* <TestiMonialsSlider /> */}
 
+      {
+        (props?.result?.projects != null && props?.result?.page?.projectOptions?.pEnterTopText != null) &&
+        <ProjectPage projectDetails={props?.result?.projects} projectPageTitle={props?.result?.page?.projectOptions?.pEnterTopText} />
+      }
 
-      {(props?.result?.page?.projectOptions?.testimonialsMeta != null) && <TestiMonialsSlider testimonialsMeta={props?.result?.page?.projectOptions?.testimonialsMeta} />}
+      {
+        (CommanPageData?.testimonialsMeta != null) &&
+        <TestimonialsSection testimonialsMeta={CommanPageData?.testimonialsMeta} />
+      }
+
+      {
+        (CommanPageData?.testimonialsMeta != null) &&
+        <TestiMonialsSlider testimonialsMeta={CommanPageData?.testimonialsMeta} />
+      }
 
 
     </>
   )
 }
-
-
-
 
 
 export const getStaticProps = async () => {
@@ -38,7 +44,6 @@ export const getStaticProps = async () => {
     }
   })
     .then(res => res.data.data).catch(error => error);
-
   return {
     props: {
       result,

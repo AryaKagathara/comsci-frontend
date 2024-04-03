@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HomeBanner = (props) => {
+	console.log(props);
 	return (
 		<>
 			<div className="banner">
@@ -15,6 +16,7 @@ const HomeBanner = (props) => {
 					<div className="banner_textbox" data-scroll data-scroll-speed=".2">
 						<p className="fadeInUp">{props?.bannerSubTitle}</p>
 						<h1 className="fadeInUp">{props?.bannerTitle}</h1>
+						<p>{props?.bannerShortDescription}</p>
 						<div className='fadeInUp learn_btn_2'>
 							<Link href={props?.bannerButton?.url}>{props?.bannerButton?.title}</Link>
 						</div>

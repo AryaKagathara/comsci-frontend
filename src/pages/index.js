@@ -15,6 +15,7 @@ import { GET_HOME_PAGE_DATA } from "@/queries/graphql_queries";
 import axios from "axios";
 export default function Home(props) {
   const HomePageData = props?.result?.page?.homePageOptions;
+  const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
   return (
     <>
 
@@ -24,45 +25,52 @@ export default function Home(props) {
       </Head>
 
 
-      <Banner bannerTitle={HomePageData?.bannerTitle} bannerSubTitle={HomePageData?.bannerShortTitle} bannerImage={HomePageData?.bannerImage} bannerButton={HomePageData?.bannerButton} />
+      <Banner bannerTitle={HomePageData?.bannerTitle} bannerShortDescription={HomePageData?.bannerShortDescription} bannerSubTitle={HomePageData?.bannerShortTitle} bannerImage={HomePageData?.bannerImage} bannerButton={HomePageData?.bannerButton} />
 
+      {
+        (CommanPageData?.serviceTitle != null && CommanPageData?.selectService != null && CommanPageData?.sShortTitle != null && CommanPageData?.serviceDetailButtonTitle != null && CommanPageData?.marqueeContent != null) &&
 
-      <ServicesSection serviceTitle={HomePageData?.serviceTitle} services={HomePageData?.selectService} shortTitle={HomePageData?.sShortTitle} serviceDetailButtonTitle={HomePageData?.serviceDetailButtonTitle} marqueeContent={HomePageData?.marqueeContent} />
+        <ServicesSection serviceTitle={CommanPageData?.serviceTitle} services={CommanPageData?.selectService} shortTitle={CommanPageData?.sShortTitle} serviceDetailButtonTitle={CommanPageData?.serviceDetailButtonTitle} marqueeContent={CommanPageData?.marqueeContent} />
 
+      }
 
       <Awards Heading={HomePageData?.awardText} awardsImage={HomePageData?.awardImage} />
 
 
-      <AwardType logos={HomePageData?.awardLogos} />
+      <AwardType logos={CommanPageData?.awardLogos} />
 
 
-      <RendomLogo clientLogos={HomePageData?.clientLogos} title={HomePageData?.cTitle} shortDescription={HomePageData?.shortDescription} />
-
-
-      {(HomePageData != null && HomePageData.testimonialsMeta != null) && <TestiMonialsSlider testimonialsMeta={HomePageData?.testimonialsMeta} />}
+      <RendomLogo clientLogos={CommanPageData?.clientLogos} title={CommanPageData?.cTitle} shortDescription={CommanPageData?.shortDescription} />
 
 
       {
-        (HomePageData != null && HomePageData.strategyTitle != null && HomePageData.strategySection != null) &&
-        <StrategySection strategyTitle={HomePageData?.strategyTitle} strategySection={HomePageData?.strategySection} />
+        (CommanPageData != null && CommanPageData.testimonialsMeta != null) &&
+        <TestiMonialsSlider testimonialsMeta={CommanPageData?.testimonialsMeta} />
+      }
+
+
+      {
+        (CommanPageData != null && CommanPageData.strategyTitle != null && CommanPageData.strategySection != null) &&
+        <StrategySection strategyTitle={CommanPageData?.strategyTitle} strategySection={CommanPageData?.strategySection} />
       }
 
       {
-        (HomePageData?.technologieTitle != null && HomePageData?.technologieDescription != null && HomePageData?.technologiesLogos != null) &&
-        <Technologies technologieTitle={HomePageData?.technologieTitle} technologieDescription={HomePageData?.technologieDescription} technologiesLogos={HomePageData?.technologiesLogos} />
+        (CommanPageData?.technologieTitle != null && CommanPageData?.technologieDescription != null && CommanPageData?.technologiesLogos != null) &&
+        <Technologies technologieTitle={CommanPageData?.technologieTitle} technologieDescription={CommanPageData?.technologieDescription} technologiesLogos={CommanPageData?.technologiesLogos} />
       }
-
-
       {
         (HomePageData?.pTitle != null && HomePageData?.pButtonName != null && HomePageData?.selectProject != null) &&
         < ProjectSection projectTitle={HomePageData?.pTitle} projectButtonName={HomePageData?.pButtonName} selectProject={HomePageData?.selectProject} />
       }
 
-      {(HomePageData?.testimonialsMeta != null) && <TestimonialsSection testimonialsMeta={HomePageData?.testimonialsMeta} />}
+      {
+        (CommanPageData?.testimonialsMeta != null) &&
+        <TestimonialsSection testimonialsMeta={CommanPageData?.testimonialsMeta} />
+      }
 
       {
-        (HomePageData != null && HomePageData.faqContent != null && HomePageData.faqTitle != null && HomePageData.faqDescription != null) &&
-        <Faqsection faqContent={HomePageData?.faqContent} faqTitle={HomePageData.faqTitle} faqDescription={HomePageData?.faqDescription} />
+        (CommanPageData != null && CommanPageData.faqContent != null && CommanPageData.faqTitle != null && CommanPageData.faqDescription != null) &&
+        <Faqsection faqContent={CommanPageData?.faqContent} faqTitle={CommanPageData.faqTitle} faqDescription={CommanPageData?.faqDescription} />
       }
 
       {(HomePageData != null && HomePageData.bTitle != null && HomePageData.blogSectionButtonName != null && HomePageData.selectedBlogs != null) &&
