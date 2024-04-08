@@ -7,8 +7,6 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 const ProjectSection = (props) => {
-
-	console.log('props', props);
 	useEffect(() => {
 		gsap.set(".fadeInUp", { y: "30%", opacity: 0, });
 		ScrollTrigger.batch(".fadeInUp", {

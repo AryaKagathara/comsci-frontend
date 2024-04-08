@@ -4,7 +4,7 @@ const PrimaryBtn = (props) => {
 	return (
 		<>
 			<div className={`contact_btn`}>
-				<Link href={(props?.link) ? props?.link : '/'}>
+				<Link href={(props?.link) ? (props?.link == '#' ? "javascript:void(0)" : props?.link) : '/'}>
 					<span>
 						{(props?.name) ? props?.name : ''}
 						{props?.arrow == 'yes' &&

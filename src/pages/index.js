@@ -81,7 +81,6 @@ export default function Home(props) {
   )
 }
 
-
 export const getStaticProps = async () => {
   const result = await axios.post(process.env.NEXT_PUBLIC_WORDPRESS_SITE_URL, GET_HOME_PAGE_DATA, {
     headers: {

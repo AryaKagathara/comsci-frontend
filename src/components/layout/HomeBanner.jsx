@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 const HomeBanner = (props) => {
-	console.log(props);
 	return (
 		<>
 			<div className="banner">

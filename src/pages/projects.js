@@ -6,7 +6,7 @@ import { GET_PROJECT_PAGE_DATA } from "@/queries/graphql_queries";
 import axios from "axios";
 
 export default function Projects(props) {
-  console.log('props?.result?.page?.projectOptions?.pEnterTopText', props?.result);
+  
 
   const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
 

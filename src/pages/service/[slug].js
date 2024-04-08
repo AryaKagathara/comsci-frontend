@@ -6,25 +6,33 @@ import ServicesType from "@/components/ServicesType";
 import { GET_SERVIDE_DETAIL_PAGE_DATA, GET_ALL_SERVICE_SLUG } from "@/queries/graphql_queries";
 import axios from "axios";
 
-
 export default function ServicesDetail(props) {
-    
+    // console.log("PRops ;: ",props)
     let serviceDetail = props?.result?.service;
     const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
-    console.log('props:', serviceDetail?.serviceDetailOptions?.pTitle);
+    // console.log('props:', serviceDetail?.serviceDetailOptions?.pTitle);
 
     return (
         <>
             <Head>
                 <title>SERVICES DETAIL</title>
             </Head>
-            <InnerBanner bannerImage={serviceDetail?.featuredImage} />
-            <Process tags={serviceDetail?.tags} serviceTitle={serviceDetail?.title} serviceDescription={serviceDetail?.content} />
-            <ServicesType serviceData={serviceDetail?.serviceDetailOptions?.smDetails} />
-            <ProjectSection projectTitle={serviceDetail?.serviceDetailOptions?.pTitle} projectButtonName={serviceDetail?.serviceDetailOptions?.pButtonName} selectProject={serviceDetail?.serviceDetailOptions?.selectProject} />
-
-
-            {/* < ProjectSection projectTitle={HomePageData?.pTitle} projectButtonName={HomePageData?.pButtonName} selectProject={HomePageData?.selectProject} /> */}
+            {
+                (serviceDetail?.featuredImage != null) &&
+                <InnerBanner bannerImage={serviceDetail?.featuredImage} />
+            }
+            {
+                (serviceDetail?.tags != null && serviceDetail?.title != null && serviceDetail?.content != null) &&
+                <Process tags={serviceDetail?.tags} serviceTitle={serviceDetail?.title} serviceDescription={serviceDetail?.content} />
+            }
+            {
+                (serviceDetail?.serviceDetailOptions?.smDetails != null) &&
+                <ServicesType serviceData={serviceDetail?.serviceDetailOptions?.smDetails} />
+            }
+            {
+                (serviceDetail?.serviceDetailOptions?.pTitle != null && serviceDetail?.serviceDetailOptions?.pButtonName != null && serviceDetail?.serviceDetailOptions?.selectProject != null) &&
+                <ProjectSection projectTitle={serviceDetail?.serviceDetailOptions?.pTitle} projectButtonName={serviceDetail?.serviceDetailOptions?.pButtonName} selectProject={serviceDetail?.serviceDetailOptions?.selectProject} />
+            }
         </>
     )
 }
@@ -49,6 +57,8 @@ export async function getStaticPaths() {
     return {
         paths,
         fallback: false,
+
+        
     };
 }
 

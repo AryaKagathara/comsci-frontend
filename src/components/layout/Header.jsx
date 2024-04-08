@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const Header = ({ pageProps }) => {
 	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
 	const menuItem = pageProps?.result?.primary;
+	// console.log('menuItem...................', menuItem);
 	const [menuBtn, setMenuBtn] = useState(false);
 	const menuHandler = () => {
 		setMenuBtn(!menuBtn);
@@ -62,9 +63,13 @@ const Header = ({ pageProps }) => {
 										<div className="nav-bar">
 											<ul>
 												{menuItem.nodes.map((item, index) => {
+													const createSlug = (label) => {
+														return label.toLowerCase().replace(/\s&\s/g, '-').replace(/\s/g, '-').replace(/&/g, '-');
+													};
+
 													return (
 														<li key={index}>
-															<Link href="#">{item.label}</Link>
+															<Link href={`${createSlug(item.label)}`}>{item.label}</Link>
 															{(item?.childItems?.nodes?.length > 0) &&
 
 																<ul className="dropdown_menu">

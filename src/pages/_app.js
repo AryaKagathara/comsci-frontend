@@ -14,7 +14,6 @@ import { useRouter } from 'next/router';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App({ Component, pageProps }) {
-  console.log("pageProps : ", pageProps);
   const router = useRouter();
 
   // const is404Page = router.isFallback || router.pathname == '/404';

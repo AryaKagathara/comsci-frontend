@@ -7,7 +7,6 @@ import Tab from "react-bootstrap/Tab";
 import Accordion from 'react-bootstrap/Accordion';
 
 const ServicesSection = (props) => {
-  console.log('props.services',props.services);
   return (
     <>
       <div className="services">

@@ -1,6 +1,4 @@
 const THEME_QUERY = `themeGeneralSettings {
-
-
   commanComponentOption {
     technologieTitle
     technologieDescription
@@ -199,6 +197,133 @@ footer2: menuItems(where: {location: FOOTER_MENU_2, parentId: "0"}) {
       nodes {
         id
         label
+      }
+    }
+  }
+}
+`
+
+
+const COMMAN_COMPONENT_DATA = `themeGeneralSettings {
+  commanComponentOption {
+    technologieTitle
+    technologieDescription
+    strategyTitle
+    shortDescription
+    serviceTitle
+    serviceDetailButtonTitle
+    sShortTitle
+    pTitle
+    pButtonName {
+      url
+      title
+      target
+    }
+    awardLogos {
+      awardLogoImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    cTitle
+    shortDescription
+    clientLogos {
+      clientLogoImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    faqTitle
+    faqDescription
+    faqContent {
+      faqMetaTitle
+      faqMetaDescription
+    }
+    marqueeContent {
+      marqueeText
+    }
+    selectProject {
+      ... on Project {
+        id
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        title
+        slug
+      }
+    }
+    selectService {
+      ... on Service {
+        id
+        title
+        slug
+        featuredImage {
+          node {
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+            altText
+          }
+        }
+        content
+        tags {
+          nodes {
+            name
+          }
+        }
+        excerpt
+      }
+    }
+    strategySection {
+      straTitle
+      straDescription
+      straImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    technologiesLogos {
+      technologieLogos {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
+      }
+    }
+    testimonialsMeta {
+      testtimonialsName
+      testtimonialsPosition
+      testtimonialsTitle
+      testimonialImage {
+        altText
+        sourceUrl
+        mediaDetails {
+          width
+          height
+        }
       }
     }
   }
@@ -520,10 +645,49 @@ export const GET_SERVIDE_DETAIL_PAGE_DATA = {
 }
 
 
+export const GET_APPROACH_PAGE_DATA = {
+  query: `{
+    ${THEME_QUERY}
+  }`
+}
+
 export const GET_ALL_SERVICE_SLUG = {
   query: `query getAllServiceSlug {
     services {
       nodes {
+        slug
+      }
+    }
+    ${THEME_QUERY}
+  }`
+}
+
+export const GET_ALL_POST = {
+  query: `query getAllPosts {
+    posts(first: 9999) {
+      nodes {
+        content
+        title
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+        categories {
+          nodes {
+            name
+            slug
+            databaseId
+          }
+        }
+        date
+      }
+    }
+    categories {
+      nodes {
+        databaseId
+        name
         slug
       }
     }
