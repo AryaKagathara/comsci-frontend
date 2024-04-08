@@ -590,6 +590,8 @@ export const GET_PROJECT_PAGE_DATA = {
       }`
 }
 
+
+
 export const GET_SERVIDE_DETAIL_PAGE_DATA = {
   query: `query ServiceDetailData($id: ID = "") {
     service(id: $id, idType: SLUG) {
@@ -661,34 +663,162 @@ export const GET_ALL_SERVICE_SLUG = {
     ${THEME_QUERY}
   }`
 }
-
-export const GET_ALL_POST = {
-  query: `query getAllPosts {
-    posts(first: 9999) {
+export const GET_ALL_POST_SLUG = {
+  query: `query getAllPostsSlug {
+    posts {
       nodes {
-        content
-        title
-        featuredImage {
-          node {
-            altText
-            sourceUrl
-          }
-        }
-        categories {
-          nodes {
-            name
-            slug
-            databaseId
-          }
-        }
-        date
+        slug
       }
     }
-    categories {
+    ${THEME_QUERY}
+  }`
+}
+export const GET_ALL_PROJECT_SLUG = {
+  query: `query getAllProjectSlug {
+    projects {
       nodes {
-        databaseId
-        name
         slug
+      }
+    }
+    ${THEME_QUERY}
+  }`
+}
+
+
+export const GET_ALL_POST = {
+  query: `query BlogPageData($id: ID = "/blog") {
+    page(id: $id, idType: URI) {
+      blogPageOptions {
+        bannerTitle
+      }
+    }
+     posts(first: 9999) {
+        nodes {
+          content
+          title
+          slug
+          featuredImage {
+            node {
+              altText
+              sourceUrl
+            }
+          }
+          categories {
+            nodes {
+              name
+              slug
+              databaseId
+            }
+          }
+          date
+        }
+      }
+      categories {
+        nodes {
+          databaseId
+          name
+          slug
+        }
+      }
+      ${THEME_QUERY}
+  }`
+}
+
+
+
+// export const GET_ALL_POST = {
+//   query: `query getAllPosts {
+//     posts(first: 9999) {
+//       nodes {
+//         content
+//         title
+//         slug
+//         featuredImage {
+//           node {
+//             altText
+//             sourceUrl
+//           }
+//         }
+//         categories {
+//           nodes {
+//             name
+//             slug
+//             databaseId
+//           }
+//         }
+//         date
+//       }
+//     }
+//     categories {
+//       nodes {
+//         databaseId
+//         name
+//         slug
+//       }
+//     }
+//     ${THEME_QUERY}
+//   }`
+// }
+
+
+
+
+
+export const GET_POST_DETAIL_PAGE_DATA = {
+  query: `query PostDetailData($id: ID = "") {
+    post(id: $id, idType: SLUG) {
+      content
+      title
+      date
+      categories {
+        nodes {
+          name
+          slug
+          databaseId
+        }
+      }
+      featuredImage {
+        node {
+          altText
+          mediaDetails {
+            width
+            height
+          }
+          sourceUrl
+        }
+      }
+    }
+    ${THEME_QUERY}
+  }`
+}
+export const GET_PROJECT_DETAIL_PAGE_DATA = {
+  query: `query ProjectDetailData($id: ID = "") {
+    project(id: $id, idType: SLUG) {
+      content
+      title
+      date
+      featuredImage {
+        node {
+          altText
+          mediaDetails {
+            width
+            height
+          }
+          sourceUrl
+         
+        }
+      }
+      projectDetailPageOptions {
+        projectDetailImages {
+          pdImage {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
       }
     }
     ${THEME_QUERY}

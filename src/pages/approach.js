@@ -11,10 +11,6 @@ import axios from "axios";
 
 export default function Approach(props) {
     const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
-
-    console.log('CommanPageData', CommanPageData);
-
-
     return (
         <>
             <Head>

@@ -4,18 +4,17 @@ import { GET_ALL_POST } from "@/queries/graphql_queries";
 import axios from "axios";
 
 export default function Projects(props) {
+    console.log('props:', props?.result?.page?.blogPageOptions);
 
-    // const posts = props?.result?.posts;
     const categories = props?.result?.categories;
-
     const PostData = [];
     props?.result?.posts?.nodes?.map((item, i) => {
 
         const category = []
         item.categories.nodes.map((items) => {
             const dataObj = {
-                name:items.name,
-                id:items.databaseId
+                name: items.name,
+                id: items.databaseId
             }
             category.push(dataObj)
         })
@@ -28,10 +27,11 @@ export default function Projects(props) {
             catName: category[0].name || '',
             catID: category[0].id || '',
             date: item.date || '',
+            slug: item.slug || '',
         }
         PostData.push(dataObj);
     });
-// console.log('PostData',PostData);
+    // console.log('PostData',PostData);
 
     return (
         <>
@@ -40,7 +40,7 @@ export default function Projects(props) {
             </Head>
             {
                 (PostData != null && categories != null) &&
-                <BlogpageSection categortList={categories} postList={PostData} />
+                <BlogpageSection categortList={categories} postList={PostData} pageTitle={props?.result?.page?.blogPageOptions} />
             }
         </>
     )

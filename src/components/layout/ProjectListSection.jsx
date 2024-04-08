@@ -3,10 +3,9 @@ import Image from "next/image";
 
 const ProjectListSection = (props) => {
 
-	// console.log('-------------->',props);
 	return (
 		<>
-			<Link href={props?.projectDetails?.slug} className="project_wrap">
+			<Link href={`project/${props?.projectDetails?.slug}`} className="project_wrap">
 				<div className="picture">
 					<Image src={props?.projectDetails?.featuredImage?.node?.sourceUrl} width={516} height={540} alt={props?.projectDetails?.featuredImage?.node?.altText} />
 				</div>

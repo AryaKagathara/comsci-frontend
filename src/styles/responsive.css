@@ -62,6 +62,7 @@
 	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
 	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips .chip a { white-space: nowrap; overflow: hidden; padding: 8px 16px; display: block; border-radius: 57px; background-color: var(--primary-light-white); font-size: 16px; font-weight: 500; transition: all 0.3s ease-in-out; color: var(--primary-black); text-decoration: none; line-height: normal; }
 	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .chips .chip a:hover { background: var(--primary-dark-white); }
+	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box span p img { width: 100%; height: auto; }
 	.mobile_service_tabsection .accordion .accordion-item .accordion-button.collapsed { background: transparent; padding: 0; box-shadow: none; color: var(--primary-light-gray); font-size: 24px; font-weight: 500; }
 	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .learn_btn { display: flex; justify-content: flex-start; margin-top: 24px; }
 	.mobile_service_tabsection .accordion .accordion-item .accordion-body .content_box .learn_btn a { display: block; color: var(--primary-white); font-size: 18px; font-weight: 500; line-height: 1.44; text-decoration: none; padding: 8px 16px; border-radius: 42px; transition: all 0.4s ease-in-out; border: 1px solid var(--primary-orange); overflow: hidden; position: relative; z-index: 1; }
@@ -147,7 +148,7 @@
 	.testimonials { display: none; }
 	.testimonials_slider { padding: 80px 0 60px 0; background: var(--primary-white); display: block; }
 	.testimonials_slider .testimg-text { position: relative; margin-bottom: 90px; }
-	.testimonials_slider .testimg-text .textimgbox { width: 42px; height: 36px; display: flex; position: absolute; top: 0; left: 0; }
+	.testimonials_slider .testimg-text .textimgbox { width: 50px; height: 50px; margin-right: 20px; display: flex; }
 	.testimonials_slider .testimg-text .textimgbox img { width: 100%; height: auto; max-width: 100%; max-height: 100%; object-fit: cover; }
 	.testimonials_slider .testimg-text .contentbox { margin-left: 30px; margin-top: 24px; }
 	.testimonials_slider .testimg-text .contentbox h4 { margin: 0 0 24px 0; color: var(--primary-black); font-weight: 400; }
@@ -273,6 +274,15 @@
 	.service_type { padding: 100px 0; }
 	.service_type .type_textbox { flex-direction: column; row-gap: 20px; }
 	.service_type .type_textbox + .type_textbox { margin-top: 60px; }
+
+
+	.project_detail_section { padding: 40px 0 40px 0; }
+
+
+	.detail_wrap h5 { margin-bottom: 14px; }
+
+
+	.detail_wrap .share_btn { margin-top: 30px; }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -485,6 +495,15 @@
 	.service_type .type_textbox h3 { max-width: 100%; }
 	.service_type .type_textbox p { max-width: 100%; }
 	.service_type .type_textbox + .type_textbox { margin-top: 70px; }
+
+
+	.project_detail_section { padding: 50px 0 50px 0; }
+
+
+	.detail_wrap h5 { margin-bottom: 20px; }
+
+
+	.detail_wrap .share_btn { margin-top: 30px; }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -496,6 +515,7 @@
 	h5 { font-size: 28px; }
 
 	.main_header .navigation_bar .nav-bar ul li .dropdown_menu { min-width: 310px; }
+	.main_header .navigation_bar { width: calc(50% + 160px); }
 
 
 	.services { padding: 100px 0; }
@@ -612,6 +632,15 @@
 	.service_type .type_textbox h3 { max-width: 400px; }
 	.service_type .type_textbox p { max-width: 500px; }
 	.service_type .type_textbox + .type_textbox { margin-top: 80px; }
+
+
+	.project_detail_section { padding: 60px 0 60px 0; }
+
+
+	.detail_wrap h5 { margin-bottom: 26px; }
+
+
+	.detail_wrap .share_btn { margin-top: 30px; }
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
@@ -621,6 +650,8 @@
 	h3 { font-size: 46px; }
 	h4 { font-size: 30px; }
 	h5 { font-size: 30px; }
+
+	.main_header .navigation_bar { width: calc(50% + 160px); }
 
 
 	.services { padding: 110px 0; }
@@ -699,6 +730,15 @@
 	.service_type { padding: 100px 0 80px 0; }
 	.service_type .type_textbox p { max-width: 580px; }
 	.service_type .type_textbox + .type_textbox { margin-top: 80px; }
+
+
+	.project_detail_section { padding: 70px 0 64px 0; }
+
+
+	.detail_wrap h5 { margin-bottom: 26px; }
+
+
+	.detail_wrap .share_btn { margin-top: 30px; }
 }
 
 @media (min-width: 1301px) and (max-width: 1399px) {
@@ -706,6 +746,8 @@
 	h2 { font-size: 78px; }
 	h4 { font-size: 32px; }
 	h5 { font-size: 32px; }
+
+	.main_header .navigation_bar { width: calc(50% + 160px); }
 
 
 	.services { padding: 120px 0; }
@@ -771,6 +813,9 @@
 }
 
 @media (min-width: 1400px) and (max-width: 1600px) {
+
+	.main_header .navigation_bar { width: calc(50% + 160px); }
+
 
 	.service_detail .marquee { column-gap: normal; }
 	.service_detail .marquee .marquee-content .back_wrapper .text_box { font-size: 32px; }

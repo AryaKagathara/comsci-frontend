@@ -21,7 +21,6 @@
 
         {
           (CommanPageData?.serviceTitle != null && CommanPageData?.selectService != null && CommanPageData?.sShortTitle != null && CommanPageData?.serviceDetailButtonTitle != null && CommanPageData?.marqueeContent != null) &&
-
           <ServicesSection serviceTitle={CommanPageData?.serviceTitle} services={CommanPageData?.selectService} shortTitle={CommanPageData?.sShortTitle} serviceDetailButtonTitle={CommanPageData?.serviceDetailButtonTitle} marqueeContent={CommanPageData?.marqueeContent} />
         }
 
@@ -40,13 +39,6 @@
       </>
     )
   }
-
-
-
-
-
-  
-
 
 
   export const getStaticProps = async () => {
