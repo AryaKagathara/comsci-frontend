@@ -30,6 +30,28 @@ const Footer = () => {
 							</div>
 							<div className="social_media">
 								<ul>
+									<li><Link href="#">Logo & Branding</Link></li>
+									<li><Link href="#">UX UI Designing</Link></li>
+									<li><Link href="#">Custom Web Development</Link></li>
+									<li><Link href="#">Mobile Application</Link></li>
+									<li><Link href="#">Video & Art Direction</Link></li>
+									<li><Link href="#">Search Engine Optimization</Link></li>
+									<li><Link href="#">Artificial Intelligence</Link></li>
+								</ul>
+							</div>
+							<div className="social_media industries_block">
+								<ul>
+									<li><Link href="#">Healthcare</Link></li>
+									<li><Link href="#">Real Estate</Link></li>
+									<li><Link href="#">Fintech & Banking</Link></li>
+									<li><Link href="#">Web3</Link></li>
+									<li><Link href="#">AR & VR</Link></li>
+									<li><Link href="#">Educational</Link></li>
+									<li><Link href="#">Hospitality & Luxery</Link></li>
+								</ul>
+							</div>
+							<div className="social_media soc_block_wrap">
+								<ul>
 									<li><Link href="#">Instagram</Link></li>
 									<li><Link href="#">Facebook</Link></li>
 									<li><Link href="#">Behance</Link></li>

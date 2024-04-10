@@ -11,6 +11,7 @@ import ProjectSection from "@/components/ProjectSection";
 import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import RendomLogo from "@/components/RendomLogo";
 import AwardType from "@/components/AwardTypeSection";
+import IndustriesSection from "@/components/IndustriesSection";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <Technologies />
       <ProjectSection />
       <TestimonialsSection />
+      <IndustriesSection />
       <Faqsection />
       <BlogSection />
     </>

@@ -60,6 +60,7 @@ const Header = () => {
 								<div className="navigation_wrap">
 									<div className="nav-bar">
 										<ul>
+											<li><Link href="/about" className="active">About us</Link></li>
 											<li>
 												<Link href="/services">Services <i><Image src={downArrow} alt="arrow" /></i></Link>
 												<ul className="dropdown_menu">
@@ -74,9 +75,21 @@ const Header = () => {
 												</ul>
 											</li>
 											<li><Link href="/projects">Projects</Link></li>
+											<li>
+												<Link href="/industries">Industries <i><Image src={downArrow} alt="arrow" /></i></Link>
+												<ul className="dropdown_menu">
+													<li><Link href="#">Finance & Banking Tech</Link></li>
+													<li><Link href="#">Medical Healthcare</Link></li>
+													<li><Link href="#">Real Estate Sector</Link></li>
+													<li><Link href="#">Hospitality & Luxury</Link></li>
+													<li><Link href="#">Educational</Link></li>
+													<li><Link href="#">Entertainment and Media</Link></li>
+													<li><Link href="#">Ecommerce</Link></li>
+													<li><Link href="/" className="drop_learn_btn">Explore Our Services</Link></li>
+												</ul>
+											</li>
 											<li><Link href="/blogs">Blogs</Link></li>
 											<li><Link href="/approach">Approach</Link></li>
-											<li><Link href="/about" className="active">About us</Link></li>
 										</ul>
 									</div>
 									<div className="header_btn">
