@@ -1,31 +1,33 @@
 import ContentBox from "@/components/layout/ContentBox";
 
-const ResultSection = () => {
+const ResultSection = (props) => {
 	return (
 		<>
 			<div className="result">
 				<div className="container">
 					<div className="result_wrap">
 						<div className="result_content">
-							<ContentBox title="Our results in numbers" />
+							{
+								(props?.title != null) &&
+								<ContentBox title={props?.title} />
+							}
 						</div>
 						<div className="result_detail">
-							<div className="result_textbox">
-								<h4>99%</h4>
-								<span>Customer satisfaction</span>
-							</div>
-							<div className="result_textbox">
-								<h4>32M</h4>
-								<span>Active users</span>
-							</div>
-							<div className="result_textbox">
-								<h4>51+</h4>
-								<span>Team members</span>
-							</div>
-							<div className="result_textbox">
-								<h4>240%</h4>
-								<span>Company growth</span>
-							</div>
+							{
+								(props?.metaData.length > 0) &&
+								props?.metaData.map((metaData, index) => (
+									<div className="result_textbox" key={index}>
+										{
+											(metaData?.orMetaNumberText != null) &&
+											<h4>{metaData?.orMetaNumberText}</h4>
+										}
+										{
+											(metaData?.orMetaTitle != null) &&
+											<span>{metaData?.orMetaTitle}</span>
+										}
+									</div>
+								))
+							}
 						</div>
 					</div>
 				</div>
@@ -33,5 +35,5 @@ const ResultSection = () => {
 		</>
 	)
 }
-	
+
 export default ResultSection;

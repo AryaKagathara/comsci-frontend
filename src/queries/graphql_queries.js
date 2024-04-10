@@ -724,6 +724,59 @@ export const GET_ALL_POST = {
   }`
 }
 
+export const GET_ABOUT_PAGE_DATA = {
+  query: `query AboutPageData($id: ID = "/about") {
+    page(id: $id, idType: URI) {
+      aboutPageOptions {
+        apShortTitle
+        apTitle
+        apMeta {
+          apMetaNumber
+          apMetaDescription
+        }
+        orTitle
+        otTitle
+        orMeta {
+          orMetaNumberText
+          orMetaTitle
+        }
+        selectTeamMember {
+          ... on TeamMember {
+            date
+            databaseId
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
+              }
+            }
+            slug
+            title
+            excerpt
+          }
+        }
+      }
+    }
+    ${THEME_QUERY}
+  }`
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // export const GET_ALL_POST = {
