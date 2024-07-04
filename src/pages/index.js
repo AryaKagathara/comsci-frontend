@@ -12,9 +12,13 @@ import TestiMonialsSlider from "@/components/layout/TestiMonialsSlider";
 import RendomLogo from "@/components/RendomLogo";
 import AwardType from "@/components/AwardTypeSection";
 import { GET_HOME_PAGE_DATA } from "@/queries/graphql_queries";
+import IndustriesSection from "@/components/IndustriesSection";
 import axios from "axios";
 export default function Home(props) {
+  console.log('props', props);
+
   const HomePageData = props?.result?.page?.homePageOptions;
+  const industriesSection = props?.result?.page?.industriesSection;
   const CommanPageData = props?.result?.themeGeneralSettings?.commanComponentOption;
   return (
     <>
@@ -42,12 +46,10 @@ export default function Home(props) {
 
       <RendomLogo clientLogos={CommanPageData?.clientLogos} title={CommanPageData?.cTitle} shortDescription={CommanPageData?.shortDescription} />
 
-
       {
         (CommanPageData != null && CommanPageData.testimonialsMeta != null) &&
         <TestiMonialsSlider testimonialsMeta={CommanPageData?.testimonialsMeta} />
       }
-
 
       {
         (CommanPageData != null && CommanPageData.strategyTitle != null && CommanPageData.strategySection != null) &&
@@ -62,21 +64,21 @@ export default function Home(props) {
         (HomePageData?.pTitle != null && HomePageData?.pButtonName != null && HomePageData?.selectProject != null) &&
         < ProjectSection projectTitle={HomePageData?.pTitle} projectButtonName={HomePageData?.pButtonName} selectProject={HomePageData?.selectProject} />
       }
-
       {
         (CommanPageData?.testimonialsMeta != null) &&
         <TestimonialsSection testimonialsMeta={CommanPageData?.testimonialsMeta} />
       }
-
+      {/* {
+        (industriesSection?.iTitle != null && industriesSection?.selectIndustrie != null) &&
+        <IndustriesSection title={industriesSection?.iTitle} selectIndustrie={industriesSection?.selectIndustrie} />
+      } */}
       {
         (CommanPageData != null && CommanPageData.faqContent != null && CommanPageData.faqTitle != null && CommanPageData.faqDescription != null) &&
         <Faqsection faqContent={CommanPageData?.faqContent} faqTitle={CommanPageData.faqTitle} faqDescription={CommanPageData?.faqDescription} />
       }
-
       {(HomePageData != null && HomePageData.bTitle != null && HomePageData.blogSectionButtonName != null && HomePageData.selectedBlogs != null) &&
         <BlogSection title={HomePageData?.bTitle} blogButtonName={HomePageData?.blogSectionButtonName} selectedBlogs={HomePageData?.selectedBlogs} />
       }
-
     </>
   )
 }

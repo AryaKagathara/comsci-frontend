@@ -332,179 +332,199 @@ const COMMAN_COMPONENT_DATA = `themeGeneralSettings {
 
 export const GET_HOME_PAGE_DATA = {
   query: `query HomePageQuery($id: ID = "/") {
-        page(id: $id, idType: URI) {
-          homePageOptions {
-            bannerImage {
-              altText
-              sourceUrl
-              mediaDetails {
-                width
-                height
-              }
-            }
-            bannerShortDescription
-            bannerButton {
-              target
-              title
-              url
-            }
-            bannerTitle
-            bannerShortTitle
-            serviceTitle
-            sShortTitle
-            serviceDetailButtonTitle
-            selectService {
-              ... on Service {
-                id
-                title
-                slug
-                featuredImage {
-                  node {
-                    sourceUrl
-                    mediaDetails {
-                      width
-                      height
-                    }
-                    altText
-                  }
-                }
-                content
-
-                tags {
-                  nodes {
-                    name
-                  }
-                }
-              }
-            }
-            marqueeContent {
-              marqueeText
-            }
-            awardText
-            awardImage {
-              altText
-              sourceUrl
-              mediaDetails {
-                width
-                height
-              }
-            }
-            awardLogos {
-              awardLogoImage {
-                altText
+    page(id: $id, idType: URI) {
+      homePageOptions {
+        bannerImage {
+          altText
+          sourceUrl
+          mediaDetails {
+            width
+            height
+          }
+        }
+        bannerShortDescription
+        bannerButton {
+          target
+          title
+          url
+        }
+        bannerTitle
+        bannerShortTitle
+        serviceTitle
+        sShortTitle
+        serviceDetailButtonTitle
+        selectService {
+          ... on Service {
+            id
+            title
+            slug
+            featuredImage {
+              node {
                 sourceUrl
                 mediaDetails {
                   width
                   height
                 }
-              }
-            }
-            cTitle
-            shortDescription
-            clientLogos {
-              clientLogoImage {
                 altText
-                sourceUrl
-                mediaDetails {
-                  width
-                  height
-                }
               }
             }
-            strategyTitle
-            strategySection {
-              straTitle
-              straDescription
-              straImage {
-                altText
-                sourceUrl
-                mediaDetails {
-                  width
-                  height
-                }
-              }
-            }
-            technologieTitle
-            technologieDescription
-            technologiesLogos {
-              technologieLogos {
-                altText
-                sourceUrl
-                mediaDetails {
-                  width
-                  height
-                }
-              }
-            }
-            pTitle
-            pButtonName {
-              url
-              title
-              target
-            }
-            selectProject {
-              ... on Project {
-                id
-                featuredImage {
-                  node {
-                    altText
-                    sourceUrl
-                    mediaDetails {
-                      width
-                      height
-                    }
-                  }
-                }
-                title
-                slug
-              }
-            }
-            testimonialsMeta {
-              testtimonialsName
-              testtimonialsPosition
-              testtimonialsTitle
-            }
-            faqTitle
-            faqDescription
-            faqContent {
-              faqMetaTitle
-              faqMetaDescription
-            }
-            bTitle
-            blogSectionButtonName {
-              target
-              title
-              url
-            }
-            selectedBlogs {
-              ... on Post {
-                id
-                content
-                featuredImage {
-                  node {
-                    altText
-                    sourceUrl
-                    mediaDetails {
-                      width
-                      height
-                    }
-                  }
-                }
-                slug
-                title
-                date
-                categories {
-                  nodes {
-                    name
-                    slug
-                  }
-                }
+            content
+            tags {
+              nodes {
+                name
               }
             }
           }
         }
-        ${THEME_QUERY}
-      }`
+        marqueeContent {
+          marqueeText
+        }
+        awardText
+        awardImage {
+          altText
+          sourceUrl
+          mediaDetails {
+            width
+            height
+          }
+        }
+        awardLogos {
+          awardLogoImage {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        cTitle
+        shortDescription
+        clientLogos {
+          clientLogoImage {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        strategyTitle
+        strategySection {
+          straTitle
+          straDescription
+          straImage {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        technologieTitle
+        technologieDescription
+        technologiesLogos {
+          technologieLogos {
+            altText
+            sourceUrl
+            mediaDetails {
+              width
+              height
+            }
+          }
+        }
+        pTitle
+        pButtonName {
+          url
+          title
+          target
+        }
+        selectProject {
+          ... on Project {
+            id
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
+              }
+            }
+            title
+            slug
+          }
+        }
+        testimonialsMeta {
+          testtimonialsName
+          testtimonialsPosition
+          testtimonialsTitle
+        }
+        faqTitle
+        faqDescription
+        faqContent {
+          faqMetaTitle
+          faqMetaDescription
+        }
+        bTitle
+        blogSectionButtonName {
+          target
+          title
+          url
+        }
+        selectedBlogs {
+          ... on Post {
+            id
+            content
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+                mediaDetails {
+                  width
+                  height
+                }
+              }
+            }
+            slug
+            title
+            date
+            categories {
+              nodes {
+                name
+                slug
+              }
+            }
+          }
+        }
+      }
+      industriesSection {
+        iTitle
+        selectIndustrie {
+          ... on Industrie {
+            id
+            content
+            featuredImage {
+              node {
+                altText
+                sourceUrl
+                mediaDetails {
+                  height
+                  width
+                }
+              }
+            }
+            slug
+            title
+          }
+        }
+      }
+    }
+    ${THEME_QUERY}
+  }`
 }
 
 export const GET_SERVICE_PAGE_DATA = {
@@ -640,6 +660,23 @@ export const GET_SERVIDE_DETAIL_PAGE_DATA = {
           url
         }
         pTitle
+      }
+      flexibleContentSection {
+        flexibleContent {
+          ... on Service_Flexiblecontentsection_FlexibleContent_StrategySection {
+            fieldGroupName
+            ssTitle
+            strategySection {
+              straTitle
+              straDescription
+              straImage {
+                altText
+                sourceUrl
+              }
+            }
+          }
+        }
+        fieldGroupName
       }
     }
     ${THEME_QUERY}

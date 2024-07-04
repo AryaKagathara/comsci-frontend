@@ -20,7 +20,6 @@ const BlogListSection = (props) => {
 
 	return (
 		<>
-
 			{
 				(props?.post?.length > 0) &&
 				props?.post?.map((postData, index) => {
@@ -46,10 +45,6 @@ const BlogListSection = (props) => {
 					)
 				})
 			}
-
-
-
-
 		</>
 	)
 }

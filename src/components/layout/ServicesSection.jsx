@@ -64,22 +64,22 @@ const ServicesSection = (props) => {
                               </div>
                               <span dangerouslySetInnerHTML={{ __html: services?.excerpt }}>
                               </span>
-                           
+
                               <div className="chips">
                                 {
                                   (services?.tags?.nodes?.length > 0) &&
                                   services.tags.nodes.map((tags, index) => {
                                     return (
                                       <div className="chip" key={index}>
+                                        {/* <span>{tags?.name}</span> */}
                                         <Link href="javascript:;">{tags?.name}</Link>
-                                      </div>
+                                      </div>  
                                     )
                                   })
                                 }
-
                               </div>
                               <div className="learn_btn">
-                              <Link href={`service/${services?.slug}`}>{props?.serviceDetailButtonTitle} {services?.title}</Link>
+                                <Link href={`service/${services?.slug}`}>{props?.serviceDetailButtonTitle} {services?.title}</Link>
                               </div>
                             </div>
                           </Tab.Pane>
@@ -113,6 +113,7 @@ const ServicesSection = (props) => {
                               services.tags.nodes.map((tags, index) => {
                                 return (
                                   <div className="chip" key={index}>
+                                    
                                     <Link href="javascript:;">{tags?.name}</Link>
                                   </div>
                                 )
@@ -120,7 +121,7 @@ const ServicesSection = (props) => {
                             }
                           </div>
 
-                          <span dangerouslySetInnerHTML={{ __html: services?.content }}></span>
+                          <span dangerouslySetInnerHTML={{ __html: services?.excerpt }}></span>
                           <div className="learn_btn">
                             <Link href={services?.slug}>{props?.serviceDetailButtonTitle}</Link>
                           </div>

@@ -10,13 +10,13 @@ const BlogpageSection = (props) => {
 	const [filterResult, setFilterResult] = useState(props?.postList);
 	const [filterResultCount, setFilterResultCount] = useState(props?.postList?.length);
 	const [activeCategory, setActiveCategory] = useState(null);
-	const [current,setCurrent] = useState(defaultPostDisplay);
-	const [showLoadMore,setShowLoadMore] = useState(true);
+	const [current, setCurrent] = useState(defaultPostDisplay);
+	const [showLoadMore, setShowLoadMore] = useState(true);
 
 	const catClickHandler = (e, catName) => {
 		e.preventDefault();
 		let filterData = postList.filter(post => post.catName == catName)
-		let data = filterData.length > defaultPostDisplay ? filterData.slice(0,defaultPostDisplay) : filterData;
+		let data = filterData.length > defaultPostDisplay ? filterData.slice(0, defaultPostDisplay) : filterData;
 		setFilterResult(data);
 		setFilterResultCount(filterData.length)
 		setActiveCategory(catName); // Update active category
@@ -25,7 +25,7 @@ const BlogpageSection = (props) => {
 	}
 	const allCatHandler = (e) => {
 		e.preventDefault();
-		let data = postList.length > defaultPostDisplay ? postList.slice(0,defaultPostDisplay) : postList;
+		let data = postList.length > defaultPostDisplay ? postList.slice(0, defaultPostDisplay) : postList;
 		setFilterResult(data);
 		setFilterResultCount(postList.length)
 		setActiveCategory(null); // Reset active category
@@ -36,7 +36,7 @@ const BlogpageSection = (props) => {
 		e.preventDefault();
 		// console.log("activeCategory : ",activeCategory)
 		let filterData = activeCategory == null ? postList : postList.filter(post => post.catName == activeCategory)
-		let data = filterData.slice(0,current + defaultPostDisplay);
+		let data = filterData.slice(0, current + defaultPostDisplay);
 		setCurrent(current + defaultPostDisplay)
 		setFilterResult(data)
 		setFilterResultCount(data.length)
@@ -44,6 +44,7 @@ const BlogpageSection = (props) => {
 		// console.log("lenght : ",data.length)
 	}
 
+	console.log('filterResult', filterResult);
 	return (
 		<>
 			<div className="blog">

@@ -10,10 +10,10 @@ const BlogSection = (props) => {
 						<HomeBlogBox title={props?.title} buttonName={props?.blogButtonName} />
 						<div className="bloglist_section">
 							{
-								(props?.selectedBlogs.length > 0) &&
-								props.selectedBlogs.map((blogs, index) => (
-									<BlogListSection key={index} blog={blogs} />
-								))
+								// (props?.selectedBlogs.length > 0) &&
+								// props.selectedBlogs.map((blogs, index) => (
+									<BlogListSection post={props?.selectedBlogs} />
+								// ))
 							}
 						</div>
 					</div>

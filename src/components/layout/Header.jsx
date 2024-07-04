@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import PrimaryBtn from '@/components/layout/PrimaryBtn';
+import downArrow from "@/../public/images/dropdown-arrow.svg";
 import { useState, useEffect } from "react";
 const Header = ({ pageProps }) => {
 	const themeSettings = pageProps?.result?.themeGeneralSettings?.themeOptions;
 	const menuItem = pageProps?.result?.primary;
-	// console.log('menuItem...................', menuItem);
 	const [menuBtn, setMenuBtn] = useState(false);
 	const menuHandler = () => {
 		setMenuBtn(!menuBtn);
@@ -69,16 +69,24 @@ const Header = ({ pageProps }) => {
 
 													return (
 														<li key={index}>
-															<Link href={`${createSlug(item.label)}`}>{item.label}</Link>
+															<Link href={`${createSlug(item.label)}`}>{item.label}
+																{(item?.childItems?.nodes?.length > 0) &&
+																	<i><Image src={downArrow} alt="arrow" /></i>
+																}
+
+															</Link>
 															{(item?.childItems?.nodes?.length > 0) &&
 
 																<ul className="dropdown_menu">
 																	{
 																		item.childItems.nodes.map((subitem, index) => {
 																			return (
-																				<li key={index}><Link href="#">{subitem.label}</Link></li>
+																				<li key={index} ><Link href="#" >{subitem.label}</Link></li>
 																			)
 																		})
+																	}
+																	{(item.label == 'Service') &&
+																		<li><Link href="/service" className="drop_learn_btn">Explore Our Services</Link></li>
 																	}
 																</ul>
 															}
